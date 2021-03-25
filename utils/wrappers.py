@@ -8,6 +8,22 @@ AtariEnvs = ['basketball_pong_v1', 'boxing_v1', 'combat_plane_v1', 'combat_tank_
   'pong_v1', 'quadrapong_v2', 'space_invaders_v1', 'space_war_v1', 'surround_v1', 'tennis_v2', 
   'video_checkers_v3', 'volleyball_pong_v1', 'warlords_v2', 'wizard_of_wor_v2']
 
+AtariTwoPlayerCompetitiveEnvs = ['basketball_pong_v1', 'boxing_v1', 'combat_plane_v1', 'combat_tank_v1',
+ 'double_dunk_v2', 'entombed_competitive_v2', 'flag_capture_v1', 'joust_v2', 'maze_craze_v2', 'othello_v2',
+ 'pong_v1', 'space_war_v1', 'surround_v1', 'tennis_v2', 'video_checkers_v3',
+]
+
+AtariTwoPlayerCompetitiveEnvs = ['entombed_cooperative_v2']
+
+AtariTwoPlayerMixedSumEnvs = ['joust_v2', 'mario_bros_v2', 'space_invaders_v1']
+
+AtariMoreThan2PlayersEnvs = ['foozpong_v1',  # 4 players, 2 teams
+'quadrapong_v2', # 4 players, 2 teams
+'volleyball_pong_v1', # 4 players, 2 teams
+'warlords_v2', # 4 players, competitive
+'wizard_of_wor_v2' # 4 players, competitive and coorperative
+]
+
 # import envs: multi-agent environments in PettingZoo Atari (both competitive and coorperative)
 for env in AtariEnvs:   
     exec("from pettingzoo.atari import {}".format(env))
