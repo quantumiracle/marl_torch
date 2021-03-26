@@ -20,6 +20,13 @@ action_table = [[0, 0, 0], # NOOP
 
 
 def main():
+    parser = argparse.ArgumentParser(description='Train or test arguments.')
+    parser.add_argument('--train', dest='train', action='store_true', default=False)
+    parser.add_argument('--test', dest='test', action='store_true', default=False)
+    parser.add_argument('--render', dest='render', action='store_true',
+                    help='Enable openai gym real-time rendering')
+    args = parser.parse_args()
+    
     SEED = 721
     # env = gym.make('CartPole-v1')
     env = gym.make("SlimeVolley-v0")
@@ -42,8 +49,12 @@ def main():
     learner_args = {'device':  device}
 
     model = PPODiscrete(state_space, action_space, 'MLP', learner_args, **hyperparams).to(device)
+    if args.test:
+        model.load_model('model/mappo')
+
     score = 0.0
     print_interval = 20
+    save_interval = 100
     epi_len = []
     for n_epi in range(10000):
         s = env.reset()
@@ -51,7 +62,8 @@ def main():
         for t in range(env.t_limit):
             a, logprob = model.choose_action(s)
             s_prime, r, done, info = env.step(env.discreteToBox(a))  # from discrete to multibinary action
-            # env.render()
+            if args.render:
+                env.render()
             model.put_data((s, a, r, s_prime, logprob, done))
 
             s = s_prime
@@ -59,14 +71,15 @@ def main():
             score += r
             if done:
                 break
-
-        model.train_net()
+        if args.train:
+            model.train_net()
         epi_len.append(t)
         if n_epi%print_interval==0 and n_epi!=0:
             print("# of episode :{}, avg score : {:.3f}, avg epi length : {}".format(n_epi, score/print_interval, int(np.mean(epi_len))))
             score = 0.0
             epi_len = []
-
+        if n_epi%save_interval==0 and n_epi!=0 and args.train:
+            model.save_model('model/mappo')
     env.close()
 
 if __name__ == '__main__':

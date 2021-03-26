@@ -1,5 +1,6 @@
 import gym
 import torch
+torch.multiprocessing.set_start_method('forkserver', force=True) # critical for make multiprocessing work
 import torch.nn as nn
 import torch.nn.functional as F
 import torch.optim as optim
@@ -10,6 +11,12 @@ import pettingzoo
 from utils.wrappers import PettingZooWrapper, make_env
 from utils.ppo import PPODiscrete, MultiPPODiscrete
 import argparse
+
+import torch.multiprocessing as mp
+from torch.multiprocessing import Process
+from multiprocessing import Process, Manager
+from multiprocessing.managers import BaseManager
+
 from torch.utils.tensorboard import SummaryWriter
 
 writer = SummaryWriter()
@@ -55,7 +62,16 @@ def iterate_rollout(env, model, max_eps, max_timesteps):
             model.save_model('model/mappo')
 
 
-def parallel_rollout(env, model, max_eps, max_timesteps, render, fixed_agent=None):
+def parallel_rollout(id, env_name, obs_type, model, max_eps, max_timesteps, render, seed):
+    """ 
+    Paralllel rollout for multi-agent games, in contrast to the iterative rollout manner.
+    Parallel: (multi-agent actions are executed in once call of env.step())
+    observations_, rewards, dones, infos = env.step(actions)
+    actions, observations_, rewards, dones, infos are all dictionaries, 
+    with agent name as key and corresponding values.
+    """
+    env = make_env(env_name, seed, obs_type=obs_type)
+    env.reset() # required by env.agents
     score = {a:0.0 for a in env.agents}
     print_interval = 20
     save_interval = 100
@@ -82,7 +98,7 @@ def parallel_rollout(env, model, max_eps, max_timesteps, render, fixed_agent=Non
             # if not env.agents: # according to official docu (https://www.pettingzoo.ml/api), single agent will be removed if it recieved done, while others remain 
             #     break 
 
-        model.train_net(fixed_agent=fixed_agent)
+        model.train_net()
         epi_len.append(t)
         if n_epi%print_interval==0 and n_epi!=0:
             print("# of episode :{}".format(n_epi))
@@ -90,18 +106,32 @@ def parallel_rollout(env, model, max_eps, max_timesteps, render, fixed_agent=Non
             for agent_name in env.agents:
                 avg_score = score[agent_name]/float(print_interval)
                 avg_length = int(np.mean(epi_len))
-                print("agent :{}, avg score : {:.3f}, avg epi length : {}".format(agent_name, avg_score, avg_length))
+                print("id : {}, agent :{}, avg score : {:.3f}, avg epi length : {}".format(id, agent_name, avg_score, avg_length))
                 record_score[agent_name] = avg_score
                 record_length[agent_name] = avg_length
 
-            writer.add_scalars("Scores".format(agent_name), record_score, n_epi)
-            writer.add_scalars("Episode Length".format(agent_name), record_length, n_epi)
-            
+            writer.add_scalars("ID {}/Scores".format(id, agent_name), record_score, n_epi)
+            writer.add_scalars("ID {}/Episode Length".format(id, agent_name), record_length, n_epi)
+
             score = {a:0.0 for a in env.agents}
             epi_len = []
         if n_epi%save_interval==0 and n_epi!=0:
-            model.save_model('model/mappo_single')
-    model.save_model('model/mappo_single')
+            model.save_model('model/mappo_mp')
+    model.save_model('model/mappo_mp')
+
+def ShareParameters(adamoptim):
+    ''' share parameters of Adamoptimizers for multiprocessing '''
+    for group in adamoptim.param_groups:
+        for p in group['params']:
+            state = adamoptim.state[p]
+            # initialize: have to initialize here, or else cannot find
+            state['step'] = 0
+            state['exp_avg'] = torch.zeros_like(p.data)
+            state['exp_avg_sq'] = torch.zeros_like(p.data)
+
+            # share in memory
+            state['exp_avg'].share_memory_()
+            state['exp_avg_sq'].share_memory_()
 
 def main():
     parser = argparse.ArgumentParser(description='Train or test arguments.')
@@ -117,7 +147,6 @@ def main():
             help='Random seed')
     parser.add_argument('--alg', dest='alg', type=str, default='td3',
                 help='Choose algorithm type')
-    parser.add_argument('--load_opponent', dest='load_opponent', action='store_true', default=False)
     args = parser.parse_args()
 
     SEED = 721
@@ -150,12 +179,22 @@ def main():
         # model = PPODiscrete(state_space, action_space, 'CNN', learner_args, **hyperparams).to(device)
         model = MultiPPODiscrete(agents, state_spaces, action_spaces, 'CNN', learner_args, **hyperparams).to(device)
 
-    if args.load_opponent:  # load a pretrained model as opponent
-        model.load_model(agent_name='second_0', path='model/mappo')
-        fixed_agent = 'second_0' 
+    for individual_model in model.agents.values():
+        individual_model.policy.share_memory()
+        individual_model.policy_old.share_memory()
+        individual_model.value.share_memory()
+        ShareParameters(individual_model.optimizer)
 
-    parallel_rollout(env, model, max_eps=10000, max_timesteps=max_timesteps, render=args.render, fixed_agent=fixed_agent) 
+    processes=[]
+    for p in range(args.process):
+        process = Process(target=parallel_rollout, args=(p, args.env, obs_type, model, \
+            10000, max_timesteps, args.render, SEED))  # the args contain shared and not shared
+        process.daemon=True  # all processes closed when the main stops
+        processes.append(process)
 
+    [p.start() for p in processes]
+
+    [p.join() for p in processes]  # finished at the same time
 
     env.close()
 

@@ -36,11 +36,19 @@ class PPODiscrete(nn.Module):
         else:
             raise NotImplementedError
 
-        self.pi = lambda x: self.policy.forward(x, softmax_dim=-1)
-        self.v = lambda x: self.value.forward(x)            
+        # cannot use lambda in multiprocessing
+        # self.pi = lambda x: self.policy.forward(x, softmax_dim=-1)
+        # self.v = lambda x: self.value.forward(x)            
 
+        # TODO a single optimizer for two nets may be problematic
         self.optimizer = optim.Adam(list(self.value.parameters())+list(self.policy.parameters()), lr=self.learning_rate, betas=(0.9, 0.999))
         self.mseLoss = nn.MSELoss()
+
+    def pi(self, x):
+        return self.policy.forward(x, softmax_dim=-1)
+
+    def v(self, x):
+        return self.value.forward(x)  
 
     def put_data(self, transition):
         self.data.append(transition)
@@ -129,7 +137,7 @@ class PPODiscrete(nn.Module):
             dist = Categorical(prob)
             a = dist.sample()
             logprob = dist.log_prob(a)
-            return a.item(), logprob.detach().item()
+            return a.detach().item(), logprob.detach().item()
 
     def save_model(self, path=None):
         torch.save(self.policy.state_dict(), path+'_policy')
@@ -138,6 +146,8 @@ class PPODiscrete(nn.Module):
 
     def load_model(self, path=None):
         self.policy.load_state_dict(torch.load(path+'_policy'))
+        self.policy_old.load_state_dict(self.policy.state_dict())  # important
+
         self.value.load_state_dict(torch.load(path+'_value'))
 
 
@@ -158,9 +168,15 @@ class MultiPPODiscrete(nn.Module):
         for agent_name in self.agents:
             self.agents[agent_name].make_batch()
 
-    def train_net(self, GAE=False):
+    def train_net(self, fixed_agent=None, GAE=False):
         for agent_name in self.agents:
-            self.agents[agent_name].train_net(GAE)
+            if fixed_agent is not None:
+                assert fixed_agent in self.agents
+                if fixed_agent == agent_name:
+                    pass
+                else:
+                    # print('trained agents: ', agent_name)
+                    self.agents[agent_name].train_net(GAE)
 
     def choose_action(self, observations, Greedy=False):
         actions={}
@@ -173,9 +189,12 @@ class MultiPPODiscrete(nn.Module):
         for idx, agent_name in enumerate(self.agents):
             self.agents[agent_name].save_model(path+'_{}'.format(idx))
 
-    def load_model(self, path=None):
-        for idx, agent_name in enumerate(self.agents):
-            self.agents[agent_name].load_model(path+'_{}'.format(idx))
+    def load_model(self, agent_name=None, path=None):
+        if agent_name is not None:  # load model for specific agent only
+            self.agents[agent_name].load_model(path)
+        else:
+            for idx, agent_name in enumerate(self.agents):
+                self.agents[agent_name].load_model(path+'_{}'.format(idx))
 
 
 
