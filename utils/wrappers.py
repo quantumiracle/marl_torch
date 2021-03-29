@@ -93,12 +93,20 @@ class SlimeVolleyWrapper():
     def render(self,):
         self.env.render()
 
-    def step(self, actions):
+    def step(self, actions, against_baseline=False):
         obs, rewards, dones, infos = {},{},{},{}
     
         actions_ = [self.env.discreteToBox(a) for a in actions.values()]  # from discrete to multibinary action
-        obs1, reward, done, info = self.env.step(*actions_) # extra argument
-        obs2 = info['otherObs']
+
+        if against_baseline:
+            # this is for validation: load a single policy as 'second_0' to play against the baseline agent (via self-play in 2015)
+            obs2, reward, done, info = self.env.step(actions_[1]) # extra argument
+            obs1 = obs2 
+        else:
+            # normal 2-player setting
+            obs1, reward, done, info = self.env.step(*actions_) # extra argument
+            obs2 = info['otherObs']
+
         obs[self.agents[0]] = obs1
         obs[self.agents[1]] = obs2
         rewards[self.agents[0]] = reward

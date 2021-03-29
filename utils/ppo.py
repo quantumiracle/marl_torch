@@ -152,31 +152,33 @@ class PPODiscrete(nn.Module):
 
 
 class MultiPPODiscrete(nn.Module):
-    def __init__(self, agents, state_spaces, action_spaces, func_approx = 'MLP', learner_args={}, **kwargs):
+    def __init__(self, agents, state_spaces, action_spaces, func_approx = 'MLP', fixed_agents=[], learner_args={}, **kwargs):
         super(MultiPPODiscrete, self).__init__()
+        self.fixed_agents = fixed_agents
         self.agents = {}
         for agent_name, state_space, action_space in zip(agents, state_spaces.values(), action_spaces.values()):
             self.agents[agent_name] = PPODiscrete(state_space, action_space, func_approx, learner_args, **kwargs).to(learner_args['device'])
+        # validation check 
+        for agent in fixed_agents:
+            assert agent in self.agents
 
     def put_data(self, transition):
         (observations, actions, rewards, observations_, logprobs, dones) = transition
         data = (observations.values(), actions.values(), rewards.values(), observations_.values(), logprobs.values(), dones.values())
         for agent_name, *sample in zip(self.agents, *data):
-            self.agents[agent_name].put_data(tuple(sample))
+            if agent_name not in self.fixed_agents:
+                self.agents[agent_name].put_data(tuple(sample))
         
     def make_batch(self):
         for agent_name in self.agents:
-            self.agents[agent_name].make_batch()
+            if agent_name not in self.fixed_agents:
+                self.agents[agent_name].make_batch()
 
-    def train_net(self, fixed_agent=None, GAE=False):
+    def train_net(self, GAE=False):
         for agent_name in self.agents:
-            if fixed_agent is not None:
-                assert fixed_agent in self.agents
-                if fixed_agent == agent_name:
-                    pass
-                else:
-                    # print('trained agents: ', agent_name)
-                    self.agents[agent_name].train_net(GAE)
+            if agent_name not in self.fixed_agents:
+                # print('trained agents: ', agent_name)
+                self.agents[agent_name].train_net(GAE)
 
     def choose_action(self, observations, Greedy=False):
         actions={}
@@ -187,7 +189,8 @@ class MultiPPODiscrete(nn.Module):
 
     def save_model(self, path=None):
         for idx, agent_name in enumerate(self.agents):
-            self.agents[agent_name].save_model(path+'_{}'.format(idx))
+            if agent_name not in self.fixed_agents:
+                self.agents[agent_name].save_model(path+'_{}'.format(idx))
 
     def load_model(self, agent_name=None, path=None):
         if agent_name is not None:  # load model for specific agent only
