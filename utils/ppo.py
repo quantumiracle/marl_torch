@@ -190,6 +190,7 @@ class MultiPPODiscrete(nn.Module):
     def save_model(self, path=None):
         for idx, agent_name in enumerate(self.agents):
             if agent_name not in self.fixed_agents:
+                
                 self.agents[agent_name].save_model(path+'_{}'.format(idx))
 
     def load_model(self, agent_name=None, path=None):

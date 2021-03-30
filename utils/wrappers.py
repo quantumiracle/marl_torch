@@ -109,8 +109,8 @@ class SlimeVolleyWrapper():
 
         obs[self.agents[0]] = obs1
         obs[self.agents[1]] = obs2
-        rewards[self.agents[0]] = reward
-        rewards[self.agents[1]] = -reward
+        rewards[self.agents[0]] = -reward
+        rewards[self.agents[1]] = reward # the reward is for the learnable agent (second)
         dones[self.agents[0]] = done
         dones[self.agents[1]] = done
         infos[self.agents[0]] = info

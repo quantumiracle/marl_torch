@@ -11,6 +11,7 @@ from utils.wrappers import PettingZooWrapper, make_env
 from utils.ppo import PPODiscrete, MultiPPODiscrete
 import argparse
 from torch.utils.tensorboard import SummaryWriter
+import os
 
 writer = SummaryWriter()
 
@@ -55,7 +56,8 @@ def iterate_rollout(env, model, max_eps, max_timesteps):
             model.save_model('model/mappo')
 
 
-def parallel_rollout(env, model, max_eps, max_timesteps, selfplay_interval, render, model_path, against_baseline=False, selfplay=False):
+def parallel_rollout(env, model, max_eps, max_timesteps, selfplay_interval, render, \
+    model_path, against_baseline=False, selfplay=False, fictitious=False):
     score = {a:0.0 for a in env.agents}
     print_interval =20
     save_interval = 100
@@ -101,13 +103,21 @@ def parallel_rollout(env, model, max_eps, max_timesteps, selfplay_interval, rend
             epi_len = []
 
         if selfplay and n_epi%selfplay_interval==0 and n_epi!=0:
-            selfplay_model_path = model_path+'selfplay/'+str(n_epi)+'mappo_single'
-            model.save_model(selfplay_model_path)
+            save_model_path = model_path+'selfplay/'+str(n_epi)+'mappo_single'
+            model.save_model(save_model_path)
             print("Selfplay: update the model of opponent")
             # TODO different ways of opponent sampling in selfplay
             # 1. load the most recent one
-            model.load_model(agent_name='first_0', path=selfplay_model_path+'_1')  # change the opponent
+            if not fictitious: 
+                load_model_path = save_model_path+'_1'
             # 2. load an average of historical model (ficticiou selfplay)
+            else:  # fictitious selfplay
+                filelist=[]
+                for filename in os.listdir(model_path+'selfplay/'):
+                    if filename.endswith("policy"):
+                        filelist.append('_'.join(filename.split('_')[:-1]))  # remove '_policy' at end
+                load_model_path = model_path+'selfplay/' + filelist[np.random.randint(len(filelist))]
+            model.load_model(agent_name='first_0', path=load_model_path)  # change the opponent
 
 
         if n_epi%save_interval==0 and n_epi!=0:
@@ -132,6 +142,7 @@ def main():
     parser.add_argument('--load_agent', dest='load_agent', type=str, default=None, help='Load agent models by specifying: 1, 2, or both')
     parser.add_argument('--train_both', dest='train_both', action='store_true', default=False, help='Train both agents rather than train the second player only as default')
     parser.add_argument('--against_baseline', dest='against_baseline', action='store_true', default=False)
+    parser.add_argument('--fictitious', dest='fictitious', action='store_true', default=False)    
     args = parser.parse_args()
 
     SEED = 721
@@ -183,7 +194,7 @@ def main():
 
     path = 'model/'
     parallel_rollout(env, model, max_eps=max_eps, max_timesteps=max_timesteps, selfplay_interval=selfplay_interval,\
-         render=args.render, model_path=path, against_baseline=args.against_baseline, selfplay=args.selfplay)
+         render=args.render, model_path=path, against_baseline=args.against_baseline, selfplay=args.selfplay, fictitious=args.fictitious)
 
     env.close()
 
