@@ -57,7 +57,7 @@ def iterate_rollout(env, model, max_eps, max_timesteps):
 
 
 def parallel_rollout(env, model, max_eps, max_timesteps, selfplay_interval, render, \
-    model_path, against_baseline=False, selfplay=False, fictitious=False):
+    model_path, against_baseline=False, selfplay=False, fictitious=False, test=False):
     score = {a:0.0 for a in env.agents}
     print_interval =20
     save_interval = 100
@@ -67,11 +67,15 @@ def parallel_rollout(env, model, max_eps, max_timesteps, selfplay_interval, rend
 
         for t in range(max_timesteps):
             actions, logprobs = model.choose_action(observations)
-            observations_, rewards, dones, infos = env.step(actions, against_baseline)  # from discrete to multibinary action
+            if against_baseline:
+                observations_, rewards, dones, infos = env.step(actions, against_baseline)  # from discrete to multibinary action
+            else:
+                observations_, rewards, dones, infos = env.step(actions)
             if render:
                 env.render()
             
-            model.put_data((observations, actions, rewards, observations_, logprobs, dones))
+            if not test:
+                model.put_data((observations, actions, rewards, observations_, logprobs, dones))
 
             observations = observations_
 
@@ -83,45 +87,47 @@ def parallel_rollout(env, model, max_eps, max_timesteps, selfplay_interval, rend
 
             # if not env.agents: # according to official docu (https://www.pettingzoo.ml/api), single agent will be removed if it recieved done, while others remain 
             #     break 
+        if not test:
+            model.train_net()
+            epi_len.append(t)
+            # record training info
+            if n_epi%print_interval==0 and n_epi!=0:
+                print("# of episode :{}".format(n_epi))
+                record_score, record_length = {}, {}
+                for agent_name in env.agents:
+                    avg_score = score[agent_name]/float(print_interval)
+                    avg_length = int(np.mean(epi_len))
+                    print("agent :{}, avg score : {:.3f}, avg epi length : {}".format(agent_name, avg_score, avg_length))
+                    record_score[agent_name] = avg_score
+                    record_length[agent_name] = avg_length
 
-        model.train_net()
-        epi_len.append(t)
-        if n_epi%print_interval==0 and n_epi!=0:
-            print("# of episode :{}".format(n_epi))
-            record_score, record_length = {}, {}
-            for agent_name in env.agents:
-                avg_score = score[agent_name]/float(print_interval)
-                avg_length = int(np.mean(epi_len))
-                print("agent :{}, avg score : {:.3f}, avg epi length : {}".format(agent_name, avg_score, avg_length))
-                record_score[agent_name] = avg_score
-                record_length[agent_name] = avg_length
+                writer.add_scalars("Scores".format(agent_name), record_score, n_epi)
+                writer.add_scalars("Episode Length".format(agent_name), record_length, n_epi)
+                
+                score = {a:0.0 for a in env.agents}
+                epi_len = []
 
-            writer.add_scalars("Scores".format(agent_name), record_score, n_epi)
-            writer.add_scalars("Episode Length".format(agent_name), record_length, n_epi)
-            
-            score = {a:0.0 for a in env.agents}
-            epi_len = []
-
-        if selfplay and n_epi%selfplay_interval==0 and n_epi!=0:
-            save_model_path = model_path+'selfplay/'+str(n_epi)+'mappo_single'
-            model.save_model(save_model_path)
-            print("Selfplay: update the model of opponent")
-            # TODO different ways of opponent sampling in selfplay
-            # 1. load the most recent one
-            if not fictitious: 
-                load_model_path = save_model_path+'_1'
-            # 2. load an average of historical model (ficticiou selfplay)
-            else:  # fictitious selfplay
-                filelist=[]
-                for filename in os.listdir(model_path+'selfplay/'):
-                    if filename.endswith("policy"):
-                        filelist.append('_'.join(filename.split('_')[:-1]))  # remove '_policy' at end
-                load_model_path = model_path+'selfplay/' + filelist[np.random.randint(len(filelist))]
-            model.load_model(agent_name='first_0', path=load_model_path)  # change the opponent
+            # selfplay load model
+            if selfplay and n_epi%selfplay_interval==0 and n_epi!=0:
+                save_model_path = model_path+'selfplay/'+str(n_epi)+'mappo_single'
+                model.save_model(save_model_path)
+                print("Selfplay: update the model of opponent")
+                # TODO different ways of opponent sampling in selfplay
+                # 1. load the most recent one
+                if not fictitious: 
+                    load_model_path = save_model_path+'_1'
+                # 2. load an average of historical model (ficticiou selfplay)
+                else:  # fictitious selfplay
+                    filelist=[]
+                    for filename in os.listdir(model_path+'selfplay/'):
+                        if filename.endswith("policy"):
+                            filelist.append('_'.join(filename.split('_')[:-1]))  # remove '_policy' at end
+                    load_model_path = model_path+'selfplay/' + filelist[np.random.randint(len(filelist))]
+                model.load_model(agent_name='first_0', path=load_model_path)  # change the opponent
 
 
-        if n_epi%save_interval==0 and n_epi!=0:
-            model.save_model(model_path+'mappo_single')
+            if n_epi%save_interval==0 and n_epi!=0:
+                model.save_model(model_path+'mappo_single')
     model.save_model(model_path+'mappo_single')
 
 def main():
@@ -192,9 +198,14 @@ def main():
         model.load_model(agent_name='first_0', path='model/mappo')
         model.load_model(agent_name='second_0', path='model/mappo')
 
-    path = 'model/'
+    path = 'model/'+args.env
+    os.makedirs(path, exist_ok=True)
+    
+    if args.fictitious:
+        path = path + '/fictitious_'
     parallel_rollout(env, model, max_eps=max_eps, max_timesteps=max_timesteps, selfplay_interval=selfplay_interval,\
-         render=args.render, model_path=path, against_baseline=args.against_baseline, selfplay=args.selfplay, fictitious=args.fictitious)
+        render=args.render, model_path=path, against_baseline=args.against_baseline, selfplay=args.selfplay, \
+        fictitious=args.fictitious, test=args.test)
 
     env.close()
 

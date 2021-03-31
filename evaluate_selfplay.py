@@ -69,6 +69,7 @@ def main():
             help='Random seed')
     parser.add_argument('--load_agent', dest='load_agent', type=str, default=None, help='Load agent models by specifying: 1, 2, or both')
     parser.add_argument('--against_baseline', dest='against_baseline', action='store_true', default=False)
+    parser.add_argument('--fictitious', dest='fictitious', action='store_true', default=False)        
     args = parser.parse_args()
 
     SEED = np.random.randint(1000)
@@ -101,26 +102,40 @@ def main():
         # model = PPODiscrete(state_space, action_space, 'CNN', learner_args, **hyperparams).to(device)
         model = MultiPPODiscrete(agents, state_spaces, action_spaces, 'CNN', fixed_agents, learner_args, **hyperparams).to(device)
 
-    model_dir = 'model/selfplay/'
+    if args.fictitious:
+        model_dir = 'model/{}/fictitious_selfplay/'.format(args.env)
+    else:
+        model_dir = 'model/{}/selfplay/'.format(args.env)
+    os.makedirs(model_dir, exist_ok=True)
+
     filelist, epi_list = [], []
     for filename in os.listdir(model_dir):
         if filename.endswith("policy"):
             filelist.append('_'.join(filename.split('_')[:-1]))  # remove '_policy' at end
             epi_list.append(int(filename.split('mappo')[0]))
-    epi_list.sort()
-    filelist.sort()
+    sort_idx = np.argsort(epi_list).tolist()
+    filelist = [x for _,x in sorted(zip(epi_list,filelist))] # sort filelist according to the sorting of epi_list
+    epi_list.sort()  # filelist.sort() will not give correct answer   
     print(epi_list)
 
     r_list, l_list = [], []
     eval_data={}
     for f, i in zip(filelist, epi_list):
-        print('episode: ', i)
+        print('episode: ', i, f)
+        # if i>17000: 
+        print(model_dir+f)
         model.load_model(agent_name='second_0', path=model_dir+f)
 
         r, l = parallel_rollout(env, model, max_eps=eval_eps, max_timesteps=max_timesteps, selfplay_interval=selfplay_interval,\
             render=args.render, model_path=None, against_baseline=args.against_baseline)
         eval_data[str(i)]=[r, l]
-    np.save('data/eval_data.npy', eval_data)
+    save_dir = 'data/{}'.format(args.env)
+    os.makedirs(save_dir, exist_ok=True)
+    if args.fictitious:
+        save_dir+='/fictitious_eval_data.npy'
+    else:
+        save_dir+='/eval_data.npy'
+    np.save(save_dir, eval_data)
 
     env.close()
 
