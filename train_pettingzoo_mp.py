@@ -1,4 +1,5 @@
 import gym
+import os
 import torch
 torch.multiprocessing.set_start_method('forkserver', force=True) # critical for make multiprocessing work
 import torch.nn as nn
@@ -16,7 +17,6 @@ import torch.multiprocessing as mp
 from torch.multiprocessing import Process
 from multiprocessing import Process, Manager
 from multiprocessing.managers import BaseManager
-
 from torch.utils.tensorboard import SummaryWriter
 
 writer = SummaryWriter()
@@ -62,7 +62,8 @@ def iterate_rollout(env, model, max_eps, max_timesteps):
             model.save_model('model/mappo')
 
 
-def parallel_rollout(id, env_name, obs_type, model, max_eps, max_timesteps, render, seed):
+def parallel_rollout(id, env_name, model, max_eps, max_timesteps, selfplay_interval, render, \
+    model_path, against_baseline=False, selfplay=False, fictitious=False, seed=0):
     """ 
     Paralllel rollout for multi-agent games, in contrast to the iterative rollout manner.
     Parallel: (multi-agent actions are executed in once call of env.step())
@@ -147,6 +148,11 @@ def main():
             help='Random seed')
     parser.add_argument('--alg', dest='alg', type=str, default='td3',
                 help='Choose algorithm type')
+    parser.add_argument('--selfplay', dest='selfplay', action='store_true', default=False, help='The selfplay mode')
+    parser.add_argument('--load_agent', dest='load_agent', type=str, default=None, help='Load agent models by specifying: 1, 2, or both')
+    parser.add_argument('--train_both', dest='train_both', action='store_true', default=False, help='Train both agents rather than train the second player only as default')
+    parser.add_argument('--against_baseline', dest='against_baseline', action='store_true', default=False)
+    parser.add_argument('--fictitious', dest='fictitious', action='store_true', default=False)    
     args = parser.parse_args()
 
     SEED = 721
@@ -155,7 +161,10 @@ def main():
     else:
         obs_type='rgb_image'
     env = make_env(args.env, SEED, obs_type=obs_type)
+    max_eps = 500000
     max_timesteps = 10000
+    selfplay_interval = 3000 # interval in a unit of episode to checkpoint a policy and replace its opponent in selfplay
+    
     state_spaces = env.observation_spaces
     action_spaces = env.action_spaces
     print('state_spaces: ', state_spaces, ',  action_spaces: ', action_spaces)
@@ -173,11 +182,25 @@ def main():
     env.reset()
     print(env.agents)
     agents = env.agents
+    if args.train_both:
+        fixed_agents = []
+    else:
+        fixed_agents = ['first_0']   # SlimeVolley: opponent is the first, the second agent is the learnable one
+
+
     if obs_type=='ram':
-        model = MultiPPODiscrete(agents, state_spaces, action_spaces, 'MLP', learner_args, **hyperparams).to(device)
+        model = MultiPPODiscrete(agents, state_spaces, action_spaces, 'MLP', fixed_agents, learner_args, **hyperparams).to(device)
     else:
         # model = PPODiscrete(state_space, action_space, 'CNN', learner_args, **hyperparams).to(device)
-        model = MultiPPODiscrete(agents, state_spaces, action_spaces, 'CNN', learner_args, **hyperparams).to(device)
+        model = MultiPPODiscrete(agents, state_spaces, action_spaces, 'CNN', fixed_agents, learner_args, **hyperparams).to(device)
+
+    if args.load_agent=='1':  # load a pretrained model as opponent
+        model.load_model(agent_name='first_0', path='model/mappo')
+    elif args.load_agent=='2':  # load a pretrained model as opponent
+        model.load_model(agent_name='second_0', path='model/mappo')
+    elif args.load_agent=='both':
+        model.load_model(agent_name='first_0', path='model/mappo')
+        model.load_model(agent_name='second_0', path='model/mappo')
 
     for individual_model in model.agents.values():
         individual_model.policy.share_memory()
@@ -185,10 +208,18 @@ def main():
         individual_model.value.share_memory()
         ShareParameters(individual_model.optimizer)
 
+    path = 'model/'+args.env
+    os.makedirs(path, exist_ok=True)
+    
+    if args.fictitious:
+        path = path + '/fictitious_'
+
     processes=[]
     for p in range(args.process):
-        process = Process(target=parallel_rollout, args=(p, args.env, obs_type, model, \
-            10000, max_timesteps, args.render, SEED))  # the args contain shared and not shared
+        process = Process(target=parallel_rollout, args=(p, args.env, model, max_eps, \
+            max_timesteps, selfplay_interval,\
+            args.render, path, args.against_baseline, \
+            args.selfplay, args.fictitious, SEED))  # the args contain shared and not shared
         process.daemon=True  # all processes closed when the main stops
         processes.append(process)
 

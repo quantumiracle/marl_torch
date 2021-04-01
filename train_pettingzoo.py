@@ -198,11 +198,12 @@ def main():
         model.load_model(agent_name='first_0', path='model/mappo')
         model.load_model(agent_name='second_0', path='model/mappo')
 
-    path = 'model/'+args.env
+    path = f"model/{args.env}/"
     os.makedirs(path, exist_ok=True)
     
     if args.fictitious:
-        path = path + '/fictitious_'
+        path = path + 'fictitious_'
+
     parallel_rollout(env, model, max_eps=max_eps, max_timesteps=max_timesteps, selfplay_interval=selfplay_interval,\
         render=args.render, model_path=path, against_baseline=args.against_baseline, selfplay=args.selfplay, \
         fictitious=args.fictitious, test=args.test)

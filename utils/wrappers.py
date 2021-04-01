@@ -75,7 +75,8 @@ class SlimeVolleyWrapper():
         self.env = env
         self.agents = ['first_0', 'second_0']
         self.observation_spaces = {name: self.env.observation_space for name in self.agents}
-        self.action_spaces = {name: spaces.Discrete(len(self.action_table)) for name in self.agents}
+        self.action_space = spaces.Discrete(len(self.action_table))
+        self.action_spaces = {name: self.action_space for name in self.agents}
 
 
     def reset(self, observation=None):
@@ -95,7 +96,7 @@ class SlimeVolleyWrapper():
 
     def step(self, actions, against_baseline=False):
         obs, rewards, dones, infos = {},{},{},{}
-    
+        print(actions)
         actions_ = [self.env.discreteToBox(a) for a in actions.values()]  # from discrete to multibinary action
 
         if against_baseline:
@@ -128,6 +129,7 @@ def make_env(env_name='boxing_v1', seed=1, obs_type='rgb_image'):
 
     else: # PettingZoo envs
         env = eval(env_name).parallel_env(obs_type=obs_type)
+        # print(env.action_spaces)
 
         if obs_type == 'rgb_image':
             # as per openai baseline's MaxAndSKip wrapper, maxes over the last 2 frames
