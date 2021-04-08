@@ -65,7 +65,6 @@ def main():
             if args.render:
                 env.render()
             model.put_data((s, a, r, s_prime, logprob, done))
-
             s = s_prime
 
             score += r

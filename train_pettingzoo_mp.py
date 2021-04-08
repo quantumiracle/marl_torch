@@ -18,8 +18,8 @@ from torch.multiprocessing import Process
 from multiprocessing import Process, Manager
 from multiprocessing.managers import BaseManager
 from torch.utils.tensorboard import SummaryWriter
-
-writer = SummaryWriter()
+from utils.arguments import get_args
+from utils.utils import create_log_dir, load_model
 
 # action transformation of SlimeVolley 
 action_table = [[0, 0, 0], # NOOP
@@ -29,40 +29,7 @@ action_table = [[0, 0, 0], # NOOP
                 [0, 1, 1], # UPRIGHT (backward jump)
                 [0, 1, 0]] # RIGHT (backward)
 
-def iterate_rollout(env, model, max_eps, max_timesteps):
-    """ TODO the PettingZooWrapper also needs to be modified for this usage"""
-    score = 0.0
-    print_interval = 2
-    epi_len = []
-    for n_epi in range(max_eps):
-        s = env.reset()
-        done = False
-        t = 0
-        for agent in env.agent_iter():
-            t+=1
-
-            obs, r, done, info = env.last()
-            a, logprob = model.choose_action(obs)
-            env.step(a)
-            env.render()
-            score += r
-
-            if done:
-                break
-
-            # TODO put data correctly in buffer: separate or not? with next obs or not
-                model.put_data((s, a, r, s_prime, logprob, done))
-
-        model.train_net()
-        epi_len.append(t)
-        if n_epi%print_interval==0 and n_epi!=0:
-            print("# of episode :{}, avg score : {:.3f}, avg epi length : {}".format(n_epi, score/print_interval, int(np.mean(epi_len))))
-            score = 0.0
-            epi_len = []
-            model.save_model('model/mappo')
-
-
-def parallel_rollout(id, env_name, model, max_eps, max_timesteps, selfplay_interval, render, \
+def parallel_rollout(id, env_name, model, writer, max_eps, max_timesteps, selfplay_interval, render, \
     model_path, against_baseline=False, selfplay=False, fictitious=False, seed=0):
     """ 
     Paralllel rollout for multi-agent games, in contrast to the iterative rollout manner.
@@ -111,8 +78,8 @@ def parallel_rollout(id, env_name, model, max_eps, max_timesteps, selfplay_inter
                 record_score[agent_name] = avg_score
                 record_length[agent_name] = avg_length
 
-            writer.add_scalars("ID {}/Scores".format(id, agent_name), record_score, n_epi)
-            writer.add_scalars("ID {}/Episode Length".format(id, agent_name), record_length, n_epi)
+            writer.add_scalars("ID {}/Scores".format(id), record_score, n_epi)
+            writer.add_scalars("ID {}/Episode Length".format(id), record_length, n_epi)
 
             score = {a:0.0 for a in env.agents}
             epi_len = []
@@ -135,25 +102,12 @@ def ShareParameters(adamoptim):
             state['exp_avg_sq'].share_memory_()
 
 def main():
-    parser = argparse.ArgumentParser(description='Train or test arguments.')
-    parser.add_argument('--train', dest='train', action='store_true', default=False)
-    parser.add_argument('--test', dest='test', action='store_true', default=False)
-    parser.add_argument('--env', type=str, help='Environment', required=True)
-    parser.add_argument('--ram', dest='ram_obs', action='store_true', default=False)
-    parser.add_argument('--render', dest='render', action='store_true',
-                    help='Enable openai gym real-time rendering')
-    parser.add_argument('--process', type=int, default=1,
-                    help='Process count for parallel exploration')
-    parser.add_argument('--seed', dest='seed', type=int, default=1234,
-            help='Random seed')
-    parser.add_argument('--alg', dest='alg', type=str, default='td3',
-                help='Choose algorithm type')
-    parser.add_argument('--selfplay', dest='selfplay', action='store_true', default=False, help='The selfplay mode')
-    parser.add_argument('--load_agent', dest='load_agent', type=str, default=None, help='Load agent models by specifying: 1, 2, or both')
-    parser.add_argument('--train_both', dest='train_both', action='store_true', default=False, help='Train both agents rather than train the second player only as default')
-    parser.add_argument('--against_baseline', dest='against_baseline', action='store_true', default=False)
-    parser.add_argument('--fictitious', dest='fictitious', action='store_true', default=False)    
-    args = parser.parse_args()
+    args = get_args()
+    log_dir = create_log_dir(args)
+    if not args.test:
+        writer = SummaryWriter(log_dir)
+    else:
+        writer = None
 
     SEED = 721
     if args.ram_obs or args.env == "slimevolley_v0":
@@ -176,9 +130,7 @@ def main():
         'hidden_dim': 64,
         'K_epoch': 4,
     }
-    device_idx = 0
-    device = torch.device("cuda:" + str(device_idx) if torch.cuda.is_available() else "cpu")
-    learner_args = {'device':  device}
+    learner_args = {'device':  args.device}
     env.reset()
     print(env.agents)
     agents = env.agents
@@ -187,20 +139,13 @@ def main():
     else:
         fixed_agents = ['first_0']   # SlimeVolley: opponent is the first, the second agent is the learnable one
 
-
     if obs_type=='ram':
-        model = MultiPPODiscrete(agents, state_spaces, action_spaces, 'MLP', fixed_agents, learner_args, **hyperparams).to(device)
+        model = MultiPPODiscrete(agents, state_spaces, action_spaces, 'MLP', fixed_agents, learner_args, **hyperparams).to(args.device)
     else:
         # model = PPODiscrete(state_space, action_space, 'CNN', learner_args, **hyperparams).to(device)
-        model = MultiPPODiscrete(agents, state_spaces, action_spaces, 'CNN', fixed_agents, learner_args, **hyperparams).to(device)
+        model = MultiPPODiscrete(agents, state_spaces, action_spaces, 'CNN', fixed_agents, learner_args, **hyperparams).to(args.device)
 
-    if args.load_agent=='1':  # load a pretrained model as opponent
-        model.load_model(agent_name='first_0', path='model/mappo')
-    elif args.load_agent=='2':  # load a pretrained model as opponent
-        model.load_model(agent_name='second_0', path='model/mappo')
-    elif args.load_agent=='both':
-        model.load_model(agent_name='first_0', path='model/mappo')
-        model.load_model(agent_name='second_0', path='model/mappo')
+    load_model(model, args)
 
     for individual_model in model.agents.values():
         individual_model.policy.share_memory()
@@ -215,8 +160,8 @@ def main():
         path = path + '/fictitious_'
 
     processes=[]
-    for p in range(args.process):
-        process = Process(target=parallel_rollout, args=(p, args.env, model, max_eps, \
+    for p in range(args.num_envs):
+        process = Process(target=parallel_rollout, args=(p, args.env, model, writer, max_eps, \
             max_timesteps, selfplay_interval,\
             args.render, path, args.against_baseline, \
             args.selfplay, args.fictitious, SEED))  # the args contain shared and not shared

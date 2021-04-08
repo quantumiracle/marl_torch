@@ -91,7 +91,7 @@ def test_marl(task, VectorEnv, obs_type='ram'):
     Test env parallel DummyVectorEnv (no multiprocess) & SubprocVectorEnv (multiprocess) for multi-agent pettingzoo games.
     """
     # env = eval(task).parallel_env(obs_type=obs_type)
-    env_num = 2
+    env_num = 5
     envs = VectorEnv([lambda: make_env(task, obs_type=obs_type) for _ in range(env_num)])
 
     assert len(envs) == env_num
@@ -100,10 +100,11 @@ def test_marl(task, VectorEnv, obs_type='ram'):
     # envs.seed([2, 3, 4, 5, 6, 7, 8, 9])  # set specific seed for each env
     obs = envs.reset()  # reset all environments
     # obs = envs.reset([0, 5, 7])  # reset 3 specific environments
-    for i in range(3000):
+    for i in range(30000):
+        print(i)
         actions = [{'first_0':1, 'second_0':1} for i in range(env_num)]
         obs, r, done, info = envs.step(actions)  # step synchronously
-        envs.render()  # render all environments
+        # envs.render()  # render all environments
     envs.close()  # close all environments
 
 if __name__ == '__main__':
@@ -111,8 +112,8 @@ if __name__ == '__main__':
     # run_iterate()
 
     VectorEnv = [DummyVectorEnv, SubprocVectorEnv][1]
-    test_gym('CartPole-v0', VectorEnv)
+    # test_gym('CartPole-v0', VectorEnv)
     # test_marl('slimevolley_v0', VectorEnv)
-    # test_marl('pong_v1', VectorEnv, 'ram')
+    test_marl('pong_v1', VectorEnv, 'ram')
 
 
