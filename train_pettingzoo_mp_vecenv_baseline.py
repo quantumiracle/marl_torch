@@ -16,14 +16,7 @@ from utils.wrappers import PettingZooWrapper, make_env
 from utils.ppo import PPODiscrete, MultiPPODiscrete, ParallelMultiPPODiscrete
 from utils.arguments import get_args
 from utils.utils import create_log_dir, load_model
-
-# action transformation of SlimeVolley 
-action_table = [[0, 0, 0], # NOOP
-                [1, 0, 0], # LEFT (forward)
-                [1, 0, 1], # UPLEFT (forward jump)
-                [0, 0, 1], # UP (jump)
-                [0, 1, 1], # UPRIGHT (backward jump)
-                [0, 1, 0]] # RIGHT (backward)
+from hyperparams import *
 
 def parallel_rollout(env, model, writer, max_eps, max_timesteps, selfplay_interval, render, \
     model_path, against_baseline=False, selfplay=False, fictitious=False, test=False):
@@ -126,22 +119,10 @@ def main():
 
     # envs.seed(np.random.randint(1000, size=args.num_envs).tolist())  # random seeding
     envs.seed(SEED)  # fix seeding
-    
-    max_eps = 500000
-    max_timesteps = 10000
-    selfplay_interval = 3000 # interval in a unit of episode to checkpoint a policy and replace its opponent in selfplay
-
     state_spaces = env.observation_spaces
     action_spaces = env.action_spaces
     print('state_spaces: ', state_spaces, ',  action_spaces: ', action_spaces)
-    hyperparams = {
-        'learning_rate': 3e-4,
-        'gamma': 0.99,
-        'lmbda': 0.95,
-        'eps_clip': 0.2,
-        'hidden_dim': 64,
-        'K_epoch': 4,
-    }
+
     learner_args = {'device':  args.device}
     env.reset()
     agents = env.agents
