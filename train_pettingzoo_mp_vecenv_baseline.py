@@ -140,8 +140,8 @@ def main():
         'K_epoch': 4,
     }
     learner_args = {'device':  args.device}
-    envs.reset()
-    agents = envs.agents[0] # same for all env instances, so just take one
+    env.reset()
+    agents = env.agents
     print('agents: ', agents)
 
     if args.train_both:
