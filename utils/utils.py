@@ -18,3 +18,6 @@ def load_model(model, args):
     elif args.load_agent=='both':
         model.load_model(agent_name='first_0', path=f'model/{args.env}/mappo')
         model.load_model(agent_name='second_0', path=f'model/{args.env}/mappo')
+
+    if args.test:
+        model.load_model(agent_name='second_0', path=f'model/{args.env}/'+args.load_model)
