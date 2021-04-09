@@ -168,20 +168,20 @@ def main():
         fixed_agents = []
     else:
         fixed_agents = ['first_0']   # SlimeVolley: opponent is the first, the second agent is the learnable one
-
-    if obs_type=='ram':
-        model = MultiPPODiscrete(agents, state_spaces, action_spaces, 'MLP', fixed_agents, learner_args, **hyperparams).to(args.device)
-    else:
-        # model = PPODiscrete(state_space, action_space, 'CNN', learner_args, **hyperparams).to(device)
-        model = MultiPPODiscrete(agents, state_spaces, action_spaces, 'CNN', fixed_agents, learner_args, **hyperparams).to(args.device)
-
-    load_model(model, args)
-
     path = f"model/{args.env}/"
     os.makedirs(path, exist_ok=True)
     data_path = f"data/{args.env}/"
     os.makedirs(data_path, exist_ok=True)
     
+    if obs_type=='ram':
+        model = MultiPPODiscrete(agents, state_spaces, action_spaces, 'MLP', fixed_agents, learner_args, **hyperparams).to(args.device)
+    else:
+        # model = PPODiscrete(state_space, action_space, 'CNN', learner_args, **hyperparams).to(device)
+        model = MultiPPODiscrete(agents, state_spaces, action_spaces, 'CNN', fixed_agents, learner_args, **hyperparams).to(args.device)
+        path = path + 'cnn_'
+        
+    load_model(model, args)
+
     if args.fictitious:
         path = path + 'fictitious_'
 
