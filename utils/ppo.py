@@ -401,6 +401,8 @@ class ParallelMultiPPODiscrete(nn.Module):
     def choose_action(self, observations, Greedy=False):
         multi_actions = []
         multi_logprobs = []
+        empty_dict_in_obs = [bool(x) is False for x in observations]  # for example, if returns [False, True], then second env provides empty observation {}
+        observations=list(filter(None, observations)) # filter out empty dict in observations
 
         # looping through both the envs and agents is slow
         # for obs in observations: # iterate over the list of envs
@@ -412,17 +414,32 @@ class ParallelMultiPPODiscrete(nn.Module):
         #     multi_logprobs.append(logprobs)
         # return multi_actions, multi_logprobs
 
-        obs = np.array([list(obs.values()) for obs in observations]).swapaxes(0,1) # shape after swap: (# agents, # envs, obs_dim)
+        # concatenate the obs for different envs by the same agent and take one forward inference as a whole for each agent
+        try:
+            obs = np.array([list(obs.values()) for obs in observations]).swapaxes(0,1) # shape after swap: (# agents, # envs, obs_dim)
+        except:
+            print(observations)
         for i, agent_name in enumerate(self.agents):
-                actions, logprobs = self.agents[agent_name].choose_action(obs[i], Greedy)  # one forward inference for multiple envs
-                multi_actions.append(actions)  # multi_actions shape: (# agents, # envs)
-                multi_logprobs.append(logprobs)
+            actions, logprobs = self.agents[agent_name].choose_action(obs[i], Greedy)  # one forward inference for multiple envs
+            if len(actions.shape)<1:
+                multi_actions.append(actions.reshape(-1))  # expand len(shape) from 0 to 1 for single env case
+                multi_logprobs.append(logprobs.reshape(-1))
+            else:
+                multi_actions.append(actions.reshape(-1)) 
+                multi_logprobs.append(logprobs) # multi_actions shape: (# agents, # envs)
+        print(multi_actions)
 
         actions_list, logprobs_list = [{} for _ in range(self.num_envs)], [{} for _ in range(self.num_envs)]
         for i, agent_name in enumerate(self.agents):
+            available_action_idx = 0
             for j in range(self.num_envs):
-                actions_list[j][agent_name] = multi_actions[i][j]
-                logprobs_list[j][agent_name] = multi_logprobs[i][j]
+                if empty_dict_in_obs[j]: # the j-th env provides empty dict as observation, then returns empty dict as action and log_probs
+                    actions_list[j][agent_name] = {}
+                    logprobs_list[j][agent_name] = {}
+                else:
+                    actions_list[j][agent_name] = multi_actions[i][available_action_idx]
+                    logprobs_list[j][agent_name] = multi_logprobs[i][available_action_idx]
+                    available_action_idx += 1
 
         return actions_list, logprobs_list
 

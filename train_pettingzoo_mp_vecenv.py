@@ -10,8 +10,6 @@ import pettingzoo
 import argparse
 from torch.utils.tensorboard import SummaryWriter
 import os
-from stable_baselines.common.vec_env import DummyVecEnv, SubprocVecEnv
-
 from utils.env import DummyVectorEnv, SubprocVectorEnv
 from utils.arguments import get_args
 from utils.wrappers import PettingZooWrapper, make_env
@@ -37,6 +35,11 @@ def parallel_rollout(env, model, writer, max_eps, max_timesteps, selfplay_interv
 
         for t in range(max_timesteps):
             actions, logprobs = model.choose_action(observations)
+            # try:
+            #     actions, logprobs = model.choose_action(observations)
+            # except:
+            #     print(t, observations)
+            #     break
             if against_baseline:
                 observations_, rewards, dones, infos = env.step(actions, against_baseline)  # from discrete to multibinary action
             else:
@@ -49,18 +52,21 @@ def parallel_rollout(env, model, writer, max_eps, max_timesteps, selfplay_interv
 
             observations = observations_
 
+            # If all envs with each having at least one agent is done, then finishe episode. (deprecated! does not work in this way!)
+            # For example,
+            # if dones= [{'first_0': True, 'second_0': True}, {'first_0': False, 'second_0': False}], it returns False;
+            # if dones= [{'first_0': True, 'second_0': False}, {'first_0': True, 'second_0': False}], it returns True.
+            # if np.all([np.any(np.array(list(d.values()))) for d in dones]):
+            #     break
+
+            # not env.agents: according to official docu (https://www.pettingzoo.ml/api), single agent will give {} if it recieved done, while others remain.
+            # however, since env.agents is list of list, [[], []] will be bool True, but with one None filter it gives False.
+            if not list(filter(None, env.agents)): 
+                break 
+
             for agent_name in model.agents:
-                score[agent_name] += np.mean([r[agent_name] for r in rewards]) # mean over different envs
-
-            if np.all([np.any(np.array(list(d.values()))) for d in dones]):
-                # If all envs with each having at least one agent is done, then finishe episode.
-                # For example,
-                # if dones= [{'first_0': True, 'second_0': True}, {'first_0': False, 'second_0': False}], it returns False;
-                # if dones= [{'first_0': True, 'second_0': False}, {'first_0': True, 'second_0': False}], it returns True.
-                break
-
-            # if not env.agents: # according to official docu (https://www.pettingzoo.ml/api), single agent will be removed if it recieved done, while others remain 
-            #     break 
+                rewards_=list(filter(None, rewards))  # filter out empty dicts caused by finished env episodes
+                score[agent_name] += np.mean([r[agent_name] for r in rewards_]) # mean over different envs
 
         if not test:
             model.train_net()

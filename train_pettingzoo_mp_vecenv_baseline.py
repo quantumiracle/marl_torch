@@ -47,9 +47,12 @@ def parallel_rollout(env, model, writer, max_eps, max_timesteps, selfplay_interv
                 model.put_data((observations, actions, rewards, observations_, logprobs, dones))
 
             observations = observations_
-
+            print(t, actions)
             for agent_name in model.agents:
                 score[agent_name] += np.mean([r[agent_name] for r in rewards]) # mean over different envs
+                if score[agent_name] != 0:
+                    print(score[agent_name])
+            # print(dones, score, rewards, actions, observations)
 
             if np.all([np.any(np.array(list(d.values()))) for d in dones]):
                 # If all envs with each having at least one agent is done, then finishe episode.
