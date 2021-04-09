@@ -415,10 +415,7 @@ class ParallelMultiPPODiscrete(nn.Module):
         # return multi_actions, multi_logprobs
 
         # concatenate the obs for different envs by the same agent and take one forward inference as a whole for each agent
-        try:
-            obs = np.array([list(obs.values()) for obs in observations]).swapaxes(0,1) # shape after swap: (# agents, # envs, obs_dim)
-        except:
-            print(observations)
+        obs = np.array([list(obs.values()) for obs in observations]).swapaxes(0,1) # shape after swap: (# agents, # envs, obs_dim)
         for i, agent_name in enumerate(self.agents):
             actions, logprobs = self.agents[agent_name].choose_action(obs[i], Greedy)  # one forward inference for multiple envs
             if len(actions.shape)<1:
@@ -427,7 +424,6 @@ class ParallelMultiPPODiscrete(nn.Module):
             else:
                 multi_actions.append(actions.reshape(-1)) 
                 multi_logprobs.append(logprobs) # multi_actions shape: (# agents, # envs)
-        print(multi_actions)
 
         actions_list, logprobs_list = [{} for _ in range(self.num_envs)], [{} for _ in range(self.num_envs)]
         for i, agent_name in enumerate(self.agents):
