@@ -12,7 +12,7 @@ def get_args():
     parser.add_argument('--render', action='store_true',
                         help='Enable openai gym real-time rendering')
     parser.add_argument('--num-envs', type=int, default=1,
-                        help='Number of environments for parallel sampling')
+                        help='Number of environments for parallel sampling (needs to be >1)')
     parser.add_argument('--seed', type=int, default=1234,
                         help='Random seed')
     parser.add_argument('--alg', type=str, default='td3',

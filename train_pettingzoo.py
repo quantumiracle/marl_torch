@@ -179,7 +179,7 @@ def main():
         # model = PPODiscrete(state_space, action_space, 'CNN', learner_args, **hyperparams).to(device)
         model = MultiPPODiscrete(agents, state_spaces, action_spaces, 'CNN', fixed_agents, learner_args, **hyperparams).to(args.device)
         path = path + 'cnn_'
-        
+
     load_model(model, args)
 
     if args.fictitious:

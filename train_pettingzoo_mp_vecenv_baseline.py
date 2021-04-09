@@ -141,7 +141,7 @@ def main():
     }
     learner_args = {'device':  args.device}
     envs.reset()
-    agents = env.agents
+    agents = envs.agents[0] # same for all env instances, so just take one
     print('agents: ', agents)
 
     if args.train_both:

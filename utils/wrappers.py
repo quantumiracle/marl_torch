@@ -130,7 +130,6 @@ def make_env(env_name='boxing_v1', seed=1, obs_type='rgb_image'):
 
     else: # PettingZoo envs
         env = eval(env_name).parallel_env(obs_type=obs_type)
-        # print(env.action_spaces)
 
         if obs_type == 'rgb_image':
             # as per openai baseline's MaxAndSKip wrapper, maxes over the last 2 frames
@@ -151,6 +150,10 @@ def make_env(env_name='boxing_v1', seed=1, obs_type='rgb_image'):
             env = supersuit.frame_stack_v1(env, 4)
 
         #   env = PettingZooWrapper(env)  # need to be put at the end
+
+        # assign observation and action spaces
+        env.observation_space = list(env.observation_spaces.values())[0]
+        env.action_space = list(env.action_spaces.values())[0]
 
     env.seed(seed)
     return env
