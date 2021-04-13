@@ -291,7 +291,6 @@ class ParallelPPODiscrete(nn.Module):
 
                 rewards = torch.tensor(rewards, dtype=torch.float32).to(self.device)
                 rewards = (rewards - rewards.mean()) / (rewards.std() + 1e-5)
-
             for i in range(self.K_epoch):
                 vs = self.v(s)
 
@@ -329,6 +328,7 @@ class ParallelPPODiscrete(nn.Module):
                 self.optimizer.zero_grad()
                 loss.mean().backward()
                 self.optimizer.step()
+
         self.data = [[] for _ in range(self.num_envs)]
         # Copy new weights into old policy:
         self.policy_old.load_state_dict(self.policy.state_dict())
@@ -381,9 +381,9 @@ class ParallelMultiPPODiscrete(nn.Module):
             for j, *agent_data in enumerate(zip(*env_data)): # iterate over agents
                 data[j].append(*agent_data)  # *agent_data is a tuple
 
-        for agent_name, *sample in zip(self.agents, *data):
+        for agent_name, sample in zip(self.agents, data): # each sample is a list of data (containing different envs) for one agent
             if agent_name not in self.fixed_agents:
-                self.agents[agent_name].put_data(tuple(sample))
+                self.agents[agent_name].put_data(sample)
         
     def make_batch(self):
         for agent_name in self.agents:
