@@ -25,7 +25,6 @@ def parallel_rollout(env, model, writer, max_eps, max_timesteps, selfplay_interv
     epi_len = []
     for n_epi in range(max_eps):
         observations = env.reset()
-
         for t in range(max_timesteps):
             actions, logprobs = model.choose_action(observations)
             # try:
@@ -60,7 +59,7 @@ def parallel_rollout(env, model, writer, max_eps, max_timesteps, selfplay_interv
             for agent_name in model.agents:
                 rewards_=list(filter(None, rewards))  # filter out empty dicts caused by finished env episodes
                 score[agent_name] += np.mean([r[agent_name] for r in rewards_]) # mean over different envs
-
+        
         if not test:
             model.train_net()
             epi_len.append(t)
@@ -100,9 +99,9 @@ def parallel_rollout(env, model, writer, max_eps, max_timesteps, selfplay_interv
                 model.load_model(agent_name='first_0', path=load_model_path)  # change the opponent
 
 
-            if n_epi%save_interval==0 and n_epi!=0:
-                model.save_model(model_path+'mappo_single_mp')
-    model.save_model(model_path+'mappo_single_mp')
+    #         if n_epi%save_interval==0 and n_epi!=0:
+    #             model.save_model(model_path+'mappo_single_mp')
+    # model.save_model(model_path+'mappo_single_mp')
 
 def main():
     args = get_args()

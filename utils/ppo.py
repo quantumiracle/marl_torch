@@ -65,7 +65,8 @@ class PPODiscrete(nn.Module):
             prob_a_lst.append(prob_a)
             done_mask = 0 if done else 1
             done_lst.append([done_mask])
-            
+
+        # found this step take some time for Pong (not ram), even if no parallel no multiagent
         s,a,r,s_prime,done_mask, prob_a = torch.tensor(s_lst, dtype=torch.float).to(self.device), torch.tensor(a_lst).to(self.device), \
                                           torch.tensor(r_lst).to(self.device), torch.tensor(s_prime_lst, dtype=torch.float).to(self.device), \
                                           torch.tensor(done_lst, dtype=torch.float).to(self.device), torch.tensor(prob_a_lst).to(self.device)
@@ -255,32 +256,29 @@ class ParallelPPODiscrete(nn.Module):
     def put_data(self, transition):
         for i, trans in enumerate(transition): # iterate over the list of envs
             self.data[i].append(trans)
-        
-    def make_batch(self):
+
+    def make_batch(self, env_data):
         s_lst, a_lst, r_lst, s_prime_lst, prob_a_lst, done_lst = [], [], [], [], [], []
-        batch_data = []
-        for env_data in self.data:  # iterate over the list of envs
-            for transition in env_data:
-                s, a, r, s_prime, prob_a, done = transition
-                
-                s_lst.append(s)
-                a_lst.append(a)
-                r_lst.append([r])
-                s_prime_lst.append(s_prime)
-                prob_a_lst.append(prob_a)
-                done_mask = 0 if done else 1
-                done_lst.append([done_mask])
-                
-            s,a,r,s_prime,done_mask, prob_a = torch.tensor(s_lst, dtype=torch.float).to(self.device), torch.tensor(a_lst).to(self.device), \
-                                            torch.tensor(r_lst).to(self.device), torch.tensor(s_prime_lst, dtype=torch.float).to(self.device), \
-                                            torch.tensor(done_lst, dtype=torch.float).to(self.device), torch.tensor(prob_a_lst).to(self.device)
-        batch_data.append([s,a,r,s_prime,done_mask, prob_a])    
-        self.data = [[] for _ in range(self.num_envs)]
-        return batch_data
+        for transition in env_data:
+            s, a, r, s_prime, prob_a, done = transition
+            
+            s_lst.append(s)
+            a_lst.append(a)
+            r_lst.append([r])
+            s_prime_lst.append(s_prime)
+            prob_a_lst.append(prob_a)
+            done_mask = 0 if done else 1
+            done_lst.append([done_mask])
+            
+        # TODO this step take some time for Pong (no ram), better speed it up
+        s,a,r,s_prime,done_mask, prob_a = torch.tensor(s_lst, dtype=torch.float).to(self.device), torch.tensor(a_lst).to(self.device), \
+                                        torch.tensor(r_lst).to(self.device), torch.tensor(s_prime_lst, dtype=torch.float).to(self.device), \
+                                        torch.tensor(done_lst, dtype=torch.float).to(self.device), torch.tensor(prob_a_lst).to(self.device)
+        return s,a,r,s_prime,done_mask, prob_a
         
     def train_net(self, GAE=False):
-        for data in self.make_batch():  # iterate over the list of envs
-            s, a, r, s_prime, done_mask, oldlogprob = data
+        for data in self.data: # iterate over the list of envs
+            s, a, r, s_prime, done_mask, oldlogprob = self.make_batch(data)
 
             if not GAE:
                 rewards = []
@@ -294,7 +292,7 @@ class ParallelPPODiscrete(nn.Module):
                 rewards = torch.tensor(rewards, dtype=torch.float32).to(self.device)
                 rewards = (rewards - rewards.mean()) / (rewards.std() + 1e-5)
 
-            for _ in range(self.K_epoch):
+            for i in range(self.K_epoch):
                 vs = self.v(s)
 
                 if GAE:
@@ -331,7 +329,7 @@ class ParallelPPODiscrete(nn.Module):
                 self.optimizer.zero_grad()
                 loss.mean().backward()
                 self.optimizer.step()
-
+        self.data = [[] for _ in range(self.num_envs)]
         # Copy new weights into old policy:
         self.policy_old.load_state_dict(self.policy.state_dict())
 
