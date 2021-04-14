@@ -1,0 +1,194 @@
+/home/zihan/anaconda3/envs/x/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:516: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint8 = np.dtype([("qint8", np.int8, 1)])
+/home/zihan/anaconda3/envs/x/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:517: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint8 = np.dtype([("quint8", np.uint8, 1)])
+/home/zihan/anaconda3/envs/x/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:518: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint16 = np.dtype([("qint16", np.int16, 1)])
+/home/zihan/anaconda3/envs/x/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:519: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint16 = np.dtype([("quint16", np.uint16, 1)])
+/home/zihan/anaconda3/envs/x/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:520: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint32 = np.dtype([("qint32", np.int32, 1)])
+/home/zihan/anaconda3/envs/x/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:525: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  np_resource = np.dtype([("resource", np.ubyte, 1)])
+state_spaces:  {'first_0': Box(0, 255, (128,), uint8), 'second_0': Box(0, 255, (128,), uint8)} ,  action_spaces:  {'first_0': Discrete(18), 'second_0': Discrete(18)}
+agents:  ['first_0', 'second_0']
+# of episode :20
+agent :first_0, avg score : 8.717, avg epi length : 6068
+agent :second_0, avg score : -8.717, avg epi length : 6068
+# of episode :40
+agent :first_0, avg score : 1.400, avg epi length : 6435
+agent :second_0, avg score : -1.400, avg epi length : 6435
+# of episode :60
+agent :first_0, avg score : -4.258, avg epi length : 6336
+agent :second_0, avg score : 4.258, avg epi length : 6336
+# of episode :80
+agent :first_0, avg score : -4.100, avg epi length : 6123
+agent :second_0, avg score : 4.100, avg epi length : 6123
+# of episode :100
+agent :first_0, avg score : -5.408, avg epi length : 6159
+agent :second_0, avg score : 5.408, avg epi length : 6159
+# of episode :120
+agent :first_0, avg score : -3.917, avg epi length : 5925
+agent :second_0, avg score : 3.917, avg epi length : 5925
+# of episode :140
+agent :first_0, avg score : -1.117, avg epi length : 6147
+agent :second_0, avg score : 1.117, avg epi length : 6147
+# of episode :160
+agent :first_0, avg score : -2.908, avg epi length : 6204
+agent :second_0, avg score : 2.908, avg epi length : 6204
+# of episode :180
+agent :first_0, avg score : -0.200, avg epi length : 6317
+agent :second_0, avg score : 0.200, avg epi length : 6317
+# of episode :200
+agent :first_0, avg score : -3.158, avg epi length : 6501
+agent :second_0, avg score : 3.158, avg epi length : 6501
+# of episode :220
+agent :first_0, avg score : -4.917, avg epi length : 5971
+agent :second_0, avg score : 4.917, avg epi length : 5971
+# of episode :240
+agent :first_0, avg score : -1.808, avg epi length : 6084
+agent :second_0, avg score : 1.808, avg epi length : 6084
+# of episode :260
+agent :first_0, avg score : -5.075, avg epi length : 6202
+agent :second_0, avg score : 5.075, avg epi length : 6202
+# of episode :280
+agent :first_0, avg score : -4.325, avg epi length : 6264
+agent :second_0, avg score : 4.325, avg epi length : 6264
+# of episode :300
+agent :first_0, avg score : -1.350, avg epi length : 6043
+agent :second_0, avg score : 1.350, avg epi length : 6043
+# of episode :320
+agent :first_0, avg score : -2.883, avg epi length : 5800
+agent :second_0, avg score : 2.883, avg epi length : 5800
+# of episode :340
+agent :first_0, avg score : -5.367, avg epi length : 5959
+agent :second_0, avg score : 5.367, avg epi length : 5959
+# of episode :360
+agent :first_0, avg score : -0.433, avg epi length : 6473
+agent :second_0, avg score : 0.433, avg epi length : 6473
+# of episode :380
+agent :first_0, avg score : -1.358, avg epi length : 6384
+agent :second_0, avg score : 1.358, avg epi length : 6384
+# of episode :400
+agent :first_0, avg score : 1.617, avg epi length : 6267
+agent :second_0, avg score : -1.617, avg epi length : 6267
+# of episode :420
+agent :first_0, avg score : -7.425, avg epi length : 6126
+agent :second_0, avg score : 7.425, avg epi length : 6126
+# of episode :440
+agent :first_0, avg score : -3.350, avg epi length : 6046
+agent :second_0, avg score : 3.350, avg epi length : 6046
+# of episode :460
+agent :first_0, avg score : -8.500, avg epi length : 6065
+agent :second_0, avg score : 8.500, avg epi length : 6065
+# of episode :480
+agent :first_0, avg score : -11.633, avg epi length : 5822
+agent :second_0, avg score : 11.633, avg epi length : 5822
+# of episode :500
+agent :first_0, avg score : -5.333, avg epi length : 5795
+agent :second_0, avg score : 5.333, avg epi length : 5795
+# of episode :520
+agent :first_0, avg score : 1.842, avg epi length : 6610
+agent :second_0, avg score : -1.842, avg epi length : 6610
+# of episode :540
+agent :first_0, avg score : -9.925, avg epi length : 5857
+agent :second_0, avg score : 9.925, avg epi length : 5857
+# of episode :560
+agent :first_0, avg score : -1.967, avg epi length : 6453
+agent :second_0, avg score : 1.967, avg epi length : 6453
+# of episode :580
+agent :first_0, avg score : -4.683, avg epi length : 6217
+agent :second_0, avg score : 4.683, avg epi length : 6217
+# of episode :600
+agent :first_0, avg score : -5.367, avg epi length : 6352
+agent :second_0, avg score : 5.367, avg epi length : 6352
+# of episode :620
+agent :first_0, avg score : -4.417, avg epi length : 6196
+agent :second_0, avg score : 4.417, avg epi length : 6196
+# of episode :640
+agent :first_0, avg score : -3.525, avg epi length : 6374
+agent :second_0, avg score : 3.525, avg epi length : 6374
+# of episode :660
+agent :first_0, avg score : -4.408, avg epi length : 6126
+agent :second_0, avg score : 4.408, avg epi length : 6126
+# of episode :680
+agent :first_0, avg score : -3.433, avg epi length : 6452
+agent :second_0, avg score : 3.433, avg epi length : 6452
+# of episode :700
+agent :first_0, avg score : -5.883, avg epi length : 6381
+agent :second_0, avg score : 5.883, avg epi length : 6381
+# of episode :720
+agent :first_0, avg score : -8.433, avg epi length : 6197
+agent :second_0, avg score : 8.433, avg epi length : 6197
+# of episode :740
+agent :first_0, avg score : -7.250, avg epi length : 6163
+agent :second_0, avg score : 7.250, avg epi length : 6163
+# of episode :760
+agent :first_0, avg score : -5.892, avg epi length : 6211
+agent :second_0, avg score : 5.892, avg epi length : 6211
+# of episode :780
+agent :first_0, avg score : -7.425, avg epi length : 5884
+agent :second_0, avg score : 7.425, avg epi length : 5884
+# of episode :800
+agent :first_0, avg score : -5.825, avg epi length : 6150
+agent :second_0, avg score : 5.825, avg epi length : 6150
+# of episode :820
+agent :first_0, avg score : -5.283, avg epi length : 6202
+agent :second_0, avg score : 5.283, avg epi length : 6202
+# of episode :840
+agent :first_0, avg score : -3.150, avg epi length : 6018
+agent :second_0, avg score : 3.150, avg epi length : 6018
+# of episode :860
+agent :first_0, avg score : -6.175, avg epi length : 6264
+agent :second_0, avg score : 6.175, avg epi length : 6264
+# of episode :880
+agent :first_0, avg score : -4.575, avg epi length : 6244
+agent :second_0, avg score : 4.575, avg epi length : 6244
+# of episode :900
+agent :first_0, avg score : -7.817, avg epi length : 6106
+agent :second_0, avg score : 7.817, avg epi length : 6106
+# of episode :920
+agent :first_0, avg score : -4.942, avg epi length : 6196
+agent :second_0, avg score : 4.942, avg epi length : 6196
+# of episode :940
+agent :first_0, avg score : 1.425, avg epi length : 5932
+agent :second_0, avg score : -1.425, avg epi length : 5932
+# of episode :960
+agent :first_0, avg score : -9.058, avg epi length : 5870
+agent :second_0, avg score : 9.058, avg epi length : 5870
+# of episode :980
+agent :first_0, avg score : -5.967, avg epi length : 6359
+agent :second_0, avg score : 5.967, avg epi length : 6359
+# of episode :1000
+agent :first_0, avg score : -8.058, avg epi length : 6315
+agent :second_0, avg score : 8.058, avg epi length : 6315
+Selfplay: update the model of opponent
+# of episode :1020
+agent :first_0, avg score : 3.842, avg epi length : 6165
+agent :second_0, avg score : -3.842, avg epi length : 6165
+# of episode :1040
+agent :first_0, avg score : 4.192, avg epi length : 6187
+agent :second_0, avg score : -4.192, avg epi length : 6187
+# of episode :1060
+agent :first_0, avg score : 4.717, avg epi length : 6157
+agent :second_0, avg score : -4.717, avg epi length : 6157
+# of episode :1080
+agent :first_0, avg score : -2.017, avg epi length : 6070
+agent :second_0, avg score : 2.017, avg epi length : 6070
+# of episode :1100
+agent :first_0, avg score : -3.267, avg epi length : 6105
+agent :second_0, avg score : 3.267, avg epi length : 6105
+# of episode :1120
+agent :first_0, avg score : -5.342, avg epi length : 5739
+agent :second_0, avg score : 5.342, avg epi length : 5739
+# of episode :1140
+agent :first_0, avg score : -0.292, avg epi length : 6037
+agent :second_0, avg score : 0.292, avg epi length : 6037
+# of episode :1160
+agent :first_0, avg score : 2.592, avg epi length : 6051
+agent :second_0, avg score : -2.592, avg epi length : 6051
+# of episode :1180
+agent :first_0, avg score : 0.167, avg epi length : 6179
+agent :second_0, avg score : -0.167, avg epi length : 6179
+# of episode :1200
+agent :first_0, avg score : 2.408, avg epi length : 6299
