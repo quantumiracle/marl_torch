@@ -32,7 +32,7 @@ def parallel_rollout(env, model, writer, max_eps, max_timesteps, selfplay_interv
             # except:
             #     print(t, observations)
             #     break
-            if against_baseline:
+            if against_baseline:  # TODO there might be problem, against_baseline arg is not allowed when using VectorEnv
                 observations_, rewards, dones, infos = env.step(actions, against_baseline)  # from discrete to multibinary action
             else:
                 observations_, rewards, dones, infos = env.step(actions)

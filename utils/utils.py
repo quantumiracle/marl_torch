@@ -21,3 +21,4 @@ def load_model(model, args):
 
     if args.test:
         model.load_model(agent_name='second_0', path=f'model/{args.env}/'+args.load_model)
+        model.load_model(agent_name='first_0', path=f'model/{args.env}/'+args.load_model)
