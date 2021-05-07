@@ -62,7 +62,8 @@ args = parser.parse_args()
 #####################  hyper parameters  ####################
 
 # ENV_NAME = 'LunarLanderContinuous-v2'  # environment name: LunarLander-v2, Pendulum-v0
-ENV_NAME = "SlimeVolley-v0"
+# ENV_NAME = "SlimeVolley-v0"
+ENV_NAME = "Pong-ram-v0"
 RANDOMSEED = 2  # random seed
 
 EP_MAX = 10000  # total number of episodes for training
