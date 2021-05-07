@@ -302,7 +302,8 @@ def worker(id, ppo, rewards_queue):
         for t in range(EP_LEN):  # in one episode
             # env.render()
             a = ppo.choose_action(s)
-            s_, r, done, _ = env.step(env.discreteToBox(a))  # from discrete to multibinary action
+            s_, r, done, _ = env.step(a)  # from discrete to multibinary action
+            # s_, r, done, _ = env.step(env.discreteToBox(a))  # from discrete to multibinary action
             buffer_s.append(s)
             buffer_a.append(a)
             buffer_r.append(r)
@@ -393,7 +394,8 @@ def main():
             eps_r=0
             for i in range(EP_LEN):
                 env.render()
-                s, r, done, _ = env.step(env.discreteToBox(ppo.choose_action(s, True)))
+                s, r, done, _ = env.step(ppo.choose_action(s, True))
+                # s, r, done, _ = env.step(env.discreteToBox(ppo.choose_action(s, True)))
                 eps_r+=r
                 if done:
                     break
