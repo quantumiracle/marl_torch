@@ -1,3 +1,10 @@
+"""
+Testing script for PettingZoo environments.
+PettingZoo as a multi-agent library provides two environment interaction modes:
+1. iterate: the action of each agent is taken iteratively in order with env.step(ai) function;
+2. parallel: the actions of all agents are taken at the same env.step(a1, a2, ...) function.
+"""
+
 # from pettingzoo.butterfly import knights_archers_zombies_v7
 # env = knights_archers_zombies_v7.env()
 from pettingzoo.atari import boxing_v1
@@ -5,6 +12,9 @@ from utils.wrappers import PettingZooWrapper
 import supersuit
 
 def run_iterate():
+    """
+    env.step(a) function iteratively takes the action of each agent.
+    """
     env = boxing_v1.env()
     for _ in range(3):
         env.reset()
@@ -21,7 +31,9 @@ def run_iterate():
                 break
 
 def run_parallel():
-    # env = boxing_v1.env()
+    """
+    env.step(a1, a2, ...) function takes the actions of all agents all at once.
+    """
     env = boxing_v1.parallel_env()
     env = PettingZooWrapper(env)
     for _ in range(3):
@@ -38,6 +50,9 @@ def run_parallel():
                 break
 
 def run_parallel2():
+    """
+    Test parallel mode with supersuit env wrappers. 
+    """
     parallel_env = boxing_v1.parallel_env()
     # as per openai baseline's MaxAndSKip wrapper, maxes over the last 2 frames
     # to deal with frame flickering

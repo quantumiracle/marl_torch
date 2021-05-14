@@ -6,18 +6,13 @@ import torch.optim as optim
 from torch.distributions import Categorical
 import argparse
 import numpy as np
-import slimevolleygym
 from utils.ppo import PPODiscrete
 from gym import spaces
+from collections import deque
 
-# action transformation of SlimeVolley 
-action_table = [[0, 0, 0], # NOOP
-                [1, 0, 0], # LEFT (forward)
-                [1, 0, 1], # UPLEFT (forward jump)
-                [0, 0, 1], # UP (jump)
-                [0, 1, 1], # UPRIGHT (backward jump)
-                [0, 1, 0]] # RIGHT (backward)
-
+class ScaledFloatFrame(gym.ObservationWrapper):
+     def observation(self, obs):
+         return np.array(obs).astype(np.float32) / 255.0
 
 def main():
     parser = argparse.ArgumentParser(description='Train or test arguments.')
@@ -28,18 +23,20 @@ def main():
     args = parser.parse_args()
     
     SEED = 721
-    # env = gym.make('Pong-ram-v0')   # CartPole-v1 
-    # max_length = 10000
-    env = gym.make("SlimeVolley-v0")
-    max_length = env.t_limit
+    env = gym.make('Pong-ram-v4')   # CartPole-v1 
+    env = ScaledFloatFrame(env)  # scaled observation, this is essential!
+    # env = gym.make('LunarLander-v2')   
+    max_length = 10000
+    max_episode = 500000
+    stack = 1  # stack frames/ram
     env.seed(SEED)
-    state_space = env.observation_space
-    action_dim = len(action_table)  # the action space of SlimeVolley is multibinary, which can be transformed from discrete
-    action_space = spaces.Discrete(action_dim)
+    # state_space = env.observation_space
+    state_space = spaces.Box(0, 255, (stack*128,))
+    action_space = env.action_space
     print(state_space, action_space)
 
     hyperparams = {
-        'learning_rate': 3e-4,
+        'learning_rate': 3e-3,
         'gamma': 0.99,
         'lmbda': 0.95,
         'eps_clip': 0.2,
@@ -58,16 +55,22 @@ def main():
     print_interval = 20
     save_interval = 100
     epi_len = []
-    for n_epi in range(10000):
+    s_queue = deque([], maxlen=stack)
+    for n_epi in range(max_episode):
         s = env.reset()
+        for _ in range(stack):
+            s_queue.append(s)
         done = False
         for t in range(max_length):
-            a, logprob = model.choose_action(s)
-            s_prime, r, done, info = env.step(env.discreteToBox(a))  # from discrete to multibinary action
+            stack_s = np.array(s_queue).reshape(-1)
+            a, logprob = model.choose_action(stack_s)
+            s_prime, r, done, info = env.step(a)  # from discrete to multibinary action
+            s_queue.append(s_prime)
+            stack_s_prime = np.array(s_queue).reshape(-1)
             if args.render:
                 env.render()
-            model.put_data((s, a, r, s_prime, logprob, done))
-            s = s_prime
+            model.put_data((stack_s, a, r, stack_s_prime, logprob, done))
+            # s = s_prime
 
             score += r
             if done:
