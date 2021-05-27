@@ -143,7 +143,7 @@ def main():
     
     load_model(model, args)
 
-    path = f"model/{args.env}/"
+    path = f'model/{args.env}/'
     os.makedirs(path, exist_ok=True)
     
     if args.fictitious:

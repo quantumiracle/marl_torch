@@ -29,7 +29,7 @@ For PettingZoo or SlimeVolley:
 
 ​	1.`python train_pettingzoo_mp_vecenv.py --env pong_v1 --ram --num-envs 3 --selfplay`
 
-​	2.`python train_pettingzoo_mp_vecenv.py --env slimevolley-v0 --num-envs 3 --against-baseline`
+​	2.`python train_pettingzoo_mp_vecenv.py --env slimevolley_v0 --num-envs 3 --selfplay`
 
 
 
