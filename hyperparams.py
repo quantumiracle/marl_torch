@@ -8,7 +8,7 @@ action_table = [[0, 0, 0], # NOOP
 
 max_eps = 50000
 max_timesteps = 10000
-selfplay_interval = 1000 # interval in a unit of episode to checkpoint a policy and replace its opponent in selfplay
+selfplay_interval = 3000 # interval in a unit of episode to checkpoint a policy and replace its opponent in selfplay
 
 hyperparams = {
     'learning_rate': 3e-4,

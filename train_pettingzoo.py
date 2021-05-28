@@ -60,6 +60,8 @@ def parallel_rollout(env, model, writer, max_eps, max_timesteps, selfplay_interv
         observations = env.reset()
 
         for t in range(max_timesteps):
+            noise = np.random.normal(0, 0.1, size=observations['first_0'].shape[0])
+            observations['first_0'] = observations['first_0'] + noise
             actions, logprobs = model.choose_action(observations)
             if against_baseline:
                 observations_, rewards, dones, infos = env.step(actions, against_baseline)  # from discrete to multibinary action
