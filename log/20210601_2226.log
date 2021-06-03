@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "train_pettingzoo.py", line 1, in <module>
+    import gym
+ModuleNotFoundError: No module named 'gym'
