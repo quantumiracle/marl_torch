@@ -77,12 +77,11 @@ def parallel_rollout(env, model, writer, max_eps, max_timesteps, selfplay_interv
 
             for agent_name in env.agents:
                 score[agent_name] += rewards[agent_name]
-
             if np.any(np.array(list(dones.values()))):  # any agent has a done -> terminate episode
                 break
-
-            # if not env.agents: # according to official docu (https://www.pettingzoo.ml/api), single agent will be removed if it recieved done, while others remain 
-            #     break 
+            # if not env.agents: # according to official docu (https://www.pettingzoo.ml/api), single agent will be removed if it recieved done, while others remain; but it doesn't work here
+            #     break
+            #  
         if not test:
             model.train_net()
             epi_len.append(t)

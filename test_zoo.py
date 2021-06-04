@@ -100,6 +100,7 @@ class PettingzooClassic_Iterate2Parallel():
             reward_dict[agent] = self.env.rewards[agent]
             done_dict[agent] = self.env.dones[agent]
             info_dict[agent] = info
+        print(obs_dict)
         return obs_dict, reward_dict, done_dict, info_dict
 
 def run_parallel(args):

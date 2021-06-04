@@ -43,15 +43,18 @@ def parallel_rollout(env, model, writer, max_eps, max_timesteps, selfplay_interv
             for agent_name in model.agents:
                 score[agent_name] += np.mean([r[agent_name] for r in rewards]) # mean over different envs
 
-            # if not list(filter(None, env.agents)): 
-            #     break
-
-            # If all envs with each having at least one agent is done, then finishe episode. (deprecated! does not work in this way!)
-            # For example,
-            # if dones= [{'first_0': True, 'second_0': True}, {'first_0': False, 'second_0': False}], it returns False;
-            # if dones= [{'first_0': True, 'second_0': False}, {'first_0': True, 'second_0': False}], it returns True.
-            if np.all([np.any(np.array(list(d.values()))) for d in dones]):
-                break
+            if args.env in AtariEnvs:
+                # This works for PettingZoo envs. not env.agents: according to official docu (https://www.pettingzoo.ml/api), single agent will give {} if it recieved done, while others remain.
+                # however, since env.agents is list of list, [[], []] will be bool True, but with one None filter it gives False.
+                if not list(filter(None, env.agents)): 
+                    break 
+            else:
+                # If all envs with each having at least one agent is done, then finishe episode. (deprecated! does not work in this way!)
+                # For example,
+                # if dones= [{'first_0': True, 'second_0': True}, {'first_0': False, 'second_0': False}], it returns False;
+                # if dones= [{'first_0': True, 'second_0': False}, {'first_0': True, 'second_0': False}], it returns True.
+                if np.all([np.any(np.array(list(d.values()))) for d in dones]):
+                    break
 
             for agent_name in model.agents:
                 rewards_=list(filter(None, rewards))  # filter out empty dicts caused by finished env episodes
