@@ -81,7 +81,7 @@ def parallel_rollout(env, model, writer, max_eps, max_timesteps, selfplay_interv
                 break
             # if not env.agents: # according to official docu (https://www.pettingzoo.ml/api), single agent will be removed if it recieved done, while others remain; but it doesn't work here
             #     break
-            #  
+
         if not test:
             model.train_net()
             epi_len.append(t)

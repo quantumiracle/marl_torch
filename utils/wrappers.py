@@ -122,10 +122,6 @@ class SlimeVolleyWrapper():
     def close(self):
         self.env.close()
 
-class ScaledFloatFrame(gym.ObservationWrapper):
-     def observation(self, obs):
-         return np.array(obs).astype(np.float32) / 255.0
-
 def make_env(env_name='boxing_v1', seed=1, obs_type='rgb_image'):
     '''https://www.pettingzoo.ml/atari'''
     if env_name == 'slimevolley_v0':

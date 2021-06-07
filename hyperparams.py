@@ -11,7 +11,7 @@ max_timesteps = 10000
 selfplay_interval = 3000 # interval in a unit of episode to checkpoint a policy and replace its opponent in selfplay
 
 hyperparams = {
-    'learning_rate': 3e-4,
+    'learning_rate': 3e-3,
     'gamma': 0.99,
     'lmbda': 0.95,
     'eps_clip': 0.2,
