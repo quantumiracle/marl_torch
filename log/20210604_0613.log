@@ -46172,3 +46172,551 @@ agent :first_0, avg score : -0.600, avg epi length : 651
 agent :second_0, avg score : 0.600, avg epi length : 651
 # of episode :307140
 agent :first_0, avg score : 0.400, avg epi length : 694
+agent :second_0, avg score : -0.400, avg epi length : 694
+# of episode :307160
+agent :first_0, avg score : 0.500, avg epi length : 615
+agent :second_0, avg score : -0.500, avg epi length : 615
+# of episode :307180
+agent :first_0, avg score : 0.250, avg epi length : 682
+agent :second_0, avg score : -0.250, avg epi length : 682
+# of episode :307200
+agent :first_0, avg score : -1.850, avg epi length : 606
+agent :second_0, avg score : 1.850, avg epi length : 606
+# of episode :307220
+agent :first_0, avg score : -0.750, avg epi length : 634
+agent :second_0, avg score : 0.750, avg epi length : 634
+# of episode :307240
+agent :first_0, avg score : 0.550, avg epi length : 634
+agent :second_0, avg score : -0.550, avg epi length : 634
+# of episode :307260
+agent :first_0, avg score : -0.450, avg epi length : 639
+agent :second_0, avg score : 0.450, avg epi length : 639
+# of episode :307280
+agent :first_0, avg score : -0.400, avg epi length : 626
+agent :second_0, avg score : 0.400, avg epi length : 626
+# of episode :307300
+agent :first_0, avg score : 0.350, avg epi length : 624
+agent :second_0, avg score : -0.350, avg epi length : 624
+# of episode :307320
+agent :first_0, avg score : -0.500, avg epi length : 685
+agent :second_0, avg score : 0.500, avg epi length : 685
+# of episode :307340
+agent :first_0, avg score : 0.550, avg epi length : 637
+agent :second_0, avg score : -0.550, avg epi length : 637
+# of episode :307360
+agent :first_0, avg score : -0.400, avg epi length : 673
+agent :second_0, avg score : 0.400, avg epi length : 673
+# of episode :307380
+agent :first_0, avg score : -0.300, avg epi length : 657
+agent :second_0, avg score : 0.300, avg epi length : 657
+# of episode :307400
+agent :first_0, avg score : -1.250, avg epi length : 648
+agent :second_0, avg score : 1.250, avg epi length : 648
+# of episode :307420
+agent :first_0, avg score : -1.150, avg epi length : 651
+agent :second_0, avg score : 1.150, avg epi length : 651
+# of episode :307440
+agent :first_0, avg score : 0.400, avg epi length : 600
+agent :second_0, avg score : -0.400, avg epi length : 600
+# of episode :307460
+agent :first_0, avg score : 0.550, avg epi length : 651
+agent :second_0, avg score : -0.550, avg epi length : 651
+# of episode :307480
+agent :first_0, avg score : -0.700, avg epi length : 662
+agent :second_0, avg score : 0.700, avg epi length : 662
+# of episode :307500
+agent :first_0, avg score : -0.600, avg epi length : 609
+agent :second_0, avg score : 0.600, avg epi length : 609
+# of episode :307520
+agent :first_0, avg score : -0.500, avg epi length : 638
+agent :second_0, avg score : 0.500, avg epi length : 638
+# of episode :307540
+agent :first_0, avg score : -0.750, avg epi length : 660
+agent :second_0, avg score : 0.750, avg epi length : 660
+# of episode :307560
+agent :first_0, avg score : 1.100, avg epi length : 630
+agent :second_0, avg score : -1.100, avg epi length : 630
+# of episode :307580
+agent :first_0, avg score : -0.750, avg epi length : 602
+agent :second_0, avg score : 0.750, avg epi length : 602
+# of episode :307600
+agent :first_0, avg score : -0.750, avg epi length : 639
+agent :second_0, avg score : 0.750, avg epi length : 639
+# of episode :307620
+agent :first_0, avg score : 0.100, avg epi length : 629
+agent :second_0, avg score : -0.100, avg epi length : 629
+# of episode :307640
+agent :first_0, avg score : 0.450, avg epi length : 629
+agent :second_0, avg score : -0.450, avg epi length : 629
+# of episode :307660
+agent :first_0, avg score : -0.050, avg epi length : 631
+agent :second_0, avg score : 0.050, avg epi length : 631
+# of episode :307680
+agent :first_0, avg score : 1.050, avg epi length : 598
+agent :second_0, avg score : -1.050, avg epi length : 598
+# of episode :307700
+agent :first_0, avg score : -0.750, avg epi length : 655
+agent :second_0, avg score : 0.750, avg epi length : 655
+# of episode :307720
+agent :first_0, avg score : -1.400, avg epi length : 647
+agent :second_0, avg score : 1.400, avg epi length : 647
+# of episode :307740
+agent :first_0, avg score : -0.850, avg epi length : 616
+agent :second_0, avg score : 0.850, avg epi length : 616
+# of episode :307760
+agent :first_0, avg score : 0.550, avg epi length : 654
+agent :second_0, avg score : -0.550, avg epi length : 654
+# of episode :307780
+agent :first_0, avg score : -0.500, avg epi length : 607
+agent :second_0, avg score : 0.500, avg epi length : 607
+# of episode :307800
+agent :first_0, avg score : -0.350, avg epi length : 628
+agent :second_0, avg score : 0.350, avg epi length : 628
+# of episode :307820
+agent :first_0, avg score : -0.500, avg epi length : 630
+agent :second_0, avg score : 0.500, avg epi length : 630
+# of episode :307840
+agent :first_0, avg score : -0.550, avg epi length : 651
+agent :second_0, avg score : 0.550, avg epi length : 651
+# of episode :307860
+agent :first_0, avg score : -1.650, avg epi length : 575
+agent :second_0, avg score : 1.650, avg epi length : 575
+# of episode :307880
+agent :first_0, avg score : -0.200, avg epi length : 618
+agent :second_0, avg score : 0.200, avg epi length : 618
+# of episode :307900
+agent :first_0, avg score : -0.450, avg epi length : 606
+agent :second_0, avg score : 0.450, avg epi length : 606
+# of episode :307920
+agent :first_0, avg score : -0.250, avg epi length : 582
+agent :second_0, avg score : 0.250, avg epi length : 582
+# of episode :307940
+agent :first_0, avg score : -0.050, avg epi length : 633
+agent :second_0, avg score : 0.050, avg epi length : 633
+# of episode :307960
+agent :first_0, avg score : 0.350, avg epi length : 630
+agent :second_0, avg score : -0.350, avg epi length : 630
+# of episode :307980
+agent :first_0, avg score : -0.500, avg epi length : 631
+agent :second_0, avg score : 0.500, avg epi length : 631
+# of episode :308000
+agent :first_0, avg score : -0.400, avg epi length : 619
+agent :second_0, avg score : 0.400, avg epi length : 619
+# of episode :308020
+agent :first_0, avg score : -0.200, avg epi length : 589
+agent :second_0, avg score : 0.200, avg epi length : 589
+# of episode :308040
+agent :first_0, avg score : -0.650, avg epi length : 652
+agent :second_0, avg score : 0.650, avg epi length : 652
+# of episode :308060
+agent :first_0, avg score : 0.150, avg epi length : 647
+agent :second_0, avg score : -0.150, avg epi length : 647
+# of episode :308080
+agent :first_0, avg score : 0.200, avg epi length : 655
+agent :second_0, avg score : -0.200, avg epi length : 655
+# of episode :308100
+agent :first_0, avg score : 0.200, avg epi length : 651
+agent :second_0, avg score : -0.200, avg epi length : 651
+# of episode :308120
+agent :first_0, avg score : -0.150, avg epi length : 613
+agent :second_0, avg score : 0.150, avg epi length : 613
+# of episode :308140
+agent :first_0, avg score : -1.300, avg epi length : 648
+agent :second_0, avg score : 1.300, avg epi length : 648
+# of episode :308160
+agent :first_0, avg score : -0.700, avg epi length : 628
+agent :second_0, avg score : 0.700, avg epi length : 628
+# of episode :308180
+agent :first_0, avg score : -0.850, avg epi length : 625
+agent :second_0, avg score : 0.850, avg epi length : 625
+# of episode :308200
+agent :first_0, avg score : -0.300, avg epi length : 669
+agent :second_0, avg score : 0.300, avg epi length : 669
+# of episode :308220
+agent :first_0, avg score : -1.300, avg epi length : 609
+agent :second_0, avg score : 1.300, avg epi length : 609
+# of episode :308240
+agent :first_0, avg score : -0.550, avg epi length : 678
+agent :second_0, avg score : 0.550, avg epi length : 678
+# of episode :308260
+agent :first_0, avg score : -0.850, avg epi length : 644
+agent :second_0, avg score : 0.850, avg epi length : 644
+# of episode :308280
+agent :first_0, avg score : 0.550, avg epi length : 663
+agent :second_0, avg score : -0.550, avg epi length : 663
+# of episode :308300
+agent :first_0, avg score : 0.350, avg epi length : 642
+agent :second_0, avg score : -0.350, avg epi length : 642
+# of episode :308320
+agent :first_0, avg score : 0.000, avg epi length : 629
+agent :second_0, avg score : 0.000, avg epi length : 629
+# of episode :308340
+agent :first_0, avg score : -0.500, avg epi length : 622
+agent :second_0, avg score : 0.500, avg epi length : 622
+# of episode :308360
+agent :first_0, avg score : 0.300, avg epi length : 601
+agent :second_0, avg score : -0.300, avg epi length : 601
+# of episode :308380
+agent :first_0, avg score : -0.850, avg epi length : 643
+agent :second_0, avg score : 0.850, avg epi length : 643
+# of episode :308400
+agent :first_0, avg score : -1.100, avg epi length : 678
+agent :second_0, avg score : 1.100, avg epi length : 678
+# of episode :308420
+agent :first_0, avg score : -2.300, avg epi length : 601
+agent :second_0, avg score : 2.300, avg epi length : 601
+# of episode :308440
+agent :first_0, avg score : -0.400, avg epi length : 654
+agent :second_0, avg score : 0.400, avg epi length : 654
+# of episode :308460
+agent :first_0, avg score : 0.350, avg epi length : 657
+agent :second_0, avg score : -0.350, avg epi length : 657
+# of episode :308480
+agent :first_0, avg score : -0.100, avg epi length : 651
+agent :second_0, avg score : 0.100, avg epi length : 651
+# of episode :308500
+agent :first_0, avg score : -1.150, avg epi length : 624
+agent :second_0, avg score : 1.150, avg epi length : 624
+# of episode :308520
+agent :first_0, avg score : 0.950, avg epi length : 619
+agent :second_0, avg score : -0.950, avg epi length : 619
+# of episode :308540
+agent :first_0, avg score : 0.200, avg epi length : 629
+agent :second_0, avg score : -0.200, avg epi length : 629
+# of episode :308560
+agent :first_0, avg score : -0.200, avg epi length : 653
+agent :second_0, avg score : 0.200, avg epi length : 653
+# of episode :308580
+agent :first_0, avg score : -1.000, avg epi length : 619
+agent :second_0, avg score : 1.000, avg epi length : 619
+# of episode :308600
+agent :first_0, avg score : -0.550, avg epi length : 658
+agent :second_0, avg score : 0.550, avg epi length : 658
+# of episode :308620
+agent :first_0, avg score : -0.900, avg epi length : 625
+agent :second_0, avg score : 0.900, avg epi length : 625
+# of episode :308640
+agent :first_0, avg score : -1.800, avg epi length : 630
+agent :second_0, avg score : 1.800, avg epi length : 630
+# of episode :308660
+agent :first_0, avg score : 0.300, avg epi length : 646
+agent :second_0, avg score : -0.300, avg epi length : 646
+# of episode :308680
+agent :first_0, avg score : -0.600, avg epi length : 596
+agent :second_0, avg score : 0.600, avg epi length : 596
+# of episode :308700
+agent :first_0, avg score : -1.250, avg epi length : 664
+agent :second_0, avg score : 1.250, avg epi length : 664
+# of episode :308720
+agent :first_0, avg score : -0.400, avg epi length : 658
+agent :second_0, avg score : 0.400, avg epi length : 658
+# of episode :308740
+agent :first_0, avg score : -0.150, avg epi length : 611
+agent :second_0, avg score : 0.150, avg epi length : 611
+# of episode :308760
+agent :first_0, avg score : -0.250, avg epi length : 633
+agent :second_0, avg score : 0.250, avg epi length : 633
+# of episode :308780
+agent :first_0, avg score : -0.150, avg epi length : 620
+agent :second_0, avg score : 0.150, avg epi length : 620
+# of episode :308800
+agent :first_0, avg score : -1.100, avg epi length : 616
+agent :second_0, avg score : 1.100, avg epi length : 616
+# of episode :308820
+agent :first_0, avg score : -0.250, avg epi length : 595
+agent :second_0, avg score : 0.250, avg epi length : 595
+# of episode :308840
+agent :first_0, avg score : 0.600, avg epi length : 662
+agent :second_0, avg score : -0.600, avg epi length : 662
+# of episode :308860
+agent :first_0, avg score : -0.350, avg epi length : 658
+agent :second_0, avg score : 0.350, avg epi length : 658
+# of episode :308880
+agent :first_0, avg score : 0.150, avg epi length : 616
+agent :second_0, avg score : -0.150, avg epi length : 616
+# of episode :308900
+agent :first_0, avg score : 0.100, avg epi length : 643
+agent :second_0, avg score : -0.100, avg epi length : 643
+# of episode :308920
+agent :first_0, avg score : -0.650, avg epi length : 628
+agent :second_0, avg score : 0.650, avg epi length : 628
+# of episode :308940
+agent :first_0, avg score : -0.600, avg epi length : 646
+agent :second_0, avg score : 0.600, avg epi length : 646
+# of episode :308960
+agent :first_0, avg score : 0.000, avg epi length : 627
+agent :second_0, avg score : 0.000, avg epi length : 627
+# of episode :308980
+agent :first_0, avg score : 0.350, avg epi length : 668
+agent :second_0, avg score : -0.350, avg epi length : 668
+# of episode :309000
+agent :first_0, avg score : 0.950, avg epi length : 610
+agent :second_0, avg score : -0.950, avg epi length : 610
+Selfplay: update the model of opponent
+# of episode :309020
+agent :first_0, avg score : -0.150, avg epi length : 603
+agent :second_0, avg score : 0.150, avg epi length : 603
+# of episode :309040
+agent :first_0, avg score : -0.400, avg epi length : 615
+agent :second_0, avg score : 0.400, avg epi length : 615
+# of episode :309060
+agent :first_0, avg score : 0.300, avg epi length : 635
+agent :second_0, avg score : -0.300, avg epi length : 635
+# of episode :309080
+agent :first_0, avg score : -0.250, avg epi length : 632
+agent :second_0, avg score : 0.250, avg epi length : 632
+# of episode :309100
+agent :first_0, avg score : -0.250, avg epi length : 624
+agent :second_0, avg score : 0.250, avg epi length : 624
+# of episode :309120
+agent :first_0, avg score : -0.350, avg epi length : 644
+agent :second_0, avg score : 0.350, avg epi length : 644
+# of episode :309140
+agent :first_0, avg score : -0.600, avg epi length : 666
+agent :second_0, avg score : 0.600, avg epi length : 666
+# of episode :309160
+agent :first_0, avg score : 0.100, avg epi length : 604
+agent :second_0, avg score : -0.100, avg epi length : 604
+# of episode :309180
+agent :first_0, avg score : 0.100, avg epi length : 651
+agent :second_0, avg score : -0.100, avg epi length : 651
+# of episode :309200
+agent :first_0, avg score : -1.400, avg epi length : 615
+agent :second_0, avg score : 1.400, avg epi length : 615
+# of episode :309220
+agent :first_0, avg score : 0.300, avg epi length : 632
+agent :second_0, avg score : -0.300, avg epi length : 632
+# of episode :309240
+agent :first_0, avg score : 0.550, avg epi length : 627
+agent :second_0, avg score : -0.550, avg epi length : 627
+# of episode :309260
+agent :first_0, avg score : 1.100, avg epi length : 610
+agent :second_0, avg score : -1.100, avg epi length : 610
+# of episode :309280
+agent :first_0, avg score : -0.050, avg epi length : 589
+agent :second_0, avg score : 0.050, avg epi length : 589
+# of episode :309300
+agent :first_0, avg score : -0.300, avg epi length : 643
+agent :second_0, avg score : 0.300, avg epi length : 643
+# of episode :309320
+agent :first_0, avg score : -0.050, avg epi length : 661
+agent :second_0, avg score : 0.050, avg epi length : 661
+# of episode :309340
+agent :first_0, avg score : -0.200, avg epi length : 664
+agent :second_0, avg score : 0.200, avg epi length : 664
+# of episode :309360
+agent :first_0, avg score : 0.500, avg epi length : 669
+agent :second_0, avg score : -0.500, avg epi length : 669
+# of episode :309380
+agent :first_0, avg score : 0.300, avg epi length : 624
+agent :second_0, avg score : -0.300, avg epi length : 624
+# of episode :309400
+agent :first_0, avg score : 0.250, avg epi length : 630
+agent :second_0, avg score : -0.250, avg epi length : 630
+# of episode :309420
+agent :first_0, avg score : 0.700, avg epi length : 607
+agent :second_0, avg score : -0.700, avg epi length : 607
+# of episode :309440
+agent :first_0, avg score : 0.900, avg epi length : 676
+agent :second_0, avg score : -0.900, avg epi length : 676
+# of episode :309460
+agent :first_0, avg score : -0.500, avg epi length : 647
+agent :second_0, avg score : 0.500, avg epi length : 647
+# of episode :309480
+agent :first_0, avg score : 0.500, avg epi length : 617
+agent :second_0, avg score : -0.500, avg epi length : 617
+# of episode :309500
+agent :first_0, avg score : -0.100, avg epi length : 624
+agent :second_0, avg score : 0.100, avg epi length : 624
+# of episode :309520
+agent :first_0, avg score : -0.250, avg epi length : 607
+agent :second_0, avg score : 0.250, avg epi length : 607
+# of episode :309540
+agent :first_0, avg score : -0.100, avg epi length : 660
+agent :second_0, avg score : 0.100, avg epi length : 660
+# of episode :309560
+agent :first_0, avg score : -0.050, avg epi length : 650
+agent :second_0, avg score : 0.050, avg epi length : 650
+# of episode :309580
+agent :first_0, avg score : 0.350, avg epi length : 686
+agent :second_0, avg score : -0.350, avg epi length : 686
+# of episode :309600
+agent :first_0, avg score : -0.300, avg epi length : 621
+agent :second_0, avg score : 0.300, avg epi length : 621
+# of episode :309620
+agent :first_0, avg score : 0.100, avg epi length : 633
+agent :second_0, avg score : -0.100, avg epi length : 633
+# of episode :309640
+agent :first_0, avg score : 1.100, avg epi length : 617
+agent :second_0, avg score : -1.100, avg epi length : 617
+# of episode :309660
+agent :first_0, avg score : 0.200, avg epi length : 590
+agent :second_0, avg score : -0.200, avg epi length : 590
+# of episode :309680
+agent :first_0, avg score : 0.950, avg epi length : 610
+agent :second_0, avg score : -0.950, avg epi length : 610
+# of episode :309700
+agent :first_0, avg score : -0.600, avg epi length : 610
+agent :second_0, avg score : 0.600, avg epi length : 610
+# of episode :309720
+agent :first_0, avg score : -0.550, avg epi length : 671
+agent :second_0, avg score : 0.550, avg epi length : 671
+# of episode :309740
+agent :first_0, avg score : 0.600, avg epi length : 682
+agent :second_0, avg score : -0.600, avg epi length : 682
+# of episode :309760
+agent :first_0, avg score : -0.250, avg epi length : 653
+agent :second_0, avg score : 0.250, avg epi length : 653
+# of episode :309780
+agent :first_0, avg score : -0.250, avg epi length : 671
+agent :second_0, avg score : 0.250, avg epi length : 671
+# of episode :309800
+agent :first_0, avg score : 0.300, avg epi length : 601
+agent :second_0, avg score : -0.300, avg epi length : 601
+# of episode :309820
+agent :first_0, avg score : -0.900, avg epi length : 632
+agent :second_0, avg score : 0.900, avg epi length : 632
+# of episode :309840
+agent :first_0, avg score : -0.650, avg epi length : 634
+agent :second_0, avg score : 0.650, avg epi length : 634
+# of episode :309860
+agent :first_0, avg score : -0.200, avg epi length : 681
+agent :second_0, avg score : 0.200, avg epi length : 681
+# of episode :309880
+agent :first_0, avg score : -0.300, avg epi length : 670
+agent :second_0, avg score : 0.300, avg epi length : 670
+# of episode :309900
+agent :first_0, avg score : -0.050, avg epi length : 674
+agent :second_0, avg score : 0.050, avg epi length : 674
+# of episode :309920
+agent :first_0, avg score : 0.200, avg epi length : 608
+agent :second_0, avg score : -0.200, avg epi length : 608
+# of episode :309940
+agent :first_0, avg score : -0.450, avg epi length : 687
+agent :second_0, avg score : 0.450, avg epi length : 687
+# of episode :309960
+agent :first_0, avg score : -0.900, avg epi length : 677
+agent :second_0, avg score : 0.900, avg epi length : 677
+# of episode :309980
+agent :first_0, avg score : 0.200, avg epi length : 634
+agent :second_0, avg score : -0.200, avg epi length : 634
+# of episode :310000
+agent :first_0, avg score : 0.150, avg epi length : 664
+agent :second_0, avg score : -0.150, avg epi length : 664
+# of episode :310020
+agent :first_0, avg score : -0.600, avg epi length : 648
+agent :second_0, avg score : 0.600, avg epi length : 648
+# of episode :310040
+agent :first_0, avg score : -0.950, avg epi length : 675
+agent :second_0, avg score : 0.950, avg epi length : 675
+# of episode :310060
+agent :first_0, avg score : -1.250, avg epi length : 648
+agent :second_0, avg score : 1.250, avg epi length : 648
+# of episode :310080
+agent :first_0, avg score : -1.350, avg epi length : 680
+agent :second_0, avg score : 1.350, avg epi length : 680
+# of episode :310100
+agent :first_0, avg score : -0.500, avg epi length : 632
+agent :second_0, avg score : 0.500, avg epi length : 632
+# of episode :310120
+agent :first_0, avg score : 0.350, avg epi length : 599
+agent :second_0, avg score : -0.350, avg epi length : 599
+# of episode :310140
+agent :first_0, avg score : 0.200, avg epi length : 646
+agent :second_0, avg score : -0.200, avg epi length : 646
+# of episode :310160
+agent :first_0, avg score : 0.450, avg epi length : 633
+agent :second_0, avg score : -0.450, avg epi length : 633
+# of episode :310180
+agent :first_0, avg score : -0.400, avg epi length : 626
+agent :second_0, avg score : 0.400, avg epi length : 626
+# of episode :310200
+agent :first_0, avg score : 0.400, avg epi length : 577
+agent :second_0, avg score : -0.400, avg epi length : 577
+# of episode :310220
+agent :first_0, avg score : -0.400, avg epi length : 638
+agent :second_0, avg score : 0.400, avg epi length : 638
+# of episode :310240
+agent :first_0, avg score : -0.150, avg epi length : 693
+agent :second_0, avg score : 0.150, avg epi length : 693
+# of episode :310260
+agent :first_0, avg score : -0.400, avg epi length : 680
+agent :second_0, avg score : 0.400, avg epi length : 680
+# of episode :310280
+agent :first_0, avg score : -0.550, avg epi length : 627
+agent :second_0, avg score : 0.550, avg epi length : 627
+# of episode :310300
+agent :first_0, avg score : -0.500, avg epi length : 649
+agent :second_0, avg score : 0.500, avg epi length : 649
+# of episode :310320
+agent :first_0, avg score : -0.900, avg epi length : 629
+agent :second_0, avg score : 0.900, avg epi length : 629
+# of episode :310340
+agent :first_0, avg score : 0.450, avg epi length : 631
+agent :second_0, avg score : -0.450, avg epi length : 631
+# of episode :310360
+agent :first_0, avg score : 0.250, avg epi length : 636
+agent :second_0, avg score : -0.250, avg epi length : 636
+# of episode :310380
+agent :first_0, avg score : -1.750, avg epi length : 633
+agent :second_0, avg score : 1.750, avg epi length : 633
+# of episode :310400
+agent :first_0, avg score : -0.500, avg epi length : 651
+agent :second_0, avg score : 0.500, avg epi length : 651
+# of episode :310420
+agent :first_0, avg score : 0.100, avg epi length : 632
+agent :second_0, avg score : -0.100, avg epi length : 632
+# of episode :310440
+agent :first_0, avg score : -0.050, avg epi length : 660
+agent :second_0, avg score : 0.050, avg epi length : 660
+# of episode :310460
+agent :first_0, avg score : -0.450, avg epi length : 633
+agent :second_0, avg score : 0.450, avg epi length : 633
+# of episode :310480
+agent :first_0, avg score : -0.450, avg epi length : 640
+agent :second_0, avg score : 0.450, avg epi length : 640
+# of episode :310500
+agent :first_0, avg score : -1.650, avg epi length : 627
+agent :second_0, avg score : 1.650, avg epi length : 627
+# of episode :310520
+agent :first_0, avg score : -0.700, avg epi length : 618
+agent :second_0, avg score : 0.700, avg epi length : 618
+# of episode :310540
+agent :first_0, avg score : -0.100, avg epi length : 633
+agent :second_0, avg score : 0.100, avg epi length : 633
+# of episode :310560
+agent :first_0, avg score : -0.700, avg epi length : 625
+agent :second_0, avg score : 0.700, avg epi length : 625
+# of episode :310580
+agent :first_0, avg score : 1.200, avg epi length : 605
+agent :second_0, avg score : -1.200, avg epi length : 605
+# of episode :310600
+agent :first_0, avg score : -0.500, avg epi length : 676
+agent :second_0, avg score : 0.500, avg epi length : 676
+# of episode :310620
+agent :first_0, avg score : -1.700, avg epi length : 612
+agent :second_0, avg score : 1.700, avg epi length : 612
+# of episode :310640
+agent :first_0, avg score : -0.400, avg epi length : 662
+agent :second_0, avg score : 0.400, avg epi length : 662
+# of episode :310660
+agent :first_0, avg score : -2.200, avg epi length : 617
+agent :second_0, avg score : 2.200, avg epi length : 617
+# of episode :310680
+agent :first_0, avg score : -0.700, avg epi length : 667
+agent :second_0, avg score : 0.700, avg epi length : 667
+# of episode :310700
+agent :first_0, avg score : -0.400, avg epi length : 662
+agent :second_0, avg score : 0.400, avg epi length : 662
+# of episode :310720
+agent :first_0, avg score : -1.150, avg epi length : 640
+agent :second_0, avg score : 1.150, avg epi length : 640
+# of episode :310740
+agent :first_0, avg score : -0.350, avg epi length : 636
+agent :second_0, avg score : 0.350, avg epi length : 636
+# of episode :310760
+agent :first_0, avg score : 0.250, avg epi length : 645
+agent :second_0, avg score : -0.250, avg epi length : 645
+# of episode :310780
+agent :first_0, avg score : -0.050, avg epi length : 677
+agent :second_0, avg score : 0.050, avg epi length : 677
