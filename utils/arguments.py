@@ -31,6 +31,9 @@ def get_args():
                         help='Path to load pre-trained model')  
     args = parser.parse_args()
     args.device = torch.device("cuda:" + str(0) if torch.cuda.is_available() else "cpu")
-
-
     return args
+
+def print_args(args):
+    print(' ' * 26 + 'Options')
+    for k, v in vars(args).items():
+        print(' ' * 26 + k + ': ' + str(v))
