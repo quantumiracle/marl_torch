@@ -15,7 +15,7 @@ def get_args():
                         help='Number of environments for parallel sampling (needs to be >1)')
     parser.add_argument('--seed', type=int, default=1234,
                         help='Random seed')
-    parser.add_argument('--alg', type=str, default='td3',
+    parser.add_argument('--alg', type=str, default='ppo',
                         help='Choose algorithm type')
     parser.add_argument('--selfplay', action='store_true', default=False, 
                         help='The selfplay mode')

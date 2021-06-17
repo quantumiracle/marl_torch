@@ -183,7 +183,6 @@ class MultiPPODiscrete(nn.Module):
     def train_net(self, GAE=False):
         for agent_name in self.agents:
             if agent_name not in self.fixed_agents:
-                # print('trained agents: ', agent_name)
                 self.agents[agent_name].train_net(GAE)
 
     def choose_action(self, observations, Greedy=False):

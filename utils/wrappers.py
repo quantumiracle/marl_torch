@@ -148,6 +148,9 @@ def make_env(env_name='boxing_v1', seed=1, obs_type='rgb_image'):
             # allow agent to see everything on the screen despite Atari's flickering screen problem
             env = supersuit.frame_stack_v1(env, 4)
 
+        else:
+            env = supersuit.frame_skip_v0(env, 4)
+
         #   env = PettingZooWrapper(env)  # need to be put at the end
         if env_name in AtariEnvs:  # normalize the observation of Atari for both image or RAM 
             env = supersuit.dtype_v0(env, 'float32') # need to transform uint8 to float first for normalizing observation: https://github.com/PettingZoo-Team/SuperSuit

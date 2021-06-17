@@ -9,7 +9,7 @@ action_table = [[0, 0, 0], # NOOP
 max_eps = 500000
 max_timesteps = 10000
 selfplay_interval = 3000 # interval in a unit of episode to checkpoint a policy and replace its opponent in selfplay
-selfplay_score_delta = 1. # the score that current learning agent must beat its opponent to update opponent's policy
+selfplay_score_delta = 10. # the score that current learning agent must beat its opponent to update opponent's policy
 
 hyperparams = {
     'learning_rate': 3e-3,

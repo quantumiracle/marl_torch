@@ -153,7 +153,10 @@ class Evaluater():
             epi_r = 0
             for step in range(self.max_timesteps):
                 actions, logprobs = model.choose_action(o)
-                o, r, d, infos = self.env.step(actions, against_baseline=True)
+                try:
+                    o, r, d, infos = self.env.step(actions, against_baseline=True) # only for SlimeVolley
+                except:
+                    o, r, d, infos = self.env.step(actions)
                 epi_r += r['second_0']
                 if np.any(np.array(list(d.values()))):  # any agent has a done -> terminate episode
                     break

@@ -23,8 +23,8 @@ def main():
     args = parser.parse_args()
     
     SEED = 721
-    env = gym.make('Pong-ram-v4')   # CartPole-v1 
-    # env = gym.make('Boxing-ram-v0')   # CartPole-v1 
+    # env = gym.make('Pong-ram-v4')   # CartPole-v1 
+    env = gym.make('Boxing-ram-v0')   # CartPole-v1 
     env = ScaledFloatFrame(env)  # scaled observation, this is essential even for ram observation!
     # env = gym.make('LunarLander-v2')   
     max_length = 10000
