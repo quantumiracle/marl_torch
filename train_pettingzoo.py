@@ -60,8 +60,8 @@ def parallel_rollout(env, model, writer, evaluater, max_eps, max_timesteps, self
     for n_epi in range(max_eps):
         observations = env.reset()
         for t in range(max_timesteps):
-            # noise = np.random.normal(0, 0.1, size=observations['first_0'].shape[0])
-            # observations['first_0'] = observations['first_0'] + noise
+            noise = np.random.normal(0, 0.1, size=observations['first_0'].shape[0])
+            observations['first_0'] = observations['first_0'] + noise
             actions, logprobs = model.choose_action(observations)
             if against_baseline:
                 observations_, rewards, dones, infos = env.step(
@@ -109,7 +109,8 @@ def parallel_rollout(env, model, writer, evaluater, max_eps, max_timesteps, self
                 # if selfplay and n_epi%selfplay_interval==0 and n_epi!=0:  # note: this should not be in print_interval loop
                 if selfplay and record_score[env.agents[1]] - record_score[
                         env.agents[0]] > selfplay_score_delta and n_epi != 0:
-                    save_model_path = model_path + 'selfplay/' + str(
+                    prefix = 'selfplay/noise/'
+                    save_model_path = model_path + prefix + str(
                         n_epi) + 'mappo_single'
                     model.save_model(save_model_path)
                     print("Selfplay: update the model of opponent")
@@ -120,12 +121,12 @@ def parallel_rollout(env, model, writer, evaluater, max_eps, max_timesteps, self
                     # 2. load an average of historical model (ficticiou selfplay)
                     else:  # fictitious selfplay (not standard)
                         filelist = []
-                        for filename in os.listdir(model_path + 'selfplay/'):
+                        for filename in os.listdir(model_path + prefix):
                             if filename.endswith("policy"):
                                 filelist.append('_'.join(
                                     filename.split('_')
                                     [:-1]))  # remove '_policy' at end
-                        load_model_path = model_path + 'selfplay/' + filelist[
+                        load_model_path = model_path + prefix + filelist[
                             np.random.randint(len(filelist))]
                     model.load_model(
                         agent_name='first_0',
