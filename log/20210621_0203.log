@@ -1,0 +1,1429 @@
+state_spaces:  {'first_0': Box(0.0, 1.0, (128,), float32), 'second_0': Box(0.0, 1.0, (128,), float32)} ,  action_spaces:  {'first_0': Discrete(18), 'second_0': Discrete(18)}
+['first_0', 'second_0']
+[1000, 3000, 4000, 5000, 6000, 7000, 8000, 9000, 10000, 11000, 12000, 13000, 14000, 15000, 16000, 17000, 18000, 19000, 20000, 21000, 22000, 23000, 24000, 25000, 26000, 27000, 28000, 29000, 30000, 31000, 32000, 33000, 34000, 35000, 36000, 37000, 38000, 39000, 40000, 41000, 42000, 43000, 44000, 45000, 46000, 47000, 50000, 52000, 53000, 54000, 55000, 56000, 57000]
+load model:  1000 1000mappo_single_1
+model/boxing_v1/selfplay/noise/1000mappo_single_1
+# of episode :0
+exploiter avg. score: 0.0, avg. epi length: 1784
+# of episode :20
+exploiter avg. score: -37.25, avg. epi length: 1775
+# of episode :40
+exploiter avg. score: -24.7, avg. epi length: 1749
+# of episode :60
+exploiter avg. score: -27.8, avg. epi length: 1742
+# of episode :80
+exploiter avg. score: -21.85, avg. epi length: 1784
+# of episode :100
+exploiter avg. score: -34.45, avg. epi length: 1777
+# of episode :120
+exploiter avg. score: -29.9, avg. epi length: 1759
+# of episode :140
+exploiter avg. score: -29.45, avg. epi length: 1784
+# of episode :160
+exploiter avg. score: -25.55, avg. epi length: 1784
+# of episode :180
+exploiter avg. score: -21.0, avg. epi length: 1784
+# of episode :200
+exploiter avg. score: -4.95, avg. epi length: 1784
+# of episode :220
+exploiter avg. score: -3.35, avg. epi length: 1784
+# of episode :240
+exploiter avg. score: -12.0, avg. epi length: 1784
+# of episode :260
+exploiter avg. score: -9.95, avg. epi length: 1784
+# of episode :280
+exploiter avg. score: -9.8, avg. epi length: 1784
+# of episode :300
+exploiter avg. score: -9.7, avg. epi length: 1784
+# of episode :320
+exploiter avg. score: -12.45, avg. epi length: 1784
+# of episode :340
+exploiter avg. score: -13.2, avg. epi length: 1784
+# of episode :360
+exploiter avg. score: -1.9, avg. epi length: 1784
+# of episode :380
+exploiter avg. score: -6.3, avg. epi length: 1784
+# of episode :400
+exploiter avg. score: -5.2, avg. epi length: 1784
+# of episode :420
+exploiter avg. score: -11.35, avg. epi length: 1784
+# of episode :440
+exploiter avg. score: -11.05, avg. epi length: 1784
+# of episode :460
+exploiter avg. score: -8.55, avg. epi length: 1784
+# of episode :480
+exploiter avg. score: -17.1, avg. epi length: 1784
+# of episode :500
+exploiter avg. score: -17.5, avg. epi length: 1784
+# of episode :520
+exploiter avg. score: -20.4, avg. epi length: 1784
+# of episode :540
+exploiter avg. score: -14.65, avg. epi length: 1784
+# of episode :560
+exploiter avg. score: -17.65, avg. epi length: 1778
+# of episode :580
+exploiter avg. score: -12.15, avg. epi length: 1784
+# of episode :600
+exploiter avg. score: -2.65, avg. epi length: 1784
+# of episode :620
+exploiter avg. score: -10.8, avg. epi length: 1784
+# of episode :640
+exploiter avg. score: -5.7, avg. epi length: 1784
+# of episode :660
+exploiter avg. score: 4.55, avg. epi length: 1784
+# of episode :680
+exploiter avg. score: 10.05, avg. epi length: 1784
+# of episode :700
+exploiter avg. score: 35.4, avg. epi length: 1692
+# of episode :720
+exploiter avg. score: 12.65, avg. epi length: 1784
+# of episode :740
+exploiter avg. score: 4.4, avg. epi length: 1784
+# of episode :760
+exploiter avg. score: 7.15, avg. epi length: 1784
+# of episode :780
+exploiter avg. score: -5.05, avg. epi length: 1784
+# of episode :800
+exploiter avg. score: -0.1, avg. epi length: 1784
+# of episode :820
+exploiter avg. score: -5.65, avg. epi length: 1784
+# of episode :840
+exploiter avg. score: -0.55, avg. epi length: 1784
+# of episode :860
+exploiter avg. score: 5.75, avg. epi length: 1784
+# of episode :880
+exploiter avg. score: 10.9, avg. epi length: 1722
+# of episode :900
+exploiter avg. score: 4.05, avg. epi length: 1784
+# of episode :920
+exploiter avg. score: 7.45, avg. epi length: 1769
+# of episode :940
+exploiter avg. score: 11.35, avg. epi length: 1780
+# of episode :960
+exploiter avg. score: 2.85, avg. epi length: 1784
+# of episode :980
+exploiter avg. score: 20.75, avg. epi length: 1766
+Final score: 20.75, episode length: 1766
+load model:  3000 3000mappo_single_1
+model/boxing_v1/selfplay/noise/3000mappo_single_1
+# of episode :0
+exploiter avg. score: -3.45, avg. epi length: 1649
+# of episode :20
+exploiter avg. score: -12.35, avg. epi length: 1770
+# of episode :40
+exploiter avg. score: -12.7, avg. epi length: 1759
+# of episode :60
+exploiter avg. score: -6.15, avg. epi length: 1770
+# of episode :80
+exploiter avg. score: 7.6, avg. epi length: 1784
+# of episode :100
+exploiter avg. score: -2.55, avg. epi length: 1729
+# of episode :120
+exploiter avg. score: -19.4, avg. epi length: 1784
+# of episode :140
+exploiter avg. score: -13.55, avg. epi length: 1784
+# of episode :160
+exploiter avg. score: -17.85, avg. epi length: 1784
+# of episode :180
+exploiter avg. score: -13.1, avg. epi length: 1784
+# of episode :200
+exploiter avg. score: -17.15, avg. epi length: 1784
+# of episode :220
+exploiter avg. score: -24.2, avg. epi length: 1750
+# of episode :240
+exploiter avg. score: -14.45, avg. epi length: 1781
+# of episode :260
+exploiter avg. score: -2.1, avg. epi length: 1784
+# of episode :280
+exploiter avg. score: 7.6, avg. epi length: 1784
+# of episode :300
+exploiter avg. score: 5.0, avg. epi length: 1784
+# of episode :320
+exploiter avg. score: 12.45, avg. epi length: 1784
+# of episode :340
+exploiter avg. score: 0.95, avg. epi length: 1783
+# of episode :360
+exploiter avg. score: 9.15, avg. epi length: 1784
+# of episode :380
+exploiter avg. score: 34.6, avg. epi length: 1774
+# of episode :400
+exploiter avg. score: 53.4, avg. epi length: 1497
+# of episode :420
+exploiter avg. score: 59.5, avg. epi length: 1522
+# of episode :440
+exploiter avg. score: 61.2, avg. epi length: 1231
+# of episode :460
+exploiter avg. score: 61.55, avg. epi length: 1074
+# of episode :480
+exploiter avg. score: 62.5, avg. epi length: 980
+# of episode :500
+exploiter avg. score: 54.85, avg. epi length: 1196
+# of episode :520
+exploiter avg. score: 49.4, avg. epi length: 1058
+# of episode :540
+exploiter avg. score: 49.1, avg. epi length: 1088
+# of episode :560
+exploiter avg. score: 65.6, avg. epi length: 879
+# of episode :580
+exploiter avg. score: 65.85, avg. epi length: 910
+# of episode :600
+exploiter avg. score: 53.2, avg. epi length: 945
+# of episode :620
+exploiter avg. score: 61.65, avg. epi length: 1007
+# of episode :640
+exploiter avg. score: 65.4, avg. epi length: 952
+# of episode :660
+exploiter avg. score: 65.55, avg. epi length: 904
+# of episode :680
+exploiter avg. score: 72.05, avg. epi length: 1210
+# of episode :700
+exploiter avg. score: 64.75, avg. epi length: 1289
+# of episode :720
+exploiter avg. score: 57.4, avg. epi length: 1069
+# of episode :740
+exploiter avg. score: 63.65, avg. epi length: 897
+# of episode :760
+exploiter avg. score: 68.75, avg. epi length: 907
+# of episode :780
+exploiter avg. score: 74.65, avg. epi length: 763
+# of episode :800
+exploiter avg. score: 76.45, avg. epi length: 812
+# of episode :820
+exploiter avg. score: 67.45, avg. epi length: 833
+# of episode :840
+exploiter avg. score: 81.4, avg. epi length: 673
+# of episode :860
+exploiter avg. score: 68.3, avg. epi length: 794
+# of episode :880
+exploiter avg. score: 73.5, avg. epi length: 838
+# of episode :900
+exploiter avg. score: 80.7, avg. epi length: 714
+# of episode :920
+exploiter avg. score: 74.45, avg. epi length: 795
+# of episode :940
+exploiter avg. score: 70.8, avg. epi length: 909
+# of episode :960
+exploiter avg. score: 65.85, avg. epi length: 1048
+# of episode :980
+exploiter avg. score: 75.7, avg. epi length: 829
+Final score: 75.7, episode length: 829
+load model:  4000 4000mappo_single_1
+model/boxing_v1/selfplay/noise/4000mappo_single_1
+# of episode :0
+exploiter avg. score: -4.2, avg. epi length: 573
+# of episode :20
+exploiter avg. score: -59.95, avg. epi length: 1006
+# of episode :40
+exploiter avg. score: -53.7, avg. epi length: 1215
+# of episode :60
+exploiter avg. score: -54.65, avg. epi length: 1267
+# of episode :80
+exploiter avg. score: -50.75, avg. epi length: 1322
+# of episode :100
+exploiter avg. score: -36.35, avg. epi length: 1557
+# of episode :120
+exploiter avg. score: -42.05, avg. epi length: 1463
+# of episode :140
+exploiter avg. score: -31.5, avg. epi length: 1674
+# of episode :160
+exploiter avg. score: -33.1, avg. epi length: 1691
+# of episode :180
+exploiter avg. score: -28.7, avg. epi length: 1690
+# of episode :200
+exploiter avg. score: -21.2, avg. epi length: 1678
+# of episode :220
+exploiter avg. score: -27.2, avg. epi length: 1605
+# of episode :240
+exploiter avg. score: -14.85, avg. epi length: 1726
+# of episode :260
+exploiter avg. score: -19.85, avg. epi length: 1672
+# of episode :280
+exploiter avg. score: -28.1, avg. epi length: 1704
+# of episode :300
+exploiter avg. score: -17.15, avg. epi length: 1667
+# of episode :320
+exploiter avg. score: -19.9, avg. epi length: 1743
+# of episode :340
+exploiter avg. score: -13.95, avg. epi length: 1740
+# of episode :360
+exploiter avg. score: -16.3, avg. epi length: 1685
+# of episode :380
+exploiter avg. score: 1.2, avg. epi length: 1743
+# of episode :400
+exploiter avg. score: -20.0, avg. epi length: 1680
+# of episode :420
+exploiter avg. score: -15.3, avg. epi length: 1625
+# of episode :440
+exploiter avg. score: -6.7, avg. epi length: 1735
+# of episode :460
+exploiter avg. score: -10.7, avg. epi length: 1702
+# of episode :480
+exploiter avg. score: -4.4, avg. epi length: 1772
+# of episode :500
+exploiter avg. score: -15.95, avg. epi length: 1731
+# of episode :520
+exploiter avg. score: -6.5, avg. epi length: 1742
+# of episode :540
+exploiter avg. score: -16.15, avg. epi length: 1651
+# of episode :560
+exploiter avg. score: -9.0, avg. epi length: 1705
+# of episode :580
+exploiter avg. score: -20.55, avg. epi length: 1684
+# of episode :600
+exploiter avg. score: -2.75, avg. epi length: 1784
+# of episode :620
+exploiter avg. score: -9.7, avg. epi length: 1784
+# of episode :640
+exploiter avg. score: -13.0, avg. epi length: 1750
+# of episode :660
+exploiter avg. score: -13.5, avg. epi length: 1729
+# of episode :680
+exploiter avg. score: -25.8, avg. epi length: 1730
+# of episode :700
+exploiter avg. score: -26.5, avg. epi length: 1695
+# of episode :720
+exploiter avg. score: -17.5, avg. epi length: 1716
+# of episode :740
+exploiter avg. score: -8.15, avg. epi length: 1780
+# of episode :760
+exploiter avg. score: -18.85, avg. epi length: 1728
+# of episode :780
+exploiter avg. score: -11.0, avg. epi length: 1738
+# of episode :800
+exploiter avg. score: -14.9, avg. epi length: 1743
+# of episode :820
+exploiter avg. score: -11.1, avg. epi length: 1663
+# of episode :840
+exploiter avg. score: -20.35, avg. epi length: 1562
+# of episode :860
+exploiter avg. score: -12.6, avg. epi length: 1738
+# of episode :880
+exploiter avg. score: -16.85, avg. epi length: 1632
+# of episode :900
+exploiter avg. score: 5.65, avg. epi length: 1771
+# of episode :920
+exploiter avg. score: -6.9, avg. epi length: 1748
+# of episode :940
+exploiter avg. score: -5.0, avg. epi length: 1744
+# of episode :960
+exploiter avg. score: -14.95, avg. epi length: 1643
+# of episode :980
+exploiter avg. score: 10.9, avg. epi length: 1713
+Final score: 10.9, episode length: 1713
+load model:  5000 5000mappo_single_1
+model/boxing_v1/selfplay/noise/5000mappo_single_1
+# of episode :0
+exploiter avg. score: 2.85, avg. epi length: 1741
+# of episode :20
+exploiter avg. score: 52.9, avg. epi length: 1757
+# of episode :40
+exploiter avg. score: 61.25, avg. epi length: 1740
+# of episode :60
+exploiter avg. score: 66.7, avg. epi length: 1667
+# of episode :80
+exploiter avg. score: 63.0, avg. epi length: 1624
+# of episode :100
+exploiter avg. score: 70.85, avg. epi length: 1667
+# of episode :120
+exploiter avg. score: 64.8, avg. epi length: 1683
+# of episode :140
+exploiter avg. score: 62.55, avg. epi length: 1608
+# of episode :160
+exploiter avg. score: 60.7, avg. epi length: 1599
+# of episode :180
+exploiter avg. score: 67.05, avg. epi length: 1686
+# of episode :200
+exploiter avg. score: 48.95, avg. epi length: 1706
+# of episode :220
+exploiter avg. score: 54.6, avg. epi length: 1730
+# of episode :240
+exploiter avg. score: 52.15, avg. epi length: 1767
+# of episode :260
+exploiter avg. score: 53.0, avg. epi length: 1706
+# of episode :280
+exploiter avg. score: 53.7, avg. epi length: 1605
+# of episode :300
+exploiter avg. score: 55.95, avg. epi length: 1577
+# of episode :320
+exploiter avg. score: 60.55, avg. epi length: 1545
+# of episode :340
+exploiter avg. score: 62.55, avg. epi length: 1564
+# of episode :360
+exploiter avg. score: 69.45, avg. epi length: 1495
+# of episode :380
+exploiter avg. score: 72.9, avg. epi length: 1489
+# of episode :400
+exploiter avg. score: 74.8, avg. epi length: 1457
+# of episode :420
+exploiter avg. score: 65.55, avg. epi length: 1464
+# of episode :440
+exploiter avg. score: 75.45, avg. epi length: 1329
+# of episode :460
+exploiter avg. score: 71.3, avg. epi length: 1512
+# of episode :480
+exploiter avg. score: 66.35, avg. epi length: 1526
+# of episode :500
+exploiter avg. score: 76.5, avg. epi length: 1343
+# of episode :520
+exploiter avg. score: 68.65, avg. epi length: 1393
+# of episode :540
+exploiter avg. score: 67.15, avg. epi length: 1394
+# of episode :560
+exploiter avg. score: 60.45, avg. epi length: 1378
+# of episode :580
+exploiter avg. score: 78.4, avg. epi length: 1290
+# of episode :600
+exploiter avg. score: 72.2, avg. epi length: 1260
+# of episode :620
+exploiter avg. score: 73.45, avg. epi length: 1292
+# of episode :640
+exploiter avg. score: 61.15, avg. epi length: 1584
+# of episode :660
+exploiter avg. score: 71.6, avg. epi length: 1507
+# of episode :680
+exploiter avg. score: 74.5, avg. epi length: 1311
+# of episode :700
+exploiter avg. score: 79.75, avg. epi length: 1241
+# of episode :720
+exploiter avg. score: 79.85, avg. epi length: 1425
+# of episode :740
+exploiter avg. score: 84.1, avg. epi length: 1355
+# of episode :760
+exploiter avg. score: 85.15, avg. epi length: 1344
+# of episode :780
+exploiter avg. score: 81.4, avg. epi length: 1265
+# of episode :800
+exploiter avg. score: 77.9, avg. epi length: 1430
+# of episode :820
+exploiter avg. score: 86.1, avg. epi length: 1307
+# of episode :840
+exploiter avg. score: 82.1, avg. epi length: 1200
+# of episode :860
+exploiter avg. score: 90.45, avg. epi length: 1157
+# of episode :880
+exploiter avg. score: 87.3, avg. epi length: 1148
+# of episode :900
+exploiter avg. score: 92.85, avg. epi length: 1114
+# of episode :920
+exploiter avg. score: 90.85, avg. epi length: 1164
+# of episode :940
+exploiter avg. score: 85.95, avg. epi length: 1130
+# of episode :960
+exploiter avg. score: 88.2, avg. epi length: 1240
+# of episode :980
+exploiter avg. score: 84.3, avg. epi length: 1194
+Final score: 84.3, episode length: 1194
+load model:  6000 6000mappo_single_1
+model/boxing_v1/selfplay/noise/6000mappo_single_1
+# of episode :0
+exploiter avg. score: -0.05, avg. epi length: 1784
+# of episode :20
+exploiter avg. score: -17.7, avg. epi length: 1579
+# of episode :40
+exploiter avg. score: -2.15, avg. epi length: 1766
+# of episode :60
+exploiter avg. score: 1.85, avg. epi length: 1784
+# of episode :80
+exploiter avg. score: 9.45, avg. epi length: 1777
+# of episode :100
+exploiter avg. score: 6.3, avg. epi length: 1769
+# of episode :120
+exploiter avg. score: 5.8, avg. epi length: 1784
+# of episode :140
+exploiter avg. score: 2.15, avg. epi length: 1784
+# of episode :160
+exploiter avg. score: 8.9, avg. epi length: 1755
+# of episode :180
+exploiter avg. score: 5.45, avg. epi length: 1754
+# of episode :200
+exploiter avg. score: 7.95, avg. epi length: 1661
+# of episode :220
+exploiter avg. score: 12.5, avg. epi length: 1300
+# of episode :240
+exploiter avg. score: 22.55, avg. epi length: 1306
+# of episode :260
+exploiter avg. score: 32.65, avg. epi length: 1184
+# of episode :280
+exploiter avg. score: 31.75, avg. epi length: 1145
+# of episode :300
+exploiter avg. score: 38.9, avg. epi length: 1157
+# of episode :320
+exploiter avg. score: 55.9, avg. epi length: 1102
+# of episode :340
+exploiter avg. score: 58.35, avg. epi length: 1142
+# of episode :360
+exploiter avg. score: 53.65, avg. epi length: 1223
+# of episode :380
+exploiter avg. score: 60.45, avg. epi length: 1095
+# of episode :400
+exploiter avg. score: 61.8, avg. epi length: 1117
+# of episode :420
+exploiter avg. score: 67.25, avg. epi length: 1064
+# of episode :440
+exploiter avg. score: 56.2, avg. epi length: 1134
+# of episode :460
+exploiter avg. score: 57.25, avg. epi length: 1045
+# of episode :480
+exploiter avg. score: 54.55, avg. epi length: 1151
+# of episode :500
+exploiter avg. score: 30.7, avg. epi length: 1298
+# of episode :520
+exploiter avg. score: 56.1, avg. epi length: 1137
+# of episode :540
+exploiter avg. score: 56.8, avg. epi length: 1149
+# of episode :560
+exploiter avg. score: 55.6, avg. epi length: 1124
+# of episode :580
+exploiter avg. score: 47.55, avg. epi length: 1122
+# of episode :600
+exploiter avg. score: 45.35, avg. epi length: 1359
+# of episode :620
+exploiter avg. score: 50.95, avg. epi length: 1274
+# of episode :640
+exploiter avg. score: 43.2, avg. epi length: 1287
+# of episode :660
+exploiter avg. score: 43.4, avg. epi length: 1349
+# of episode :680
+exploiter avg. score: 48.4, avg. epi length: 1264
+# of episode :700
+exploiter avg. score: 53.25, avg. epi length: 1131
+# of episode :720
+exploiter avg. score: 61.1, avg. epi length: 1084
+# of episode :740
+exploiter avg. score: 57.35, avg. epi length: 1094
+# of episode :760
+exploiter avg. score: 69.75, avg. epi length: 949
+# of episode :780
+exploiter avg. score: 75.95, avg. epi length: 824
+# of episode :800
+exploiter avg. score: 72.05, avg. epi length: 951
+# of episode :820
+exploiter avg. score: 67.35, avg. epi length: 973
+# of episode :840
+exploiter avg. score: 65.3, avg. epi length: 1062
+# of episode :860
+exploiter avg. score: 60.55, avg. epi length: 1055
+# of episode :880
+exploiter avg. score: 62.55, avg. epi length: 1101
+# of episode :900
+exploiter avg. score: 62.2, avg. epi length: 989
+# of episode :920
+exploiter avg. score: 61.2, avg. epi length: 1004
+# of episode :940
+exploiter avg. score: 62.6, avg. epi length: 978
+# of episode :960
+exploiter avg. score: 49.3, avg. epi length: 995
+# of episode :980
+exploiter avg. score: 59.9, avg. epi length: 1055
+Final score: 59.9, episode length: 1055
+load model:  7000 7000mappo_single_1
+model/boxing_v1/selfplay/noise/7000mappo_single_1
+# of episode :0
+exploiter avg. score: -4.95, avg. epi length: 313
+# of episode :20
+exploiter avg. score: 9.05, avg. epi length: 869
+# of episode :40
+exploiter avg. score: 32.0, avg. epi length: 883
+# of episode :60
+exploiter avg. score: 44.95, avg. epi length: 861
+# of episode :80
+exploiter avg. score: 47.35, avg. epi length: 845
+# of episode :100
+exploiter avg. score: 52.55, avg. epi length: 740
+# of episode :120
+exploiter avg. score: 72.85, avg. epi length: 699
+# of episode :140
+exploiter avg. score: 84.85, avg. epi length: 533
+# of episode :160
+exploiter avg. score: 77.75, avg. epi length: 527
+# of episode :180
+exploiter avg. score: 69.5, avg. epi length: 627
+# of episode :200
+exploiter avg. score: 69.0, avg. epi length: 703
+# of episode :220
+exploiter avg. score: 71.5, avg. epi length: 711
+# of episode :240
+exploiter avg. score: 83.35, avg. epi length: 641
+# of episode :260
+exploiter avg. score: 70.8, avg. epi length: 909
+# of episode :280
+exploiter avg. score: 79.25, avg. epi length: 695
+# of episode :300
+exploiter avg. score: 84.85, avg. epi length: 522
+# of episode :320
+exploiter avg. score: 71.85, avg. epi length: 748
+# of episode :340
+exploiter avg. score: 61.15, avg. epi length: 811
+# of episode :360
+exploiter avg. score: 52.05, avg. epi length: 715
+# of episode :380
+exploiter avg. score: 38.65, avg. epi length: 785
+# of episode :400
+exploiter avg. score: 60.75, avg. epi length: 798
+# of episode :420
+exploiter avg. score: 57.15, avg. epi length: 792
+# of episode :440
+exploiter avg. score: 80.5, avg. epi length: 513
+# of episode :460
+exploiter avg. score: 81.2, avg. epi length: 510
+# of episode :480
+exploiter avg. score: 82.4, avg. epi length: 524
+# of episode :500
+exploiter avg. score: 85.25, avg. epi length: 454
+# of episode :520
+exploiter avg. score: 62.35, avg. epi length: 629
+# of episode :540
+exploiter avg. score: 59.5, avg. epi length: 692
+# of episode :560
+exploiter avg. score: 63.65, avg. epi length: 608
+# of episode :580
+exploiter avg. score: 56.45, avg. epi length: 659
+# of episode :600
+exploiter avg. score: 55.65, avg. epi length: 671
+# of episode :620
+exploiter avg. score: 62.95, avg. epi length: 678
+# of episode :640
+exploiter avg. score: 74.7, avg. epi length: 561
+# of episode :660
+exploiter avg. score: 43.65, avg. epi length: 634
+# of episode :680
+exploiter avg. score: 73.7, avg. epi length: 651
+# of episode :700
+exploiter avg. score: 85.45, avg. epi length: 534
+# of episode :720
+exploiter avg. score: 96.05, avg. epi length: 457
+# of episode :740
+exploiter avg. score: 72.15, avg. epi length: 533
+# of episode :760
+exploiter avg. score: 92.25, avg. epi length: 454
+# of episode :780
+exploiter avg. score: 92.5, avg. epi length: 443
+# of episode :800
+exploiter avg. score: 83.95, avg. epi length: 442
+# of episode :820
+exploiter avg. score: 38.85, avg. epi length: 593
+# of episode :840
+exploiter avg. score: 26.4, avg. epi length: 563
+# of episode :860
+exploiter avg. score: 27.3, avg. epi length: 806
+# of episode :880
+exploiter avg. score: 26.2, avg. epi length: 756
+# of episode :900
+exploiter avg. score: 54.6, avg. epi length: 733
+# of episode :920
+exploiter avg. score: 56.5, avg. epi length: 601
+# of episode :940
+exploiter avg. score: 51.9, avg. epi length: 603
+# of episode :960
+exploiter avg. score: 61.5, avg. epi length: 576
+# of episode :980
+exploiter avg. score: 75.45, avg. epi length: 553
+Final score: 75.45, episode length: 553
+load model:  8000 8000mappo_single_1
+model/boxing_v1/selfplay/noise/8000mappo_single_1
+# of episode :0
+exploiter avg. score: 4.05, avg. epi length: 560
+# of episode :20
+exploiter avg. score: 77.4, avg. epi length: 536
+# of episode :40
+exploiter avg. score: 86.5, avg. epi length: 490
+# of episode :60
+exploiter avg. score: 84.3, avg. epi length: 513
+# of episode :80
+exploiter avg. score: 79.9, avg. epi length: 493
+# of episode :100
+exploiter avg. score: 75.6, avg. epi length: 554
+# of episode :120
+exploiter avg. score: 62.05, avg. epi length: 583
+# of episode :140
+exploiter avg. score: 73.25, avg. epi length: 582
+# of episode :160
+exploiter avg. score: 79.2, avg. epi length: 625
+# of episode :180
+exploiter avg. score: 67.2, avg. epi length: 621
+# of episode :200
+exploiter avg. score: 70.35, avg. epi length: 777
+# of episode :220
+exploiter avg. score: 52.75, avg. epi length: 1205
+# of episode :240
+exploiter avg. score: 52.4, avg. epi length: 1031
+# of episode :260
+exploiter avg. score: 56.15, avg. epi length: 870
+# of episode :280
+exploiter avg. score: 80.35, avg. epi length: 622
+# of episode :300
+exploiter avg. score: 65.5, avg. epi length: 952
+# of episode :320
+exploiter avg. score: 44.85, avg. epi length: 1422
+# of episode :340
+exploiter avg. score: 72.75, avg. epi length: 805
+# of episode :360
+exploiter avg. score: 78.6, avg. epi length: 658
+# of episode :380
+exploiter avg. score: 86.2, avg. epi length: 520
+# of episode :400
+exploiter avg. score: 70.4, avg. epi length: 658
+# of episode :420
+exploiter avg. score: 80.15, avg. epi length: 558
+# of episode :440
+exploiter avg. score: 73.55, avg. epi length: 692
+# of episode :460
+exploiter avg. score: 72.05, avg. epi length: 699
+# of episode :480
+exploiter avg. score: 74.45, avg. epi length: 708
+# of episode :500
+exploiter avg. score: 76.95, avg. epi length: 640
+# of episode :520
+exploiter avg. score: 75.35, avg. epi length: 603
+# of episode :540
+exploiter avg. score: 69.85, avg. epi length: 610
+# of episode :560
+exploiter avg. score: 65.0, avg. epi length: 767
+# of episode :580
+exploiter avg. score: 70.0, avg. epi length: 644
+# of episode :600
+exploiter avg. score: 63.75, avg. epi length: 608
+# of episode :620
+exploiter avg. score: 73.25, avg. epi length: 566
+# of episode :640
+exploiter avg. score: 70.45, avg. epi length: 647
+# of episode :660
+exploiter avg. score: 79.45, avg. epi length: 593
+# of episode :680
+exploiter avg. score: 84.6, avg. epi length: 512
+# of episode :700
+exploiter avg. score: 88.45, avg. epi length: 491
+# of episode :720
+exploiter avg. score: 86.0, avg. epi length: 489
+# of episode :740
+exploiter avg. score: 80.3, avg. epi length: 537
+# of episode :760
+exploiter avg. score: 87.55, avg. epi length: 536
+# of episode :780
+exploiter avg. score: 88.7, avg. epi length: 483
+# of episode :800
+exploiter avg. score: 94.8, avg. epi length: 439
+# of episode :820
+exploiter avg. score: 95.7, avg. epi length: 429
+# of episode :840
+exploiter avg. score: 91.85, avg. epi length: 453
+# of episode :860
+exploiter avg. score: 73.05, avg. epi length: 752
+# of episode :880
+exploiter avg. score: 77.7, avg. epi length: 725
+# of episode :900
+exploiter avg. score: 80.05, avg. epi length: 595
+# of episode :920
+exploiter avg. score: 79.95, avg. epi length: 557
+# of episode :940
+exploiter avg. score: 92.55, avg. epi length: 426
+# of episode :960
+exploiter avg. score: 89.0, avg. epi length: 519
+# of episode :980
+exploiter avg. score: 82.8, avg. epi length: 502
+Final score: 82.8, episode length: 502
+load model:  9000 9000mappo_single_1
+model/boxing_v1/selfplay/noise/9000mappo_single_1
+# of episode :0
+exploiter avg. score: -2.6, avg. epi length: 1240
+# of episode :20
+exploiter avg. score: 12.65, avg. epi length: 1687
+# of episode :40
+exploiter avg. score: 50.9, avg. epi length: 1255
+# of episode :60
+exploiter avg. score: 62.2, avg. epi length: 1303
+# of episode :80
+exploiter avg. score: 58.3, avg. epi length: 953
+# of episode :100
+exploiter avg. score: 67.35, avg. epi length: 878
+# of episode :120
+exploiter avg. score: 82.9, avg. epi length: 838
+# of episode :140
+exploiter avg. score: 80.4, avg. epi length: 1046
+# of episode :160
+exploiter avg. score: 69.2, avg. epi length: 1017
+# of episode :180
+exploiter avg. score: 84.95, avg. epi length: 661
+# of episode :200
+exploiter avg. score: 84.45, avg. epi length: 734
+# of episode :220
+exploiter avg. score: 65.1, avg. epi length: 831
+# of episode :240
+exploiter avg. score: 65.4, avg. epi length: 740
+# of episode :260
+exploiter avg. score: 73.7, avg. epi length: 727
+# of episode :280
+exploiter avg. score: 65.7, avg. epi length: 801
+# of episode :300
+exploiter avg. score: 69.85, avg. epi length: 671
+# of episode :320
+exploiter avg. score: 71.2, avg. epi length: 807
+# of episode :340
+exploiter avg. score: 76.8, avg. epi length: 813
+# of episode :360
+exploiter avg. score: 83.55, avg. epi length: 605
+# of episode :380
+exploiter avg. score: 84.5, avg. epi length: 539
+# of episode :400
+exploiter avg. score: 73.3, avg. epi length: 743
+# of episode :420
+exploiter avg. score: 74.6, avg. epi length: 571
+# of episode :440
+exploiter avg. score: 53.55, avg. epi length: 836
+# of episode :460
+exploiter avg. score: 90.35, avg. epi length: 426
+# of episode :480
+exploiter avg. score: 83.1, avg. epi length: 592
+# of episode :500
+exploiter avg. score: 59.85, avg. epi length: 935
+# of episode :520
+exploiter avg. score: 73.75, avg. epi length: 717
+# of episode :540
+exploiter avg. score: 80.3, avg. epi length: 628
+# of episode :560
+exploiter avg. score: 84.75, avg. epi length: 664
+# of episode :580
+exploiter avg. score: 73.55, avg. epi length: 1122
+# of episode :600
+exploiter avg. score: 85.35, avg. epi length: 828
+# of episode :620
+exploiter avg. score: 90.45, avg. epi length: 594
+# of episode :640
+exploiter avg. score: 87.35, avg. epi length: 726
+# of episode :660
+exploiter avg. score: 76.55, avg. epi length: 1049
+# of episode :680
+exploiter avg. score: 90.45, avg. epi length: 616
+# of episode :700
+exploiter avg. score: 85.2, avg. epi length: 636
+# of episode :720
+exploiter avg. score: 90.1, avg. epi length: 484
+# of episode :740
+exploiter avg. score: 77.1, avg. epi length: 696
+# of episode :760
+exploiter avg. score: 50.45, avg. epi length: 1547
+# of episode :780
+exploiter avg. score: 82.55, avg. epi length: 818
+# of episode :800
+exploiter avg. score: 89.0, avg. epi length: 635
+# of episode :820
+exploiter avg. score: 82.45, avg. epi length: 643
+# of episode :840
+exploiter avg. score: 75.85, avg. epi length: 932
+# of episode :860
+exploiter avg. score: 75.0, avg. epi length: 779
+# of episode :880
+exploiter avg. score: 78.8, avg. epi length: 888
+# of episode :900
+exploiter avg. score: 79.5, avg. epi length: 910
+# of episode :920
+exploiter avg. score: 85.5, avg. epi length: 695
+# of episode :940
+exploiter avg. score: 78.2, avg. epi length: 850
+# of episode :960
+exploiter avg. score: 83.95, avg. epi length: 538
+# of episode :980
+exploiter avg. score: 78.05, avg. epi length: 720
+Final score: 78.05, episode length: 720
+load model:  10000 10000mappo_single_1
+model/boxing_v1/selfplay/noise/10000mappo_single_1
+# of episode :0
+exploiter avg. score: 5.0, avg. epi length: 260
+# of episode :20
+exploiter avg. score: 33.9, avg. epi length: 802
+# of episode :40
+exploiter avg. score: 6.3, avg. epi length: 1049
+# of episode :60
+exploiter avg. score: 24.65, avg. epi length: 936
+# of episode :80
+exploiter avg. score: 64.85, avg. epi length: 655
+# of episode :100
+exploiter avg. score: 35.45, avg. epi length: 581
+# of episode :120
+exploiter avg. score: 43.05, avg. epi length: 677
+# of episode :140
+exploiter avg. score: 41.05, avg. epi length: 494
+# of episode :160
+exploiter avg. score: 47.8, avg. epi length: 655
+# of episode :180
+exploiter avg. score: 46.4, avg. epi length: 576
+# of episode :200
+exploiter avg. score: 55.15, avg. epi length: 935
+# of episode :220
+exploiter avg. score: 62.65, avg. epi length: 754
+# of episode :240
+exploiter avg. score: 75.0, avg. epi length: 386
+# of episode :260
+exploiter avg. score: 53.7, avg. epi length: 602
+# of episode :280
+exploiter avg. score: 20.3, avg. epi length: 774
+# of episode :300
+exploiter avg. score: -5.95, avg. epi length: 745
+# of episode :320
+exploiter avg. score: 55.4, avg. epi length: 646
+# of episode :340
+exploiter avg. score: 56.0, avg. epi length: 569
+# of episode :360
+exploiter avg. score: 36.8, avg. epi length: 701
+# of episode :380
+exploiter avg. score: 50.2, avg. epi length: 727
+# of episode :400
+exploiter avg. score: 28.55, avg. epi length: 931
+# of episode :420
+exploiter avg. score: 44.55, avg. epi length: 1044
+# of episode :440
+exploiter avg. score: 19.4, avg. epi length: 926
+# of episode :460
+exploiter avg. score: 5.5, avg. epi length: 1045
+# of episode :480
+exploiter avg. score: 6.15, avg. epi length: 1092
+# of episode :500
+exploiter avg. score: 30.75, avg. epi length: 931
+# of episode :520
+exploiter avg. score: 35.4, avg. epi length: 871
+# of episode :540
+exploiter avg. score: -5.0, avg. epi length: 671
+# of episode :560
+exploiter avg. score: 6.3, avg. epi length: 591
+# of episode :580
+exploiter avg. score: 33.45, avg. epi length: 534
+# of episode :600
+exploiter avg. score: 60.55, avg. epi length: 511
+# of episode :620
+exploiter avg. score: 48.4, avg. epi length: 412
+# of episode :640
+exploiter avg. score: 53.95, avg. epi length: 422
+# of episode :660
+exploiter avg. score: 30.5, avg. epi length: 493
+# of episode :680
+exploiter avg. score: 30.0, avg. epi length: 582
+# of episode :700
+exploiter avg. score: 8.25, avg. epi length: 645
+# of episode :720
+exploiter avg. score: 14.3, avg. epi length: 595
+# of episode :740
+exploiter avg. score: 20.3, avg. epi length: 502
+# of episode :760
+exploiter avg. score: 25.75, avg. epi length: 726
+# of episode :780
+exploiter avg. score: -5.35, avg. epi length: 886
+# of episode :800
+exploiter avg. score: 5.15, avg. epi length: 917
+# of episode :820
+exploiter avg. score: 22.85, avg. epi length: 767
+# of episode :840
+exploiter avg. score: 32.85, avg. epi length: 630
+# of episode :860
+exploiter avg. score: 49.35, avg. epi length: 666
+# of episode :880
+exploiter avg. score: 58.1, avg. epi length: 574
+# of episode :900
+exploiter avg. score: 49.1, avg. epi length: 732
+# of episode :920
+exploiter avg. score: 62.0, avg. epi length: 659
+# of episode :940
+exploiter avg. score: 67.45, avg. epi length: 443
+# of episode :960
+exploiter avg. score: 66.1, avg. epi length: 534
+# of episode :980
+exploiter avg. score: 66.55, avg. epi length: 500
+Final score: 66.55, episode length: 500
+load model:  11000 11000mappo_single_1
+model/boxing_v1/selfplay/noise/11000mappo_single_1
+# of episode :0
+exploiter avg. score: 0.6, avg. epi length: 661
+# of episode :20
+exploiter avg. score: -81.65, avg. epi length: 469
+# of episode :40
+exploiter avg. score: -67.9, avg. epi length: 511
+# of episode :60
+exploiter avg. score: -11.0, avg. epi length: 846
+# of episode :80
+exploiter avg. score: -20.4, avg. epi length: 710
+# of episode :100
+exploiter avg. score: 13.7, avg. epi length: 650
+# of episode :120
+exploiter avg. score: 23.05, avg. epi length: 675
+# of episode :140
+exploiter avg. score: 51.15, avg. epi length: 696
+# of episode :160
+exploiter avg. score: 39.6, avg. epi length: 684
+# of episode :180
+exploiter avg. score: 44.75, avg. epi length: 669
+# of episode :200
+exploiter avg. score: 36.35, avg. epi length: 619
+# of episode :220
+exploiter avg. score: 32.6, avg. epi length: 568
+# of episode :240
+exploiter avg. score: 68.5, avg. epi length: 621
+# of episode :260
+exploiter avg. score: 38.85, avg. epi length: 697
+# of episode :280
+exploiter avg. score: 25.25, avg. epi length: 642
+# of episode :300
+exploiter avg. score: 17.4, avg. epi length: 721
+# of episode :320
+exploiter avg. score: 36.85, avg. epi length: 682
+# of episode :340
+exploiter avg. score: 34.2, avg. epi length: 635
+# of episode :360
+exploiter avg. score: 49.25, avg. epi length: 518
+# of episode :380
+exploiter avg. score: 58.9, avg. epi length: 627
+# of episode :400
+exploiter avg. score: 71.8, avg. epi length: 528
+# of episode :420
+exploiter avg. score: 54.75, avg. epi length: 606
+# of episode :440
+exploiter avg. score: 84.2, avg. epi length: 565
+# of episode :460
+exploiter avg. score: 81.25, avg. epi length: 697
+# of episode :480
+exploiter avg. score: 86.7, avg. epi length: 857
+# of episode :500
+exploiter avg. score: 82.1, avg. epi length: 763
+# of episode :520
+exploiter avg. score: 64.0, avg. epi length: 535
+# of episode :540
+exploiter avg. score: 54.0, avg. epi length: 761
+# of episode :560
+exploiter avg. score: 52.8, avg. epi length: 951
+# of episode :580
+exploiter avg. score: 72.55, avg. epi length: 681
+# of episode :600
+exploiter avg. score: 80.55, avg. epi length: 707
+# of episode :620
+exploiter avg. score: 75.5, avg. epi length: 895
+# of episode :640
+exploiter avg. score: 66.8, avg. epi length: 672
+# of episode :660
+exploiter avg. score: 72.95, avg. epi length: 690
+# of episode :680
+exploiter avg. score: 75.65, avg. epi length: 809
+# of episode :700
+exploiter avg. score: 68.45, avg. epi length: 1113
+# of episode :720
+exploiter avg. score: 82.35, avg. epi length: 793
+# of episode :740
+exploiter avg. score: 67.3, avg. epi length: 745
+# of episode :760
+exploiter avg. score: 78.7, avg. epi length: 525
+# of episode :780
+exploiter avg. score: 92.8, avg. epi length: 420
+# of episode :800
+exploiter avg. score: 47.3, avg. epi length: 474
+# of episode :820
+exploiter avg. score: 79.4, avg. epi length: 406
+# of episode :840
+exploiter avg. score: 66.6, avg. epi length: 519
+# of episode :860
+exploiter avg. score: 74.2, avg. epi length: 561
+# of episode :880
+exploiter avg. score: 39.6, avg. epi length: 763
+# of episode :900
+exploiter avg. score: 44.8, avg. epi length: 756
+# of episode :920
+exploiter avg. score: 57.25, avg. epi length: 667
+# of episode :940
+exploiter avg. score: 35.45, avg. epi length: 563
+# of episode :960
+exploiter avg. score: 46.4, avg. epi length: 552
+# of episode :980
+exploiter avg. score: 48.35, avg. epi length: 700
+Final score: 48.35, episode length: 700
+load model:  12000 12000mappo_single_1
+model/boxing_v1/selfplay/noise/12000mappo_single_1
+# of episode :0
+exploiter avg. score: 3.05, avg. epi length: 718
+# of episode :20
+exploiter avg. score: -0.15, avg. epi length: 814
+# of episode :40
+exploiter avg. score: 16.75, avg. epi length: 783
+# of episode :60
+exploiter avg. score: 39.45, avg. epi length: 866
+# of episode :80
+exploiter avg. score: 15.15, avg. epi length: 715
+# of episode :100
+exploiter avg. score: 70.05, avg. epi length: 574
+# of episode :120
+exploiter avg. score: 63.8, avg. epi length: 569
+# of episode :140
+exploiter avg. score: 53.15, avg. epi length: 598
+# of episode :160
+exploiter avg. score: 35.25, avg. epi length: 633
+# of episode :180
+exploiter avg. score: 40.6, avg. epi length: 575
+# of episode :200
+exploiter avg. score: 36.85, avg. epi length: 481
+# of episode :220
+exploiter avg. score: 21.9, avg. epi length: 611
+# of episode :240
+exploiter avg. score: 43.65, avg. epi length: 554
+# of episode :260
+exploiter avg. score: 42.15, avg. epi length: 576
+# of episode :280
+exploiter avg. score: 40.0, avg. epi length: 653
+# of episode :300
+exploiter avg. score: 37.1, avg. epi length: 853
+# of episode :320
+exploiter avg. score: 82.3, avg. epi length: 685
+# of episode :340
+exploiter avg. score: 74.1, avg. epi length: 724
+# of episode :360
+exploiter avg. score: 9.85, avg. epi length: 562
+# of episode :380
+exploiter avg. score: 2.1, avg. epi length: 631
+# of episode :400
+exploiter avg. score: -33.3, avg. epi length: 1230
+# of episode :420
+exploiter avg. score: -3.95, avg. epi length: 1572
+# of episode :440
+exploiter avg. score: 34.45, avg. epi length: 1383
+# of episode :460
+exploiter avg. score: 61.8, avg. epi length: 810
+# of episode :480
+exploiter avg. score: 40.0, avg. epi length: 537
+# of episode :500
+exploiter avg. score: 61.4, avg. epi length: 552
+# of episode :520
+exploiter avg. score: 69.15, avg. epi length: 523
+# of episode :540
+exploiter avg. score: 45.25, avg. epi length: 600
+# of episode :560
+exploiter avg. score: 46.35, avg. epi length: 655
+# of episode :580
+exploiter avg. score: 50.75, avg. epi length: 711
+# of episode :600
+exploiter avg. score: 37.7, avg. epi length: 615
+# of episode :620
+exploiter avg. score: 73.85, avg. epi length: 495
+# of episode :640
+exploiter avg. score: 68.9, avg. epi length: 481
+# of episode :660
+exploiter avg. score: 63.3, avg. epi length: 444
+# of episode :680
+exploiter avg. score: 62.45, avg. epi length: 481
+# of episode :700
+exploiter avg. score: 60.8, avg. epi length: 478
+# of episode :720
+exploiter avg. score: 68.1, avg. epi length: 513
+# of episode :740
+exploiter avg. score: 77.55, avg. epi length: 546
+# of episode :760
+exploiter avg. score: 60.55, avg. epi length: 573
+# of episode :780
+exploiter avg. score: 81.55, avg. epi length: 602
+# of episode :800
+exploiter avg. score: 60.5, avg. epi length: 534
+# of episode :820
+exploiter avg. score: 45.6, avg. epi length: 717
+# of episode :840
+exploiter avg. score: 87.05, avg. epi length: 469
+# of episode :860
+exploiter avg. score: 33.8, avg. epi length: 548
+# of episode :880
+exploiter avg. score: 37.55, avg. epi length: 661
+# of episode :900
+exploiter avg. score: -44.65, avg. epi length: 655
+# of episode :920
+exploiter avg. score: -37.3, avg. epi length: 771
+# of episode :940
+exploiter avg. score: 10.0, avg. epi length: 841
+# of episode :960
+exploiter avg. score: 70.55, avg. epi length: 428
+# of episode :980
+exploiter avg. score: 87.4, avg. epi length: 427
+Final score: 87.4, episode length: 427
+load model:  13000 13000mappo_single_1
+model/boxing_v1/selfplay/noise/13000mappo_single_1
+# of episode :0
+exploiter avg. score: -3.9, avg. epi length: 631
+# of episode :20
+exploiter avg. score: 42.35, avg. epi length: 627
+# of episode :40
+exploiter avg. score: 44.8, avg. epi length: 706
+# of episode :60
+exploiter avg. score: 50.95, avg. epi length: 396
+# of episode :80
+exploiter avg. score: 47.6, avg. epi length: 424
+# of episode :100
+exploiter avg. score: 71.3, avg. epi length: 368
+# of episode :120
+exploiter avg. score: 74.0, avg. epi length: 338
+# of episode :140
+exploiter avg. score: 89.0, avg. epi length: 414
+# of episode :160
+exploiter avg. score: 61.1, avg. epi length: 348
+# of episode :180
+exploiter avg. score: 72.4, avg. epi length: 421
+# of episode :200
+exploiter avg. score: 44.25, avg. epi length: 364
+# of episode :220
+exploiter avg. score: 57.2, avg. epi length: 384
+# of episode :240
+exploiter avg. score: 42.4, avg. epi length: 424
+# of episode :260
+exploiter avg. score: 15.35, avg. epi length: 323
+# of episode :280
+exploiter avg. score: 66.6, avg. epi length: 411
+# of episode :300
+exploiter avg. score: 24.0, avg. epi length: 386
+# of episode :320
+exploiter avg. score: 22.85, avg. epi length: 410
+# of episode :340
+exploiter avg. score: 9.65, avg. epi length: 429
+# of episode :360
+exploiter avg. score: 40.6, avg. epi length: 478
+# of episode :380
+exploiter avg. score: 3.0, avg. epi length: 516
+# of episode :400
+exploiter avg. score: -7.0, avg. epi length: 587
+# of episode :420
+exploiter avg. score: 32.0, avg. epi length: 481
+# of episode :440
+exploiter avg. score: -75.65, avg. epi length: 509
+# of episode :460
+exploiter avg. score: -85.2, avg. epi length: 412
+# of episode :480
+exploiter avg. score: -64.55, avg. epi length: 446
+# of episode :500
+exploiter avg. score: -45.75, avg. epi length: 499
+# of episode :520
+exploiter avg. score: -7.4, avg. epi length: 563
+# of episode :540
+exploiter avg. score: -5.45, avg. epi length: 665
+# of episode :560
+exploiter avg. score: -16.3, avg. epi length: 767
+# of episode :580
+exploiter avg. score: -8.45, avg. epi length: 674
+# of episode :600
+exploiter avg. score: -38.9, avg. epi length: 575
+# of episode :620
+exploiter avg. score: -0.7, avg. epi length: 523
+# of episode :640
+exploiter avg. score: -2.8, avg. epi length: 476
+# of episode :660
+exploiter avg. score: -48.55, avg. epi length: 565
+# of episode :680
+exploiter avg. score: 21.1, avg. epi length: 658
+# of episode :700
+exploiter avg. score: 24.65, avg. epi length: 529
+# of episode :720
+exploiter avg. score: 44.9, avg. epi length: 404
+# of episode :740
+exploiter avg. score: 71.5, avg. epi length: 404
+# of episode :760
+exploiter avg. score: 40.65, avg. epi length: 469
+# of episode :780
+exploiter avg. score: 61.8, avg. epi length: 515
+# of episode :800
+exploiter avg. score: 54.85, avg. epi length: 543
+# of episode :820
+exploiter avg. score: 16.6, avg. epi length: 665
+# of episode :840
+exploiter avg. score: 15.8, avg. epi length: 767
+# of episode :860
+exploiter avg. score: 14.55, avg. epi length: 618
+# of episode :880
+exploiter avg. score: 15.5, avg. epi length: 668
+# of episode :900
+exploiter avg. score: 7.55, avg. epi length: 809
+# of episode :920
+exploiter avg. score: 18.95, avg. epi length: 836
+# of episode :940
+exploiter avg. score: -26.45, avg. epi length: 700
+# of episode :960
+exploiter avg. score: 1.65, avg. epi length: 684
+# of episode :980
+exploiter avg. score: 19.15, avg. epi length: 644
+Final score: 19.15, episode length: 644
+load model:  14000 14000mappo_single_1
+model/boxing_v1/selfplay/noise/14000mappo_single_1
+# of episode :0
+exploiter avg. score: -1.4, avg. epi length: 768
+# of episode :20
+exploiter avg. score: -50.3, avg. epi length: 770
+# of episode :40
+exploiter avg. score: -40.2, avg. epi length: 1021
+# of episode :60
+exploiter avg. score: -49.8, avg. epi length: 1037
+# of episode :80
+exploiter avg. score: -43.5, avg. epi length: 1183
+# of episode :100
+exploiter avg. score: -48.8, avg. epi length: 1030
+# of episode :120
+exploiter avg. score: -42.65, avg. epi length: 1221
+# of episode :140
+exploiter avg. score: -14.25, avg. epi length: 1642
+# of episode :160
+exploiter avg. score: -27.45, avg. epi length: 1403
+# of episode :180
+exploiter avg. score: -35.0, avg. epi length: 1271
+# of episode :200
+exploiter avg. score: -13.2, avg. epi length: 1496
+# of episode :220
+exploiter avg. score: -12.9, avg. epi length: 1695
+# of episode :240
+exploiter avg. score: -35.0, avg. epi length: 1695
+# of episode :260
+exploiter avg. score: 2.85, avg. epi length: 1666
+# of episode :280
+exploiter avg. score: -31.9, avg. epi length: 860
+# of episode :300
+exploiter avg. score: -33.65, avg. epi length: 674
+# of episode :320
+exploiter avg. score: -61.05, avg. epi length: 591
+# of episode :340
+exploiter avg. score: -15.8, avg. epi length: 666
+# of episode :360
+exploiter avg. score: -32.15, avg. epi length: 778
+# of episode :380
+exploiter avg. score: -57.0, avg. epi length: 674
+# of episode :400
+exploiter avg. score: -6.65, avg. epi length: 974
+# of episode :420
+exploiter avg. score: 4.4, avg. epi length: 1089
+# of episode :440
+exploiter avg. score: -3.05, avg. epi length: 1031
+# of episode :460
+exploiter avg. score: -25.8, avg. epi length: 936
+# of episode :480
+exploiter avg. score: -31.3, avg. epi length: 876
+# of episode :500
+exploiter avg. score: -11.85, avg. epi length: 879
+# of episode :520
+exploiter avg. score: 0.95, avg. epi length: 987
+# of episode :540
+exploiter avg. score: 14.35, avg. epi length: 1379
+# of episode :560
+exploiter avg. score: -9.65, avg. epi length: 1352
+# of episode :580
+exploiter avg. score: -47.5, avg. epi length: 938
+# of episode :600
+exploiter avg. score: 33.3, avg. epi length: 1060
+# of episode :620
+exploiter avg. score: 29.85, avg. epi length: 750
+# of episode :640
+exploiter avg. score: 29.4, avg. epi length: 600
+# of episode :660
+exploiter avg. score: 45.95, avg. epi length: 795
+# of episode :680
+exploiter avg. score: 57.45, avg. epi length: 624
+# of episode :700
+exploiter avg. score: 60.9, avg. epi length: 522
+# of episode :720
+exploiter avg. score: 51.2, avg. epi length: 645
+# of episode :740
+exploiter avg. score: 58.05, avg. epi length: 712
+# of episode :760
+exploiter avg. score: 56.65, avg. epi length: 718
+# of episode :780
+exploiter avg. score: 56.8, avg. epi length: 591
+# of episode :800
+exploiter avg. score: 73.4, avg. epi length: 610
+# of episode :820
+exploiter avg. score: 78.35, avg. epi length: 557
+# of episode :840
+exploiter avg. score: 45.15, avg. epi length: 527
+# of episode :860
+exploiter avg. score: 51.85, avg. epi length: 503
+# of episode :880
+exploiter avg. score: 58.85, avg. epi length: 527
+# of episode :900
+exploiter avg. score: 22.15, avg. epi length: 729
+# of episode :920
+exploiter avg. score: 79.35, avg. epi length: 625
+# of episode :940
+exploiter avg. score: 63.5, avg. epi length: 528
+# of episode :960
+exploiter avg. score: 74.15, avg. epi length: 553
+# of episode :980
+exploiter avg. score: 51.0, avg. epi length: 558
+Final score: 51.0, episode length: 558
+load model:  15000 15000mappo_single_1
+model/boxing_v1/selfplay/noise/15000mappo_single_1
+# of episode :0
+exploiter avg. score: 3.25, avg. epi length: 945
+# of episode :20
+exploiter avg. score: 84.45, avg. epi length: 382
+# of episode :40
+exploiter avg. score: 68.35, avg. epi length: 558
+# of episode :60
+exploiter avg. score: 32.25, avg. epi length: 757
+# of episode :80
+exploiter avg. score: 68.95, avg. epi length: 539
+# of episode :100
+exploiter avg. score: 91.75, avg. epi length: 374
+# of episode :120
+exploiter avg. score: 86.95, avg. epi length: 337
+# of episode :140
+exploiter avg. score: 69.6, avg. epi length: 424
+# of episode :160
+exploiter avg. score: 60.85, avg. epi length: 500
+# of episode :180
+exploiter avg. score: 79.95, avg. epi length: 477
+# of episode :200
+exploiter avg. score: 87.9, avg. epi length: 447
+# of episode :220
+exploiter avg. score: 65.95, avg. epi length: 514
+# of episode :240
+exploiter avg. score: 88.0, avg. epi length: 515
+# of episode :260
+exploiter avg. score: 63.5, avg. epi length: 521
+# of episode :280
+exploiter avg. score: 80.4, avg. epi length: 474
+# of episode :300
+exploiter avg. score: 93.8, avg. epi length: 376
+# of episode :320
+exploiter avg. score: 77.5, avg. epi length: 518
+# of episode :340
+exploiter avg. score: 59.1, avg. epi length: 528
+# of episode :360
+exploiter avg. score: 71.8, avg. epi length: 508
+# of episode :380
+exploiter avg. score: 90.2, avg. epi length: 538
+# of episode :400
+exploiter avg. score: 95.35, avg. epi length: 382
+# of episode :420
+exploiter avg. score: 82.35, avg. epi length: 498
+# of episode :440
+exploiter avg. score: 90.35, avg. epi length: 414
+# of episode :460
+exploiter avg. score: 90.7, avg. epi length: 453
+# of episode :480
+exploiter avg. score: 80.9, avg. epi length: 435
+# of episode :500
+exploiter avg. score: 92.6, avg. epi length: 367
+# of episode :520
+exploiter avg. score: 80.5, avg. epi length: 384
+# of episode :540
+exploiter avg. score: 88.1, avg. epi length: 440
+# of episode :560
+exploiter avg. score: 82.75, avg. epi length: 406
+# of episode :580
+exploiter avg. score: 94.0, avg. epi length: 367
+# of episode :600
+exploiter avg. score: 93.05, avg. epi length: 367
+# of episode :620
+exploiter avg. score: 84.7, avg. epi length: 314
+# of episode :640
+exploiter avg. score: 93.7, avg. epi length: 315
+# of episode :660
+exploiter avg. score: 77.8, avg. epi length: 386
+# of episode :680
+exploiter avg. score: 93.2, avg. epi length: 339
+# of episode :700
+exploiter avg. score: 89.85, avg. epi length: 339
+# of episode :720
+exploiter avg. score: 97.75, avg. epi length: 292
+# of episode :740
+exploiter avg. score: 91.75, avg. epi length: 350
+# of episode :760
+exploiter avg. score: 85.0, avg. epi length: 369
+# of episode :780
+exploiter avg. score: 95.25, avg. epi length: 348
+# of episode :800
+exploiter avg. score: 95.15, avg. epi length: 326
+# of episode :820
+exploiter avg. score: 94.7, avg. epi length: 323
+# of episode :840
