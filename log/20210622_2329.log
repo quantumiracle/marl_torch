@@ -1,0 +1,58 @@
+/home/zihan/anaconda3/envs/x/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:516: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint8 = np.dtype([("qint8", np.int8, 1)])
+/home/zihan/anaconda3/envs/x/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:517: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint8 = np.dtype([("quint8", np.uint8, 1)])
+/home/zihan/anaconda3/envs/x/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:518: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint16 = np.dtype([("qint16", np.int16, 1)])
+/home/zihan/anaconda3/envs/x/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:519: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint16 = np.dtype([("quint16", np.uint16, 1)])
+/home/zihan/anaconda3/envs/x/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:520: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint32 = np.dtype([("qint32", np.int32, 1)])
+/home/zihan/anaconda3/envs/x/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:525: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  np_resource = np.dtype([("resource", np.ubyte, 1)])
+/home/zihan/anaconda3/envs/x/lib/python3.7/site-packages/torch/nn/functional.py:1628: UserWarning: nn.functional.tanh is deprecated. Use torch.tanh instead.
+  warnings.warn("nn.functional.tanh is deprecated. Use torch.tanh instead.")
+                          Options
+                          test: False
+                          env: pong_v1
+                          ram_obs: True
+                          render: False
+                          num_envs: 2
+                          seed: 1234
+                          alg: ppo
+                          selfplay: True
+                          load_agent: None
+                          train_both: False
+                          against_baseline: False
+                          fictitious: False
+                          load_model: None
+                          device: cuda:0
+state_spaces:  {'first_0': Box(0.0, 1.0, (128,), float32), 'second_0': Box(0.0, 1.0, (128,), float32)} ,  action_spaces:  {'first_0': Discrete(18), 'second_0': Discrete(18)}
+['first_0', 'second_0']
+# of episode :0
+agent :first_0, avg score : -0.550, avg epi length : 1314
+agent :second_0, avg score : 0.550, avg epi length : 1314
+# of episode :20
+agent :first_0, avg score : -4.450, avg epi length : 1381
+agent :second_0, avg score : 4.450, avg epi length : 1381
+# of episode :40
+agent :first_0, avg score : -7.250, avg epi length : 1330
+agent :second_0, avg score : 7.250, avg epi length : 1330
+Traceback (most recent call last):
+  File "train_pettingzoo.py", line 234, in <module>
+    main()
+  File "train_pettingzoo.py", line 228, in main
+    fictitious=args.fictitious, test=args.test)
+  File "train_pettingzoo.py", line 115, in parallel_rollout
+    model.save_model(save_model_path)
+  File "/home/zihan/research/marl_torch/utils/ppo.py", line 198, in save_model
+    self.agents[agent_name].save_model(path+'_{}'.format(idx))
+  File "/home/zihan/research/marl_torch/utils/ppo.py", line 144, in save_model
+    torch.save(self.policy.state_dict(), path+'_policy')
+  File "/home/zihan/anaconda3/envs/x/lib/python3.7/site-packages/torch/serialization.py", line 369, in save
+    with _open_file_like(f, 'wb') as opened_file:
+  File "/home/zihan/anaconda3/envs/x/lib/python3.7/site-packages/torch/serialization.py", line 230, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "/home/zihan/anaconda3/envs/x/lib/python3.7/site-packages/torch/serialization.py", line 211, in __init__
+    super(_open_file, self).__init__(open(name, mode))
+FileNotFoundError: [Errno 2] No such file or directory: 'model/pong_v1/selfplay/noise/40mappo_single_1_policy'
