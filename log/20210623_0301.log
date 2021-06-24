@@ -1,0 +1,3529 @@
+                          Options
+                          test: False
+                          env: pong_v1
+                          ram_obs: True
+                          render: False
+                          num_envs: 2
+                          seed: 1234
+                          alg: ppo
+                          selfplay: True
+                          load_agent: None
+                          train_both: False
+                          against_baseline: False
+                          fictitious: False
+                          load_model: None
+                          device: cuda:0
+state_spaces:  {'first_0': Box(0.0, 1.0, (128,), float32), 'second_0': Box(0.0, 1.0, (128,), float32)} ,  action_spaces:  {'first_0': Discrete(18), 'second_0': Discrete(18)}
+['first_0', 'second_0']
+# of episode :0
+agent :first_0, avg score : -0.700, avg epi length : 1141
+agent :second_0, avg score : 0.700, avg epi length : 1141
+# of episode :20
+agent :first_0, avg score : -3.200, avg epi length : 1365
+agent :second_0, avg score : 3.200, avg epi length : 1365
+# of episode :40
+agent :first_0, avg score : 4.600, avg epi length : 1270
+agent :second_0, avg score : -4.600, avg epi length : 1270
+# of episode :60
+agent :first_0, avg score : -3.350, avg epi length : 1401
+agent :second_0, avg score : 3.350, avg epi length : 1401
+# of episode :80
+agent :first_0, avg score : -5.050, avg epi length : 1339
+agent :second_0, avg score : 5.050, avg epi length : 1339
+Selfplay: update the model of opponent
+Evaluate reward:  -8.666666666666666
+# of episode :100
+agent :first_0, avg score : 0.850, avg epi length : 1413
+agent :second_0, avg score : -0.850, avg epi length : 1413
+# of episode :120
+agent :first_0, avg score : -5.150, avg epi length : 1455
+agent :second_0, avg score : 5.150, avg epi length : 1455
+Selfplay: update the model of opponent
+Evaluate reward:  2.0
+# of episode :140
+agent :first_0, avg score : -0.500, avg epi length : 1440
+agent :second_0, avg score : 0.500, avg epi length : 1440
+# of episode :160
+agent :first_0, avg score : 5.050, avg epi length : 1454
+agent :second_0, avg score : -5.050, avg epi length : 1454
+# of episode :180
+agent :first_0, avg score : 1.550, avg epi length : 1437
+agent :second_0, avg score : -1.550, avg epi length : 1437
+# of episode :200
+agent :first_0, avg score : 3.200, avg epi length : 1542
+agent :second_0, avg score : -3.200, avg epi length : 1542
+# of episode :220
+agent :first_0, avg score : 5.250, avg epi length : 1427
+agent :second_0, avg score : -5.250, avg epi length : 1427
+# of episode :240
+agent :first_0, avg score : 1.800, avg epi length : 1557
+agent :second_0, avg score : -1.800, avg epi length : 1557
+# of episode :260
+agent :first_0, avg score : 1.300, avg epi length : 1606
+agent :second_0, avg score : -1.300, avg epi length : 1606
+# of episode :280
+agent :first_0, avg score : -7.300, avg epi length : 1352
+agent :second_0, avg score : 7.300, avg epi length : 1352
+Selfplay: update the model of opponent
+Evaluate reward:  6.666666666666667
+# of episode :300
+agent :first_0, avg score : -3.350, avg epi length : 1654
+agent :second_0, avg score : 3.350, avg epi length : 1654
+# of episode :320
+agent :first_0, avg score : -8.850, avg epi length : 1629
+agent :second_0, avg score : 8.850, avg epi length : 1629
+Selfplay: update the model of opponent
+Evaluate reward:  1.0
+# of episode :340
+agent :first_0, avg score : 0.300, avg epi length : 2163
+agent :second_0, avg score : -0.300, avg epi length : 2163
+# of episode :360
+agent :first_0, avg score : -8.750, avg epi length : 1768
+agent :second_0, avg score : 8.750, avg epi length : 1768
+Selfplay: update the model of opponent
+Evaluate reward:  7.0
+# of episode :380
+agent :first_0, avg score : -7.400, avg epi length : 1815
+agent :second_0, avg score : 7.400, avg epi length : 1815
+Selfplay: update the model of opponent
+Evaluate reward:  4.666666666666667
+# of episode :400
+agent :first_0, avg score : -7.600, avg epi length : 1744
+agent :second_0, avg score : 7.600, avg epi length : 1744
+Selfplay: update the model of opponent
+Evaluate reward:  2.6666666666666665
+# of episode :420
+agent :first_0, avg score : -7.350, avg epi length : 1884
+agent :second_0, avg score : 7.350, avg epi length : 1884
+Selfplay: update the model of opponent
+Evaluate reward:  0.6666666666666666
+# of episode :440
+agent :first_0, avg score : 0.300, avg epi length : 2104
+agent :second_0, avg score : -0.300, avg epi length : 2104
+# of episode :460
+agent :first_0, avg score : 0.900, avg epi length : 1945
+agent :second_0, avg score : -0.900, avg epi length : 1945
+# of episode :480
+agent :first_0, avg score : 3.950, avg epi length : 1979
+agent :second_0, avg score : -3.950, avg epi length : 1979
+# of episode :500
+agent :first_0, avg score : 5.850, avg epi length : 2078
+agent :second_0, avg score : -5.850, avg epi length : 2078
+# of episode :520
+agent :first_0, avg score : -0.050, avg epi length : 2054
+agent :second_0, avg score : 0.050, avg epi length : 2054
+# of episode :540
+agent :first_0, avg score : 4.550, avg epi length : 1932
+agent :second_0, avg score : -4.550, avg epi length : 1932
+# of episode :560
+agent :first_0, avg score : 3.350, avg epi length : 1933
+agent :second_0, avg score : -3.350, avg epi length : 1933
+# of episode :580
+agent :first_0, avg score : 0.400, avg epi length : 2036
+agent :second_0, avg score : -0.400, avg epi length : 2036
+# of episode :600
+agent :first_0, avg score : 2.500, avg epi length : 2049
+agent :second_0, avg score : -2.500, avg epi length : 2049
+# of episode :620
+agent :first_0, avg score : 3.000, avg epi length : 2179
+agent :second_0, avg score : -3.000, avg epi length : 2179
+# of episode :640
+agent :first_0, avg score : 4.900, avg epi length : 2048
+agent :second_0, avg score : -4.900, avg epi length : 2048
+# of episode :660
+agent :first_0, avg score : 2.250, avg epi length : 2055
+agent :second_0, avg score : -2.250, avg epi length : 2055
+# of episode :680
+agent :first_0, avg score : 2.000, avg epi length : 2048
+agent :second_0, avg score : -2.000, avg epi length : 2048
+# of episode :700
+agent :first_0, avg score : -1.250, avg epi length : 2022
+agent :second_0, avg score : 1.250, avg epi length : 2022
+# of episode :720
+agent :first_0, avg score : 2.900, avg epi length : 2014
+agent :second_0, avg score : -2.900, avg epi length : 2014
+# of episode :740
+agent :first_0, avg score : 3.950, avg epi length : 1929
+agent :second_0, avg score : -3.950, avg epi length : 1929
+# of episode :760
+agent :first_0, avg score : 1.800, avg epi length : 2077
+agent :second_0, avg score : -1.800, avg epi length : 2077
+# of episode :780
+agent :first_0, avg score : -1.000, avg epi length : 2148
+agent :second_0, avg score : 1.000, avg epi length : 2148
+# of episode :800
+agent :first_0, avg score : 2.600, avg epi length : 2057
+agent :second_0, avg score : -2.600, avg epi length : 2057
+# of episode :820
+agent :first_0, avg score : 1.500, avg epi length : 2063
+agent :second_0, avg score : -1.500, avg epi length : 2063
+# of episode :840
+agent :first_0, avg score : 0.500, avg epi length : 2104
+agent :second_0, avg score : -0.500, avg epi length : 2104
+# of episode :860
+agent :first_0, avg score : 3.500, avg epi length : 1981
+agent :second_0, avg score : -3.500, avg epi length : 1981
+# of episode :880
+agent :first_0, avg score : 3.200, avg epi length : 2202
+agent :second_0, avg score : -3.200, avg epi length : 2202
+# of episode :900
+agent :first_0, avg score : 4.150, avg epi length : 2136
+agent :second_0, avg score : -4.150, avg epi length : 2136
+# of episode :920
+agent :first_0, avg score : 3.850, avg epi length : 1975
+agent :second_0, avg score : -3.850, avg epi length : 1975
+# of episode :940
+agent :first_0, avg score : 5.850, avg epi length : 1985
+agent :second_0, avg score : -5.850, avg epi length : 1985
+# of episode :960
+agent :first_0, avg score : 4.150, avg epi length : 1971
+agent :second_0, avg score : -4.150, avg epi length : 1971
+# of episode :980
+agent :first_0, avg score : 5.150, avg epi length : 1975
+agent :second_0, avg score : -5.150, avg epi length : 1975
+# of episode :1000
+agent :first_0, avg score : 0.400, avg epi length : 2047
+agent :second_0, avg score : -0.400, avg epi length : 2047
+# of episode :1020
+agent :first_0, avg score : 2.800, avg epi length : 1902
+agent :second_0, avg score : -2.800, avg epi length : 1902
+# of episode :1040
+agent :first_0, avg score : 1.450, avg epi length : 1931
+agent :second_0, avg score : -1.450, avg epi length : 1931
+# of episode :1060
+agent :first_0, avg score : 1.750, avg epi length : 1955
+agent :second_0, avg score : -1.750, avg epi length : 1955
+# of episode :1080
+agent :first_0, avg score : 0.000, avg epi length : 1962
+agent :second_0, avg score : 0.000, avg epi length : 1962
+# of episode :1100
+agent :first_0, avg score : 1.750, avg epi length : 1875
+agent :second_0, avg score : -1.750, avg epi length : 1875
+# of episode :1120
+agent :first_0, avg score : -1.900, avg epi length : 1897
+agent :second_0, avg score : 1.900, avg epi length : 1897
+# of episode :1140
+agent :first_0, avg score : -0.500, avg epi length : 1975
+agent :second_0, avg score : 0.500, avg epi length : 1975
+# of episode :1160
+agent :first_0, avg score : -0.300, avg epi length : 2085
+agent :second_0, avg score : 0.300, avg epi length : 2085
+# of episode :1180
+agent :first_0, avg score : -2.800, avg epi length : 1992
+agent :second_0, avg score : 2.800, avg epi length : 1992
+# of episode :1200
+agent :first_0, avg score : -1.850, avg epi length : 2099
+agent :second_0, avg score : 1.850, avg epi length : 2099
+# of episode :1220
+agent :first_0, avg score : 0.850, avg epi length : 1943
+agent :second_0, avg score : -0.850, avg epi length : 1943
+# of episode :1240
+agent :first_0, avg score : -1.500, avg epi length : 2058
+agent :second_0, avg score : 1.500, avg epi length : 2058
+# of episode :1260
+agent :first_0, avg score : -0.700, avg epi length : 2003
+agent :second_0, avg score : 0.700, avg epi length : 2003
+# of episode :1280
+agent :first_0, avg score : 2.800, avg epi length : 2026
+agent :second_0, avg score : -2.800, avg epi length : 2026
+# of episode :1300
+agent :first_0, avg score : 0.500, avg epi length : 2036
+agent :second_0, avg score : -0.500, avg epi length : 2036
+# of episode :1320
+agent :first_0, avg score : -1.500, avg epi length : 2055
+agent :second_0, avg score : 1.500, avg epi length : 2055
+# of episode :1340
+agent :first_0, avg score : 1.950, avg epi length : 2052
+agent :second_0, avg score : -1.950, avg epi length : 2052
+# of episode :1360
+agent :first_0, avg score : 4.000, avg epi length : 1951
+agent :second_0, avg score : -4.000, avg epi length : 1951
+# of episode :1380
+agent :first_0, avg score : -2.400, avg epi length : 2128
+agent :second_0, avg score : 2.400, avg epi length : 2128
+# of episode :1400
+agent :first_0, avg score : -0.400, avg epi length : 2113
+agent :second_0, avg score : 0.400, avg epi length : 2113
+# of episode :1420
+agent :first_0, avg score : 1.650, avg epi length : 2099
+agent :second_0, avg score : -1.650, avg epi length : 2099
+# of episode :1440
+agent :first_0, avg score : 2.600, avg epi length : 2021
+agent :second_0, avg score : -2.600, avg epi length : 2021
+# of episode :1460
+agent :first_0, avg score : 4.200, avg epi length : 2023
+agent :second_0, avg score : -4.200, avg epi length : 2023
+# of episode :1480
+agent :first_0, avg score : 2.650, avg epi length : 2043
+agent :second_0, avg score : -2.650, avg epi length : 2043
+# of episode :1500
+agent :first_0, avg score : 4.650, avg epi length : 1883
+agent :second_0, avg score : -4.650, avg epi length : 1883
+# of episode :1520
+agent :first_0, avg score : 3.250, avg epi length : 2030
+agent :second_0, avg score : -3.250, avg epi length : 2030
+# of episode :1540
+agent :first_0, avg score : -2.450, avg epi length : 2095
+agent :second_0, avg score : 2.450, avg epi length : 2095
+# of episode :1560
+agent :first_0, avg score : -2.100, avg epi length : 2112
+agent :second_0, avg score : 2.100, avg epi length : 2112
+# of episode :1580
+agent :first_0, avg score : -2.950, avg epi length : 2095
+agent :second_0, avg score : 2.950, avg epi length : 2095
+# of episode :1600
+agent :first_0, avg score : -1.450, avg epi length : 2036
+agent :second_0, avg score : 1.450, avg epi length : 2036
+# of episode :1620
+agent :first_0, avg score : -2.000, avg epi length : 2114
+agent :second_0, avg score : 2.000, avg epi length : 2114
+# of episode :1640
+agent :first_0, avg score : -2.650, avg epi length : 2023
+agent :second_0, avg score : 2.650, avg epi length : 2023
+# of episode :1660
+agent :first_0, avg score : -1.650, avg epi length : 2053
+agent :second_0, avg score : 1.650, avg epi length : 2053
+# of episode :1680
+agent :first_0, avg score : -1.250, avg epi length : 2076
+agent :second_0, avg score : 1.250, avg epi length : 2076
+# of episode :1700
+agent :first_0, avg score : -1.250, avg epi length : 2127
+agent :second_0, avg score : 1.250, avg epi length : 2127
+# of episode :1720
+agent :first_0, avg score : 0.450, avg epi length : 2089
+agent :second_0, avg score : -0.450, avg epi length : 2089
+# of episode :1740
+agent :first_0, avg score : 3.550, avg epi length : 2097
+agent :second_0, avg score : -3.550, avg epi length : 2097
+# of episode :1760
+agent :first_0, avg score : 2.600, avg epi length : 2025
+agent :second_0, avg score : -2.600, avg epi length : 2025
+# of episode :1780
+agent :first_0, avg score : 5.600, avg epi length : 2083
+agent :second_0, avg score : -5.600, avg epi length : 2083
+# of episode :1800
+agent :first_0, avg score : -2.350, avg epi length : 2086
+agent :second_0, avg score : 2.350, avg epi length : 2086
+# of episode :1820
+agent :first_0, avg score : 1.650, avg epi length : 2107
+agent :second_0, avg score : -1.650, avg epi length : 2107
+# of episode :1840
+agent :first_0, avg score : -2.250, avg epi length : 2054
+agent :second_0, avg score : 2.250, avg epi length : 2054
+# of episode :1860
+agent :first_0, avg score : 0.850, avg epi length : 2011
+agent :second_0, avg score : -0.850, avg epi length : 2011
+# of episode :1880
+agent :first_0, avg score : -2.600, avg epi length : 1888
+agent :second_0, avg score : 2.600, avg epi length : 1888
+# of episode :1900
+agent :first_0, avg score : -2.150, avg epi length : 2126
+agent :second_0, avg score : 2.150, avg epi length : 2126
+# of episode :1920
+agent :first_0, avg score : 0.350, avg epi length : 1919
+agent :second_0, avg score : -0.350, avg epi length : 1919
+# of episode :1940
+agent :first_0, avg score : -2.500, avg epi length : 2081
+agent :second_0, avg score : 2.500, avg epi length : 2081
+# of episode :1960
+agent :first_0, avg score : 4.100, avg epi length : 1971
+agent :second_0, avg score : -4.100, avg epi length : 1971
+# of episode :1980
+agent :first_0, avg score : 0.300, avg epi length : 1968
+agent :second_0, avg score : -0.300, avg epi length : 1968
+# of episode :2000
+agent :first_0, avg score : -1.150, avg epi length : 1908
+agent :second_0, avg score : 1.150, avg epi length : 1908
+# of episode :2020
+agent :first_0, avg score : 1.550, avg epi length : 1902
+agent :second_0, avg score : -1.550, avg epi length : 1902
+# of episode :2040
+agent :first_0, avg score : -0.550, avg epi length : 1910
+agent :second_0, avg score : 0.550, avg epi length : 1910
+# of episode :2060
+agent :first_0, avg score : 1.350, avg epi length : 1814
+agent :second_0, avg score : -1.350, avg epi length : 1814
+# of episode :2080
+agent :first_0, avg score : 2.200, avg epi length : 2016
+agent :second_0, avg score : -2.200, avg epi length : 2016
+# of episode :2100
+agent :first_0, avg score : 0.950, avg epi length : 1992
+agent :second_0, avg score : -0.950, avg epi length : 1992
+# of episode :2120
+agent :first_0, avg score : 1.550, avg epi length : 2065
+agent :second_0, avg score : -1.550, avg epi length : 2065
+# of episode :2140
+agent :first_0, avg score : -1.500, avg epi length : 2055
+agent :second_0, avg score : 1.500, avg epi length : 2055
+# of episode :2160
+agent :first_0, avg score : -1.600, avg epi length : 2069
+agent :second_0, avg score : 1.600, avg epi length : 2069
+# of episode :2180
+agent :first_0, avg score : -5.500, avg epi length : 1874
+agent :second_0, avg score : 5.500, avg epi length : 1874
+Selfplay: update the model of opponent
+Evaluate reward:  18.0
+# of episode :2200
+agent :first_0, avg score : -16.050, avg epi length : 1052
+agent :second_0, avg score : 16.050, avg epi length : 1052
+Selfplay: update the model of opponent
+Evaluate reward:  10.333333333333334
+# of episode :2220
+agent :first_0, avg score : -14.400, avg epi length : 1114
+agent :second_0, avg score : 14.400, avg epi length : 1114
+Selfplay: update the model of opponent
+Evaluate reward:  13.0
+# of episode :2240
+agent :first_0, avg score : -12.050, avg epi length : 1277
+agent :second_0, avg score : 12.050, avg epi length : 1277
+Selfplay: update the model of opponent
+Evaluate reward:  8.0
+# of episode :2260
+agent :first_0, avg score : -13.550, avg epi length : 1280
+agent :second_0, avg score : 13.550, avg epi length : 1280
+Selfplay: update the model of opponent
+Evaluate reward:  10.333333333333334
+# of episode :2280
+agent :first_0, avg score : -12.200, avg epi length : 1447
+agent :second_0, avg score : 12.200, avg epi length : 1447
+Selfplay: update the model of opponent
+Evaluate reward:  12.666666666666666
+# of episode :2300
+agent :first_0, avg score : -11.150, avg epi length : 1433
+agent :second_0, avg score : 11.150, avg epi length : 1433
+Selfplay: update the model of opponent
+Evaluate reward:  13.0
+# of episode :2320
+agent :first_0, avg score : -14.300, avg epi length : 1304
+agent :second_0, avg score : 14.300, avg epi length : 1304
+Selfplay: update the model of opponent
+Evaluate reward:  13.666666666666666
+# of episode :2340
+agent :first_0, avg score : -14.400, avg epi length : 1389
+agent :second_0, avg score : 14.400, avg epi length : 1389
+Selfplay: update the model of opponent
+Evaluate reward:  17.333333333333332
+# of episode :2360
+agent :first_0, avg score : -14.750, avg epi length : 1097
+agent :second_0, avg score : 14.750, avg epi length : 1097
+Selfplay: update the model of opponent
+Evaluate reward:  15.0
+# of episode :2380
+agent :first_0, avg score : -14.900, avg epi length : 1180
+agent :second_0, avg score : 14.900, avg epi length : 1180
+Selfplay: update the model of opponent
+Evaluate reward:  12.666666666666666
+# of episode :2400
+agent :first_0, avg score : -12.150, avg epi length : 1359
+agent :second_0, avg score : 12.150, avg epi length : 1359
+Selfplay: update the model of opponent
+Evaluate reward:  7.666666666666667
+# of episode :2420
+agent :first_0, avg score : -5.250, avg epi length : 1727
+agent :second_0, avg score : 5.250, avg epi length : 1727
+Selfplay: update the model of opponent
+Evaluate reward:  3.3333333333333335
+# of episode :2440
+agent :first_0, avg score : -9.950, avg epi length : 1466
+agent :second_0, avg score : 9.950, avg epi length : 1466
+Selfplay: update the model of opponent
+Evaluate reward:  -0.3333333333333333
+# of episode :2460
+agent :first_0, avg score : -4.000, avg epi length : 1840
+agent :second_0, avg score : 4.000, avg epi length : 1840
+# of episode :2480
+agent :first_0, avg score : -7.000, avg epi length : 1660
+agent :second_0, avg score : 7.000, avg epi length : 1660
+Selfplay: update the model of opponent
+Evaluate reward:  3.6666666666666665
+# of episode :2500
+agent :first_0, avg score : -8.500, avg epi length : 1628
+agent :second_0, avg score : 8.500, avg epi length : 1628
+Selfplay: update the model of opponent
+Evaluate reward:  14.666666666666666
+# of episode :2520
+agent :first_0, avg score : -11.500, avg epi length : 1400
+agent :second_0, avg score : 11.500, avg epi length : 1400
+Selfplay: update the model of opponent
+Evaluate reward:  14.333333333333334
+# of episode :2540
+agent :first_0, avg score : -13.550, avg epi length : 1289
+agent :second_0, avg score : 13.550, avg epi length : 1289
+Selfplay: update the model of opponent
+Evaluate reward:  13.666666666666666
+# of episode :2560
+agent :first_0, avg score : -14.600, avg epi length : 1198
+agent :second_0, avg score : 14.600, avg epi length : 1198
+Selfplay: update the model of opponent
+Evaluate reward:  18.0
+# of episode :2580
+agent :first_0, avg score : -18.450, avg epi length : 939
+agent :second_0, avg score : 18.450, avg epi length : 939
+Selfplay: update the model of opponent
+Evaluate reward:  18.333333333333332
+# of episode :2600
+agent :first_0, avg score : -17.900, avg epi length : 928
+agent :second_0, avg score : 17.900, avg epi length : 928
+Selfplay: update the model of opponent
+Evaluate reward:  16.666666666666668
+# of episode :2620
+agent :first_0, avg score : -18.300, avg epi length : 898
+agent :second_0, avg score : 18.300, avg epi length : 898
+Selfplay: update the model of opponent
+Evaluate reward:  14.0
+# of episode :2640
+agent :first_0, avg score : -15.350, avg epi length : 1180
+agent :second_0, avg score : 15.350, avg epi length : 1180
+Selfplay: update the model of opponent
+Evaluate reward:  7.666666666666667
+# of episode :2660
+agent :first_0, avg score : -14.050, avg epi length : 1236
+agent :second_0, avg score : 14.050, avg epi length : 1236
+Selfplay: update the model of opponent
+Evaluate reward:  18.333333333333332
+# of episode :2680
+agent :first_0, avg score : -18.400, avg epi length : 933
+agent :second_0, avg score : 18.400, avg epi length : 933
+Selfplay: update the model of opponent
+Evaluate reward:  17.333333333333332
+# of episode :2700
+agent :first_0, avg score : -15.350, avg epi length : 1235
+agent :second_0, avg score : 15.350, avg epi length : 1235
+Selfplay: update the model of opponent
+Evaluate reward:  20.0
+# of episode :2720
+agent :first_0, avg score : -19.250, avg epi length : 863
+agent :second_0, avg score : 19.250, avg epi length : 863
+Selfplay: update the model of opponent
+Evaluate reward:  18.0
+# of episode :2740
+agent :first_0, avg score : -18.550, avg epi length : 916
+agent :second_0, avg score : 18.550, avg epi length : 916
+Selfplay: update the model of opponent
+Evaluate reward:  19.0
+# of episode :2760
+agent :first_0, avg score : -16.850, avg epi length : 1125
+agent :second_0, avg score : 16.850, avg epi length : 1125
+Selfplay: update the model of opponent
+Evaluate reward:  19.333333333333332
+# of episode :2780
+agent :first_0, avg score : -17.200, avg epi length : 1014
+agent :second_0, avg score : 17.200, avg epi length : 1014
+Selfplay: update the model of opponent
+Evaluate reward:  14.0
+# of episode :2800
+agent :first_0, avg score : -13.450, avg epi length : 1237
+agent :second_0, avg score : 13.450, avg epi length : 1237
+Selfplay: update the model of opponent
+Evaluate reward:  15.333333333333334
+# of episode :2820
+agent :first_0, avg score : -12.150, avg epi length : 1403
+agent :second_0, avg score : 12.150, avg epi length : 1403
+Selfplay: update the model of opponent
+Evaluate reward:  16.666666666666668
+# of episode :2840
+agent :first_0, avg score : -17.550, avg epi length : 1029
+agent :second_0, avg score : 17.550, avg epi length : 1029
+Selfplay: update the model of opponent
+Evaluate reward:  18.666666666666668
+# of episode :2860
+agent :first_0, avg score : -19.050, avg epi length : 850
+agent :second_0, avg score : 19.050, avg epi length : 850
+Selfplay: update the model of opponent
+Evaluate reward:  17.333333333333332
+# of episode :2880
+agent :first_0, avg score : -16.150, avg epi length : 1128
+agent :second_0, avg score : 16.150, avg epi length : 1128
+Selfplay: update the model of opponent
+Evaluate reward:  14.666666666666666
+# of episode :2900
+agent :first_0, avg score : -15.350, avg epi length : 1189
+agent :second_0, avg score : 15.350, avg epi length : 1189
+Selfplay: update the model of opponent
+Evaluate reward:  19.333333333333332
+# of episode :2920
+agent :first_0, avg score : -18.350, avg epi length : 981
+agent :second_0, avg score : 18.350, avg epi length : 981
+Selfplay: update the model of opponent
+Evaluate reward:  18.333333333333332
+# of episode :2940
+agent :first_0, avg score : -18.850, avg epi length : 914
+agent :second_0, avg score : 18.850, avg epi length : 914
+Selfplay: update the model of opponent
+Evaluate reward:  20.0
+# of episode :2960
+agent :first_0, avg score : -16.550, avg epi length : 991
+agent :second_0, avg score : 16.550, avg epi length : 991
+Selfplay: update the model of opponent
+Evaluate reward:  20.333333333333332
+# of episode :2980
+agent :first_0, avg score : -18.550, avg epi length : 877
+agent :second_0, avg score : 18.550, avg epi length : 877
+Selfplay: update the model of opponent
+Evaluate reward:  20.666666666666668
+# of episode :3000
+agent :first_0, avg score : -20.100, avg epi length : 806
+agent :second_0, avg score : 20.100, avg epi length : 806
+Selfplay: update the model of opponent
+Evaluate reward:  20.333333333333332
+# of episode :3020
+agent :first_0, avg score : -20.050, avg epi length : 802
+agent :second_0, avg score : 20.050, avg epi length : 802
+Selfplay: update the model of opponent
+Evaluate reward:  18.666666666666668
+# of episode :3040
+agent :first_0, avg score : -18.550, avg epi length : 921
+agent :second_0, avg score : 18.550, avg epi length : 921
+Selfplay: update the model of opponent
+Evaluate reward:  20.333333333333332
+# of episode :3060
+agent :first_0, avg score : -19.400, avg epi length : 904
+agent :second_0, avg score : 19.400, avg epi length : 904
+Selfplay: update the model of opponent
+Evaluate reward:  10.666666666666666
+# of episode :3080
+agent :first_0, avg score : -9.150, avg epi length : 1560
+agent :second_0, avg score : 9.150, avg epi length : 1560
+Selfplay: update the model of opponent
+Evaluate reward:  14.666666666666666
+# of episode :3100
+agent :first_0, avg score : -12.700, avg epi length : 1045
+agent :second_0, avg score : 12.700, avg epi length : 1045
+Selfplay: update the model of opponent
+Evaluate reward:  1.0
+# of episode :3120
+agent :first_0, avg score : -6.450, avg epi length : 1472
+agent :second_0, avg score : 6.450, avg epi length : 1472
+Selfplay: update the model of opponent
+Evaluate reward:  13.666666666666666
+# of episode :3140
+agent :first_0, avg score : -11.200, avg epi length : 1515
+agent :second_0, avg score : 11.200, avg epi length : 1515
+Selfplay: update the model of opponent
+Evaluate reward:  17.0
+# of episode :3160
+agent :first_0, avg score : -14.300, avg epi length : 1222
+agent :second_0, avg score : 14.300, avg epi length : 1222
+Selfplay: update the model of opponent
+Evaluate reward:  13.0
+# of episode :3180
+agent :first_0, avg score : -11.600, avg epi length : 1430
+agent :second_0, avg score : 11.600, avg epi length : 1430
+Selfplay: update the model of opponent
+Evaluate reward:  0.6666666666666666
+# of episode :3200
+agent :first_0, avg score : -6.700, avg epi length : 1782
+agent :second_0, avg score : 6.700, avg epi length : 1782
+Selfplay: update the model of opponent
+Evaluate reward:  10.0
+# of episode :3220
+agent :first_0, avg score : -11.200, avg epi length : 1550
+agent :second_0, avg score : 11.200, avg epi length : 1550
+Selfplay: update the model of opponent
+Evaluate reward:  0.6666666666666666
+# of episode :3240
+agent :first_0, avg score : -7.300, avg epi length : 1632
+agent :second_0, avg score : 7.300, avg epi length : 1632
+Selfplay: update the model of opponent
+Evaluate reward:  9.666666666666666
+# of episode :3260
+agent :first_0, avg score : -11.200, avg epi length : 1472
+agent :second_0, avg score : 11.200, avg epi length : 1472
+Selfplay: update the model of opponent
+Evaluate reward:  18.333333333333332
+# of episode :3280
+agent :first_0, avg score : -17.350, avg epi length : 1045
+agent :second_0, avg score : 17.350, avg epi length : 1045
+Selfplay: update the model of opponent
+Evaluate reward:  13.666666666666666
+# of episode :3300
+agent :first_0, avg score : -12.650, avg epi length : 1388
+agent :second_0, avg score : 12.650, avg epi length : 1388
+Selfplay: update the model of opponent
+Evaluate reward:  18.0
+# of episode :3320
+agent :first_0, avg score : -18.500, avg epi length : 912
+agent :second_0, avg score : 18.500, avg epi length : 912
+Selfplay: update the model of opponent
+Evaluate reward:  20.333333333333332
+# of episode :3340
+agent :first_0, avg score : -18.900, avg epi length : 876
+agent :second_0, avg score : 18.900, avg epi length : 876
+Selfplay: update the model of opponent
+Evaluate reward:  16.0
+# of episode :3360
+agent :first_0, avg score : -18.900, avg epi length : 897
+agent :second_0, avg score : 18.900, avg epi length : 897
+Selfplay: update the model of opponent
+Evaluate reward:  13.666666666666666
+# of episode :3380
+agent :first_0, avg score : -12.250, avg epi length : 1402
+agent :second_0, avg score : 12.250, avg epi length : 1402
+Selfplay: update the model of opponent
+Evaluate reward:  4.0
+# of episode :3400
+agent :first_0, avg score : -5.650, avg epi length : 1484
+agent :second_0, avg score : 5.650, avg epi length : 1484
+Selfplay: update the model of opponent
+Evaluate reward:  19.666666666666668
+# of episode :3420
+agent :first_0, avg score : -18.850, avg epi length : 899
+agent :second_0, avg score : 18.850, avg epi length : 899
+Selfplay: update the model of opponent
+Evaluate reward:  18.666666666666668
+# of episode :3440
+agent :first_0, avg score : -18.450, avg epi length : 884
+agent :second_0, avg score : 18.450, avg epi length : 884
+Selfplay: update the model of opponent
+Evaluate reward:  2.0
+# of episode :3460
+agent :first_0, avg score : -9.450, avg epi length : 1661
+agent :second_0, avg score : 9.450, avg epi length : 1661
+Selfplay: update the model of opponent
+Evaluate reward:  14.0
+# of episode :3480
+agent :first_0, avg score : -9.000, avg epi length : 1500
+agent :second_0, avg score : 9.000, avg epi length : 1500
+Selfplay: update the model of opponent
+Evaluate reward:  5.666666666666667
+# of episode :3500
+agent :first_0, avg score : -2.400, avg epi length : 1865
+agent :second_0, avg score : 2.400, avg epi length : 1865
+# of episode :3520
+agent :first_0, avg score : -8.250, avg epi length : 1716
+agent :second_0, avg score : 8.250, avg epi length : 1716
+Selfplay: update the model of opponent
+Evaluate reward:  13.666666666666666
+# of episode :3540
+agent :first_0, avg score : -6.800, avg epi length : 1749
+agent :second_0, avg score : 6.800, avg epi length : 1749
+Selfplay: update the model of opponent
+Evaluate reward:  19.333333333333332
+# of episode :3560
+agent :first_0, avg score : -17.050, avg epi length : 1070
+agent :second_0, avg score : 17.050, avg epi length : 1070
+Selfplay: update the model of opponent
+Evaluate reward:  16.333333333333332
+# of episode :3580
+agent :first_0, avg score : -18.000, avg epi length : 938
+agent :second_0, avg score : 18.000, avg epi length : 938
+Selfplay: update the model of opponent
+Evaluate reward:  17.0
+# of episode :3600
+agent :first_0, avg score : -16.100, avg epi length : 1037
+agent :second_0, avg score : 16.100, avg epi length : 1037
+Selfplay: update the model of opponent
+Evaluate reward:  10.0
+# of episode :3620
+agent :first_0, avg score : -7.650, avg epi length : 1305
+agent :second_0, avg score : 7.650, avg epi length : 1305
+Selfplay: update the model of opponent
+Evaluate reward:  11.666666666666666
+# of episode :3640
+agent :first_0, avg score : -10.250, avg epi length : 1389
+agent :second_0, avg score : 10.250, avg epi length : 1389
+Selfplay: update the model of opponent
+Evaluate reward:  19.333333333333332
+# of episode :3660
+agent :first_0, avg score : -15.100, avg epi length : 1160
+agent :second_0, avg score : 15.100, avg epi length : 1160
+Selfplay: update the model of opponent
+Evaluate reward:  18.0
+# of episode :3680
+agent :first_0, avg score : -13.750, avg epi length : 1151
+agent :second_0, avg score : 13.750, avg epi length : 1151
+Selfplay: update the model of opponent
+Evaluate reward:  18.333333333333332
+# of episode :3700
+agent :first_0, avg score : -13.250, avg epi length : 1231
+agent :second_0, avg score : 13.250, avg epi length : 1231
+Selfplay: update the model of opponent
+Evaluate reward:  14.666666666666666
+# of episode :3720
+agent :first_0, avg score : -17.750, avg epi length : 954
+agent :second_0, avg score : 17.750, avg epi length : 954
+Selfplay: update the model of opponent
+Evaluate reward:  16.666666666666668
+# of episode :3740
+agent :first_0, avg score : -15.150, avg epi length : 1094
+agent :second_0, avg score : 15.150, avg epi length : 1094
+Selfplay: update the model of opponent
+Evaluate reward:  19.666666666666668
+# of episode :3760
+agent :first_0, avg score : -16.100, avg epi length : 992
+agent :second_0, avg score : 16.100, avg epi length : 992
+Selfplay: update the model of opponent
+Evaluate reward:  10.333333333333334
+# of episode :3780
+agent :first_0, avg score : -14.450, avg epi length : 1202
+agent :second_0, avg score : 14.450, avg epi length : 1202
+Selfplay: update the model of opponent
+Evaluate reward:  19.666666666666668
+# of episode :3800
+agent :first_0, avg score : -19.150, avg epi length : 859
+agent :second_0, avg score : 19.150, avg epi length : 859
+Selfplay: update the model of opponent
+Evaluate reward:  10.666666666666666
+# of episode :3820
+agent :first_0, avg score : -12.750, avg epi length : 1430
+agent :second_0, avg score : 12.750, avg epi length : 1430
+Selfplay: update the model of opponent
+Evaluate reward:  15.333333333333334
+# of episode :3840
+agent :first_0, avg score : -17.450, avg epi length : 1020
+agent :second_0, avg score : 17.450, avg epi length : 1020
+Selfplay: update the model of opponent
+Evaluate reward:  15.666666666666666
+# of episode :3860
+agent :first_0, avg score : -16.750, avg epi length : 1068
+agent :second_0, avg score : 16.750, avg epi length : 1068
+Selfplay: update the model of opponent
+Evaluate reward:  8.0
+# of episode :3880
+agent :first_0, avg score : -9.700, avg epi length : 1524
+agent :second_0, avg score : 9.700, avg epi length : 1524
+Selfplay: update the model of opponent
+Evaluate reward:  0.3333333333333333
+# of episode :3900
+agent :first_0, avg score : -7.200, avg epi length : 1611
+agent :second_0, avg score : 7.200, avg epi length : 1611
+Selfplay: update the model of opponent
+Evaluate reward:  10.666666666666666
+# of episode :3920
+agent :first_0, avg score : -14.200, avg epi length : 1196
+agent :second_0, avg score : 14.200, avg epi length : 1196
+Selfplay: update the model of opponent
+Evaluate reward:  20.666666666666668
+# of episode :3940
+agent :first_0, avg score : -18.700, avg epi length : 887
+agent :second_0, avg score : 18.700, avg epi length : 887
+Selfplay: update the model of opponent
+Evaluate reward:  17.0
+# of episode :3960
+agent :first_0, avg score : -18.400, avg epi length : 967
+agent :second_0, avg score : 18.400, avg epi length : 967
+Selfplay: update the model of opponent
+Evaluate reward:  19.333333333333332
+# of episode :3980
+agent :first_0, avg score : -18.800, avg epi length : 929
+agent :second_0, avg score : 18.800, avg epi length : 929
+Selfplay: update the model of opponent
+Evaluate reward:  18.333333333333332
+# of episode :4000
+agent :first_0, avg score : -19.950, avg epi length : 827
+agent :second_0, avg score : 19.950, avg epi length : 827
+Selfplay: update the model of opponent
+Evaluate reward:  8.666666666666666
+# of episode :4020
+agent :first_0, avg score : -5.350, avg epi length : 1872
+agent :second_0, avg score : 5.350, avg epi length : 1872
+Selfplay: update the model of opponent
+Evaluate reward:  14.0
+# of episode :4040
+agent :first_0, avg score : -11.350, avg epi length : 1418
+agent :second_0, avg score : 11.350, avg epi length : 1418
+Selfplay: update the model of opponent
+Evaluate reward:  4.666666666666667
+# of episode :4060
+agent :first_0, avg score : -4.500, avg epi length : 1773
+agent :second_0, avg score : 4.500, avg epi length : 1773
+# of episode :4080
+agent :first_0, avg score : -2.850, avg epi length : 1793
+agent :second_0, avg score : 2.850, avg epi length : 1793
+# of episode :4100
+agent :first_0, avg score : -5.250, avg epi length : 1827
+agent :second_0, avg score : 5.250, avg epi length : 1827
+Selfplay: update the model of opponent
+Evaluate reward:  20.666666666666668
+# of episode :4120
+agent :first_0, avg score : -18.800, avg epi length : 896
+agent :second_0, avg score : 18.800, avg epi length : 896
+Selfplay: update the model of opponent
+Evaluate reward:  20.0
+# of episode :4140
+agent :first_0, avg score : -19.650, avg epi length : 854
+agent :second_0, avg score : 19.650, avg epi length : 854
+Selfplay: update the model of opponent
+Evaluate reward:  20.666666666666668
+# of episode :4160
+agent :first_0, avg score : -19.350, avg epi length : 883
+agent :second_0, avg score : 19.350, avg epi length : 883
+Selfplay: update the model of opponent
+Evaluate reward:  19.666666666666668
+# of episode :4180
+agent :first_0, avg score : -18.650, avg epi length : 984
+agent :second_0, avg score : 18.650, avg epi length : 984
+Selfplay: update the model of opponent
+Evaluate reward:  20.333333333333332
+# of episode :4200
+agent :first_0, avg score : -20.100, avg epi length : 807
+agent :second_0, avg score : 20.100, avg epi length : 807
+Selfplay: update the model of opponent
+Evaluate reward:  20.0
+# of episode :4220
+agent :first_0, avg score : -19.700, avg epi length : 816
+agent :second_0, avg score : 19.700, avg epi length : 816
+Selfplay: update the model of opponent
+Evaluate reward:  19.0
+# of episode :4240
+agent :first_0, avg score : -19.150, avg epi length : 877
+agent :second_0, avg score : 19.150, avg epi length : 877
+Selfplay: update the model of opponent
+Evaluate reward:  19.0
+# of episode :4260
+agent :first_0, avg score : -19.500, avg epi length : 828
+agent :second_0, avg score : 19.500, avg epi length : 828
+Selfplay: update the model of opponent
+Evaluate reward:  19.0
+# of episode :4280
+agent :first_0, avg score : -19.100, avg epi length : 871
+agent :second_0, avg score : 19.100, avg epi length : 871
+Selfplay: update the model of opponent
+Evaluate reward:  18.666666666666668
+# of episode :4300
+agent :first_0, avg score : -18.550, avg epi length : 890
+agent :second_0, avg score : 18.550, avg epi length : 890
+Selfplay: update the model of opponent
+Evaluate reward:  18.0
+# of episode :4320
+agent :first_0, avg score : -17.350, avg epi length : 920
+agent :second_0, avg score : 17.350, avg epi length : 920
+Selfplay: update the model of opponent
+Evaluate reward:  20.0
+# of episode :4340
+agent :first_0, avg score : -18.050, avg epi length : 969
+agent :second_0, avg score : 18.050, avg epi length : 969
+Selfplay: update the model of opponent
+Evaluate reward:  9.333333333333334
+# of episode :4360
+agent :first_0, avg score : -10.900, avg epi length : 1440
+agent :second_0, avg score : 10.900, avg epi length : 1440
+Selfplay: update the model of opponent
+Evaluate reward:  19.0
+# of episode :4380
+agent :first_0, avg score : -18.700, avg epi length : 918
+agent :second_0, avg score : 18.700, avg epi length : 918
+Selfplay: update the model of opponent
+Evaluate reward:  19.666666666666668
+# of episode :4400
+agent :first_0, avg score : -17.050, avg epi length : 1010
+agent :second_0, avg score : 17.050, avg epi length : 1010
+Selfplay: update the model of opponent
+Evaluate reward:  16.333333333333332
+# of episode :4420
+agent :first_0, avg score : -18.250, avg epi length : 982
+agent :second_0, avg score : 18.250, avg epi length : 982
+Selfplay: update the model of opponent
+Evaluate reward:  20.333333333333332
+# of episode :4440
+agent :first_0, avg score : -19.400, avg epi length : 838
+agent :second_0, avg score : 19.400, avg epi length : 838
+Selfplay: update the model of opponent
+Evaluate reward:  3.3333333333333335
+# of episode :4460
+agent :first_0, avg score : -14.150, avg epi length : 1198
+agent :second_0, avg score : 14.150, avg epi length : 1198
+Selfplay: update the model of opponent
+Evaluate reward:  15.333333333333334
+# of episode :4480
+agent :first_0, avg score : -16.100, avg epi length : 1150
+agent :second_0, avg score : 16.100, avg epi length : 1150
+Selfplay: update the model of opponent
+Evaluate reward:  19.0
+# of episode :4500
+agent :first_0, avg score : -19.200, avg epi length : 854
+agent :second_0, avg score : 19.200, avg epi length : 854
+Selfplay: update the model of opponent
+Evaluate reward:  9.333333333333334
+# of episode :4520
+agent :first_0, avg score : -9.650, avg epi length : 1516
+agent :second_0, avg score : 9.650, avg epi length : 1516
+Selfplay: update the model of opponent
+Evaluate reward:  20.333333333333332
+# of episode :4540
+agent :first_0, avg score : -18.900, avg epi length : 871
+agent :second_0, avg score : 18.900, avg epi length : 871
+Selfplay: update the model of opponent
+Evaluate reward:  19.333333333333332
+# of episode :4560
+agent :first_0, avg score : -20.300, avg epi length : 790
+agent :second_0, avg score : 20.300, avg epi length : 790
+Selfplay: update the model of opponent
+Evaluate reward:  9.666666666666666
+# of episode :4580
+agent :first_0, avg score : -14.750, avg epi length : 1230
+agent :second_0, avg score : 14.750, avg epi length : 1230
+Selfplay: update the model of opponent
+Evaluate reward:  19.0
+# of episode :4600
+agent :first_0, avg score : -17.900, avg epi length : 933
+agent :second_0, avg score : 17.900, avg epi length : 933
+Selfplay: update the model of opponent
+Evaluate reward:  20.0
+# of episode :4620
+agent :first_0, avg score : -19.600, avg epi length : 826
+agent :second_0, avg score : 19.600, avg epi length : 826
+Selfplay: update the model of opponent
+Evaluate reward:  20.0
+# of episode :4640
+agent :first_0, avg score : -18.700, avg epi length : 898
+agent :second_0, avg score : 18.700, avg epi length : 898
+Selfplay: update the model of opponent
+Evaluate reward:  19.333333333333332
+# of episode :4660
+agent :first_0, avg score : -19.800, avg epi length : 812
+agent :second_0, avg score : 19.800, avg epi length : 812
+Selfplay: update the model of opponent
+Evaluate reward:  20.0
+# of episode :4680
+agent :first_0, avg score : -20.000, avg epi length : 820
+agent :second_0, avg score : 20.000, avg epi length : 820
+Selfplay: update the model of opponent
+Evaluate reward:  20.0
+# of episode :4700
+agent :first_0, avg score : -18.750, avg epi length : 897
+agent :second_0, avg score : 18.750, avg epi length : 897
+Selfplay: update the model of opponent
+Evaluate reward:  20.0
+# of episode :4720
+agent :first_0, avg score : -19.050, avg epi length : 888
+agent :second_0, avg score : 19.050, avg epi length : 888
+Selfplay: update the model of opponent
+Evaluate reward:  19.666666666666668
+# of episode :4740
+agent :first_0, avg score : -18.000, avg epi length : 959
+agent :second_0, avg score : 18.000, avg epi length : 959
+Selfplay: update the model of opponent
+Evaluate reward:  11.666666666666666
+# of episode :4760
+agent :first_0, avg score : -12.050, avg epi length : 1414
+agent :second_0, avg score : 12.050, avg epi length : 1414
+Selfplay: update the model of opponent
+Evaluate reward:  12.333333333333334
+# of episode :4780
+agent :first_0, avg score : -13.000, avg epi length : 1398
+agent :second_0, avg score : 13.000, avg epi length : 1398
+Selfplay: update the model of opponent
+Evaluate reward:  19.333333333333332
+# of episode :4800
+agent :first_0, avg score : -14.800, avg epi length : 1169
+agent :second_0, avg score : 14.800, avg epi length : 1169
+Selfplay: update the model of opponent
+Evaluate reward:  12.0
+# of episode :4820
+agent :first_0, avg score : -9.250, avg epi length : 1250
+agent :second_0, avg score : 9.250, avg epi length : 1250
+Selfplay: update the model of opponent
+Evaluate reward:  2.0
+# of episode :4840
+agent :first_0, avg score : -10.100, avg epi length : 1100
+agent :second_0, avg score : 10.100, avg epi length : 1100
+Selfplay: update the model of opponent
+Evaluate reward:  -5.666666666666667
+# of episode :4860
+agent :first_0, avg score : -9.600, avg epi length : 1353
+agent :second_0, avg score : 9.600, avg epi length : 1353
+Selfplay: update the model of opponent
+Evaluate reward:  9.0
+# of episode :4880
+agent :first_0, avg score : -7.600, avg epi length : 1447
+agent :second_0, avg score : 7.600, avg epi length : 1447
+Selfplay: update the model of opponent
+Evaluate reward:  0.6666666666666666
+# of episode :4900
+agent :first_0, avg score : -7.000, avg epi length : 1412
+agent :second_0, avg score : 7.000, avg epi length : 1412
+Selfplay: update the model of opponent
+Evaluate reward:  12.0
+# of episode :4920
+agent :first_0, avg score : -10.900, avg epi length : 1375
+agent :second_0, avg score : 10.900, avg epi length : 1375
+Selfplay: update the model of opponent
+Evaluate reward:  7.333333333333333
+# of episode :4940
+agent :first_0, avg score : -14.300, avg epi length : 1226
+agent :second_0, avg score : 14.300, avg epi length : 1226
+Selfplay: update the model of opponent
+Evaluate reward:  12.333333333333334
+# of episode :4960
+agent :first_0, avg score : -14.900, avg epi length : 1186
+agent :second_0, avg score : 14.900, avg epi length : 1186
+Selfplay: update the model of opponent
+Evaluate reward:  16.0
+# of episode :4980
+agent :first_0, avg score : -14.850, avg epi length : 1121
+agent :second_0, avg score : 14.850, avg epi length : 1121
+Selfplay: update the model of opponent
+Evaluate reward:  15.333333333333334
+# of episode :5000
+agent :first_0, avg score : -16.100, avg epi length : 1095
+agent :second_0, avg score : 16.100, avg epi length : 1095
+Selfplay: update the model of opponent
+Evaluate reward:  14.333333333333334
+# of episode :5020
+agent :first_0, avg score : -12.850, avg epi length : 1273
+agent :second_0, avg score : 12.850, avg epi length : 1273
+Selfplay: update the model of opponent
+Evaluate reward:  14.666666666666666
+# of episode :5040
+agent :first_0, avg score : -15.650, avg epi length : 1093
+agent :second_0, avg score : 15.650, avg epi length : 1093
+Selfplay: update the model of opponent
+Evaluate reward:  19.0
+# of episode :5060
+agent :first_0, avg score : -16.600, avg epi length : 1085
+agent :second_0, avg score : 16.600, avg epi length : 1085
+Selfplay: update the model of opponent
+Evaluate reward:  15.0
+# of episode :5080
+agent :first_0, avg score : -16.000, avg epi length : 1143
+agent :second_0, avg score : 16.000, avg epi length : 1143
+Selfplay: update the model of opponent
+Evaluate reward:  18.666666666666668
+# of episode :5100
+agent :first_0, avg score : -18.950, avg epi length : 885
+agent :second_0, avg score : 18.950, avg epi length : 885
+Selfplay: update the model of opponent
+Evaluate reward:  17.0
+# of episode :5120
+agent :first_0, avg score : -18.050, avg epi length : 934
+agent :second_0, avg score : 18.050, avg epi length : 934
+Selfplay: update the model of opponent
+Evaluate reward:  19.666666666666668
+# of episode :5140
+agent :first_0, avg score : -19.450, avg epi length : 837
+agent :second_0, avg score : 19.450, avg epi length : 837
+Selfplay: update the model of opponent
+Evaluate reward:  19.0
+# of episode :5160
+agent :first_0, avg score : -16.200, avg epi length : 1011
+agent :second_0, avg score : 16.200, avg epi length : 1011
+Selfplay: update the model of opponent
+Evaluate reward:  10.666666666666666
+# of episode :5180
+agent :first_0, avg score : -13.550, avg epi length : 1139
+agent :second_0, avg score : 13.550, avg epi length : 1139
+Selfplay: update the model of opponent
+Evaluate reward:  13.666666666666666
+# of episode :5200
+agent :first_0, avg score : -11.750, avg epi length : 1072
+agent :second_0, avg score : 11.750, avg epi length : 1072
+Selfplay: update the model of opponent
+Evaluate reward:  9.666666666666666
+# of episode :5220
+agent :first_0, avg score : -16.000, avg epi length : 1062
+agent :second_0, avg score : 16.000, avg epi length : 1062
+Selfplay: update the model of opponent
+Evaluate reward:  15.666666666666666
+# of episode :5240
+agent :first_0, avg score : -16.650, avg epi length : 976
+agent :second_0, avg score : 16.650, avg epi length : 976
+Selfplay: update the model of opponent
+Evaluate reward:  17.0
+# of episode :5260
+agent :first_0, avg score : -17.050, avg epi length : 1088
+agent :second_0, avg score : 17.050, avg epi length : 1088
+Selfplay: update the model of opponent
+Evaluate reward:  19.666666666666668
+# of episode :5280
+agent :first_0, avg score : -18.750, avg epi length : 940
+agent :second_0, avg score : 18.750, avg epi length : 940
+Selfplay: update the model of opponent
+Evaluate reward:  13.666666666666666
+# of episode :5300
+agent :first_0, avg score : -16.300, avg epi length : 1119
+agent :second_0, avg score : 16.300, avg epi length : 1119
+Selfplay: update the model of opponent
+Evaluate reward:  12.0
+# of episode :5320
+agent :first_0, avg score : -11.650, avg epi length : 1384
+agent :second_0, avg score : 11.650, avg epi length : 1384
+Selfplay: update the model of opponent
+Evaluate reward:  11.666666666666666
+# of episode :5340
+agent :first_0, avg score : -13.100, avg epi length : 1373
+agent :second_0, avg score : 13.100, avg epi length : 1373
+Selfplay: update the model of opponent
+Evaluate reward:  18.333333333333332
+# of episode :5360
+agent :first_0, avg score : -17.700, avg epi length : 988
+agent :second_0, avg score : 17.700, avg epi length : 988
+Selfplay: update the model of opponent
+Evaluate reward:  19.0
+# of episode :5380
+agent :first_0, avg score : -16.000, avg epi length : 1097
+agent :second_0, avg score : 16.000, avg epi length : 1097
+Selfplay: update the model of opponent
+Evaluate reward:  16.666666666666668
+# of episode :5400
+agent :first_0, avg score : -15.400, avg epi length : 1135
+agent :second_0, avg score : 15.400, avg epi length : 1135
+Selfplay: update the model of opponent
+Evaluate reward:  16.0
+# of episode :5420
+agent :first_0, avg score : -16.600, avg epi length : 1073
+agent :second_0, avg score : 16.600, avg epi length : 1073
+Selfplay: update the model of opponent
+Evaluate reward:  12.333333333333334
+# of episode :5440
+agent :first_0, avg score : -19.250, avg epi length : 857
+agent :second_0, avg score : 19.250, avg epi length : 857
+Selfplay: update the model of opponent
+Evaluate reward:  17.333333333333332
+# of episode :5460
+agent :first_0, avg score : -18.500, avg epi length : 892
+agent :second_0, avg score : 18.500, avg epi length : 892
+Selfplay: update the model of opponent
+Evaluate reward:  20.333333333333332
+# of episode :5480
+agent :first_0, avg score : -19.900, avg epi length : 830
+agent :second_0, avg score : 19.900, avg epi length : 830
+Selfplay: update the model of opponent
+Evaluate reward:  18.333333333333332
+# of episode :5500
+agent :first_0, avg score : -17.900, avg epi length : 959
+agent :second_0, avg score : 17.900, avg epi length : 959
+Selfplay: update the model of opponent
+Evaluate reward:  15.0
+# of episode :5520
+agent :first_0, avg score : -12.800, avg epi length : 1264
+agent :second_0, avg score : 12.800, avg epi length : 1264
+Selfplay: update the model of opponent
+Evaluate reward:  14.333333333333334
+# of episode :5540
+agent :first_0, avg score : -12.550, avg epi length : 1313
+agent :second_0, avg score : 12.550, avg epi length : 1313
+Selfplay: update the model of opponent
+Evaluate reward:  16.666666666666668
+# of episode :5560
+agent :first_0, avg score : -15.050, avg epi length : 1132
+agent :second_0, avg score : 15.050, avg epi length : 1132
+Selfplay: update the model of opponent
+Evaluate reward:  17.0
+# of episode :5580
+agent :first_0, avg score : -17.750, avg epi length : 949
+agent :second_0, avg score : 17.750, avg epi length : 949
+Selfplay: update the model of opponent
+Evaluate reward:  16.0
+# of episode :5600
+agent :first_0, avg score : -16.600, avg epi length : 1112
+agent :second_0, avg score : 16.600, avg epi length : 1112
+Selfplay: update the model of opponent
+Evaluate reward:  13.0
+# of episode :5620
+agent :first_0, avg score : -12.750, avg epi length : 1399
+agent :second_0, avg score : 12.750, avg epi length : 1399
+Selfplay: update the model of opponent
+Evaluate reward:  19.666666666666668
+# of episode :5640
+agent :first_0, avg score : -19.550, avg epi length : 847
+agent :second_0, avg score : 19.550, avg epi length : 847
+Selfplay: update the model of opponent
+Evaluate reward:  19.0
+# of episode :5660
+agent :first_0, avg score : -19.750, avg epi length : 839
+agent :second_0, avg score : 19.750, avg epi length : 839
+Selfplay: update the model of opponent
+Evaluate reward:  20.666666666666668
+# of episode :5680
+agent :first_0, avg score : -19.750, avg epi length : 829
+agent :second_0, avg score : 19.750, avg epi length : 829
+Selfplay: update the model of opponent
+Evaluate reward:  20.333333333333332
+# of episode :5700
+agent :first_0, avg score : -19.750, avg epi length : 843
+agent :second_0, avg score : 19.750, avg epi length : 843
+Selfplay: update the model of opponent
+Evaluate reward:  18.333333333333332
+# of episode :5720
+agent :first_0, avg score : -17.900, avg epi length : 988
+agent :second_0, avg score : 17.900, avg epi length : 988
+Selfplay: update the model of opponent
+Evaluate reward:  18.333333333333332
+# of episode :5740
+agent :first_0, avg score : -19.500, avg epi length : 898
+agent :second_0, avg score : 19.500, avg epi length : 898
+Selfplay: update the model of opponent
+Evaluate reward:  19.666666666666668
+# of episode :5760
+agent :first_0, avg score : -19.500, avg epi length : 846
+agent :second_0, avg score : 19.500, avg epi length : 846
+Selfplay: update the model of opponent
+Evaluate reward:  17.0
+# of episode :5780
+agent :first_0, avg score : -19.400, avg epi length : 858
+agent :second_0, avg score : 19.400, avg epi length : 858
+Selfplay: update the model of opponent
+Evaluate reward:  17.333333333333332
+# of episode :5800
+agent :first_0, avg score : -15.350, avg epi length : 1156
+agent :second_0, avg score : 15.350, avg epi length : 1156
+Selfplay: update the model of opponent
+Evaluate reward:  20.333333333333332
+# of episode :5820
+agent :first_0, avg score : -19.650, avg epi length : 870
+agent :second_0, avg score : 19.650, avg epi length : 870
+Selfplay: update the model of opponent
+Evaluate reward:  17.666666666666668
+# of episode :5840
+agent :first_0, avg score : -18.650, avg epi length : 956
+agent :second_0, avg score : 18.650, avg epi length : 956
+Selfplay: update the model of opponent
+Evaluate reward:  17.666666666666668
+# of episode :5860
+agent :first_0, avg score : -19.300, avg epi length : 859
+agent :second_0, avg score : 19.300, avg epi length : 859
+Selfplay: update the model of opponent
+Evaluate reward:  20.0
+# of episode :5880
+agent :first_0, avg score : -18.550, avg epi length : 902
+agent :second_0, avg score : 18.550, avg epi length : 902
+Selfplay: update the model of opponent
+Evaluate reward:  19.0
+# of episode :5900
+agent :first_0, avg score : -19.000, avg epi length : 884
+agent :second_0, avg score : 19.000, avg epi length : 884
+Selfplay: update the model of opponent
+Evaluate reward:  16.0
+# of episode :5920
+agent :first_0, avg score : -14.150, avg epi length : 1229
+agent :second_0, avg score : 14.150, avg epi length : 1229
+Selfplay: update the model of opponent
+Evaluate reward:  5.0
+# of episode :5940
+agent :first_0, avg score : -6.800, avg epi length : 1462
+agent :second_0, avg score : 6.800, avg epi length : 1462
+Selfplay: update the model of opponent
+Evaluate reward:  16.333333333333332
+# of episode :5960
+agent :first_0, avg score : -13.250, avg epi length : 1208
+agent :second_0, avg score : 13.250, avg epi length : 1208
+Selfplay: update the model of opponent
+Evaluate reward:  12.0
+# of episode :5980
+agent :first_0, avg score : -13.850, avg epi length : 1305
+agent :second_0, avg score : 13.850, avg epi length : 1305
+Selfplay: update the model of opponent
+Evaluate reward:  16.0
+# of episode :6000
+agent :first_0, avg score : -14.850, avg epi length : 1117
+agent :second_0, avg score : 14.850, avg epi length : 1117
+Selfplay: update the model of opponent
+Evaluate reward:  19.666666666666668
+# of episode :6020
+agent :first_0, avg score : -19.700, avg epi length : 819
+agent :second_0, avg score : 19.700, avg epi length : 819
+Selfplay: update the model of opponent
+Evaluate reward:  17.333333333333332
+# of episode :6040
+agent :first_0, avg score : -15.950, avg epi length : 1071
+agent :second_0, avg score : 15.950, avg epi length : 1071
+Selfplay: update the model of opponent
+Evaluate reward:  16.0
+# of episode :6060
+agent :first_0, avg score : -13.500, avg epi length : 1106
+agent :second_0, avg score : 13.500, avg epi length : 1106
+Selfplay: update the model of opponent
+Evaluate reward:  10.0
+# of episode :6080
+agent :first_0, avg score : 2.550, avg epi length : 1065
+agent :second_0, avg score : -2.550, avg epi length : 1065
+# of episode :6100
+agent :first_0, avg score : 15.100, avg epi length : 862
+agent :second_0, avg score : -15.100, avg epi length : 862
+# of episode :6120
+agent :first_0, avg score : 7.950, avg epi length : 1060
+agent :second_0, avg score : -7.950, avg epi length : 1060
+# of episode :6140
+agent :first_0, avg score : -2.750, avg epi length : 1287
+agent :second_0, avg score : 2.750, avg epi length : 1287
+# of episode :6160
+agent :first_0, avg score : -4.300, avg epi length : 1244
+agent :second_0, avg score : 4.300, avg epi length : 1244
+# of episode :6180
+agent :first_0, avg score : -8.200, avg epi length : 1130
+agent :second_0, avg score : 8.200, avg epi length : 1130
+Selfplay: update the model of opponent
+Evaluate reward:  -6.333333333333333
+# of episode :6200
+agent :first_0, avg score : 1.350, avg epi length : 1239
+agent :second_0, avg score : -1.350, avg epi length : 1239
+# of episode :6220
+agent :first_0, avg score : -5.100, avg epi length : 1317
+agent :second_0, avg score : 5.100, avg epi length : 1317
+Selfplay: update the model of opponent
+Evaluate reward:  12.666666666666666
+# of episode :6240
+agent :first_0, avg score : -6.800, avg epi length : 1360
+agent :second_0, avg score : 6.800, avg epi length : 1360
+Selfplay: update the model of opponent
+Evaluate reward:  1.0
+# of episode :6260
+agent :first_0, avg score : 1.550, avg epi length : 1418
+agent :second_0, avg score : -1.550, avg epi length : 1418
+# of episode :6280
+agent :first_0, avg score : -9.500, avg epi length : 1392
+agent :second_0, avg score : 9.500, avg epi length : 1392
+Selfplay: update the model of opponent
+Evaluate reward:  4.333333333333333
+# of episode :6300
+agent :first_0, avg score : -6.400, avg epi length : 1643
+agent :second_0, avg score : 6.400, avg epi length : 1643
+Selfplay: update the model of opponent
+Evaluate reward:  14.666666666666666
+# of episode :6320
+agent :first_0, avg score : -0.450, avg epi length : 1224
+agent :second_0, avg score : 0.450, avg epi length : 1224
+# of episode :6340
+agent :first_0, avg score : -5.350, avg epi length : 1339
+agent :second_0, avg score : 5.350, avg epi length : 1339
+Selfplay: update the model of opponent
+Evaluate reward:  20.0
+# of episode :6360
+agent :first_0, avg score : -18.150, avg epi length : 922
+agent :second_0, avg score : 18.150, avg epi length : 922
+Selfplay: update the model of opponent
+Evaluate reward:  11.0
+# of episode :6380
+agent :first_0, avg score : -13.200, avg epi length : 1239
+agent :second_0, avg score : 13.200, avg epi length : 1239
+Selfplay: update the model of opponent
+Evaluate reward:  14.666666666666666
+# of episode :6400
+agent :first_0, avg score : -10.100, avg epi length : 1409
+agent :second_0, avg score : 10.100, avg epi length : 1409
+Selfplay: update the model of opponent
+Evaluate reward:  4.333333333333333
+# of episode :6420
+agent :first_0, avg score : -3.100, avg epi length : 1341
+agent :second_0, avg score : 3.100, avg epi length : 1341
+# of episode :6440
+agent :first_0, avg score : -9.650, avg epi length : 1437
+agent :second_0, avg score : 9.650, avg epi length : 1437
+Selfplay: update the model of opponent
+Evaluate reward:  7.0
+# of episode :6460
+agent :first_0, avg score : -8.600, avg epi length : 1577
+agent :second_0, avg score : 8.600, avg epi length : 1577
+Selfplay: update the model of opponent
+Evaluate reward:  10.666666666666666
+# of episode :6480
+agent :first_0, avg score : -15.600, avg epi length : 1087
+agent :second_0, avg score : 15.600, avg epi length : 1087
+Selfplay: update the model of opponent
+Evaluate reward:  10.0
+# of episode :6500
+agent :first_0, avg score : -6.650, avg epi length : 1405
+agent :second_0, avg score : 6.650, avg epi length : 1405
+Selfplay: update the model of opponent
+Evaluate reward:  13.333333333333334
+# of episode :6520
+agent :first_0, avg score : -13.550, avg epi length : 1311
+agent :second_0, avg score : 13.550, avg epi length : 1311
+Selfplay: update the model of opponent
+Evaluate reward:  20.666666666666668
+# of episode :6540
+agent :first_0, avg score : -19.550, avg epi length : 837
+agent :second_0, avg score : 19.550, avg epi length : 837
+Selfplay: update the model of opponent
+Evaluate reward:  19.0
+# of episode :6560
+agent :first_0, avg score : -18.950, avg epi length : 876
+agent :second_0, avg score : 18.950, avg epi length : 876
+Selfplay: update the model of opponent
+Evaluate reward:  17.666666666666668
+# of episode :6580
+agent :first_0, avg score : -19.300, avg epi length : 864
+agent :second_0, avg score : 19.300, avg epi length : 864
+Selfplay: update the model of opponent
+Evaluate reward:  20.666666666666668
+# of episode :6600
+agent :first_0, avg score : -19.200, avg epi length : 879
+agent :second_0, avg score : 19.200, avg epi length : 879
+Selfplay: update the model of opponent
+Evaluate reward:  16.666666666666668
+# of episode :6620
+agent :first_0, avg score : -16.900, avg epi length : 1068
+agent :second_0, avg score : 16.900, avg epi length : 1068
+Selfplay: update the model of opponent
+Evaluate reward:  13.0
+# of episode :6640
+agent :first_0, avg score : -16.900, avg epi length : 1040
+agent :second_0, avg score : 16.900, avg epi length : 1040
+Selfplay: update the model of opponent
+Evaluate reward:  8.0
+# of episode :6660
+agent :first_0, avg score : -7.200, avg epi length : 1483
+agent :second_0, avg score : 7.200, avg epi length : 1483
+Selfplay: update the model of opponent
+Evaluate reward:  15.333333333333334
+# of episode :6680
+agent :first_0, avg score : -16.150, avg epi length : 1042
+agent :second_0, avg score : 16.150, avg epi length : 1042
+Selfplay: update the model of opponent
+Evaluate reward:  3.6666666666666665
+# of episode :6700
+agent :first_0, avg score : -4.450, avg epi length : 1677
+agent :second_0, avg score : 4.450, avg epi length : 1677
+# of episode :6720
+agent :first_0, avg score : -1.450, avg epi length : 1678
+agent :second_0, avg score : 1.450, avg epi length : 1678
+# of episode :6740
+agent :first_0, avg score : -1.550, avg epi length : 1674
+agent :second_0, avg score : 1.550, avg epi length : 1674
+# of episode :6760
+agent :first_0, avg score : -6.000, avg epi length : 1637
+agent :second_0, avg score : 6.000, avg epi length : 1637
+Selfplay: update the model of opponent
+Evaluate reward:  15.333333333333334
+# of episode :6780
+agent :first_0, avg score : -17.900, avg epi length : 956
+agent :second_0, avg score : 17.900, avg epi length : 956
+Selfplay: update the model of opponent
+Evaluate reward:  12.0
+# of episode :6800
+agent :first_0, avg score : -13.350, avg epi length : 1360
+agent :second_0, avg score : 13.350, avg epi length : 1360
+Selfplay: update the model of opponent
+Evaluate reward:  7.666666666666667
+# of episode :6820
+agent :first_0, avg score : -6.900, avg epi length : 1559
+agent :second_0, avg score : 6.900, avg epi length : 1559
+Selfplay: update the model of opponent
+Evaluate reward:  18.333333333333332
+# of episode :6840
+agent :first_0, avg score : -16.050, avg epi length : 1054
+agent :second_0, avg score : 16.050, avg epi length : 1054
+Selfplay: update the model of opponent
+Evaluate reward:  20.666666666666668
+# of episode :6860
+agent :first_0, avg score : -17.200, avg epi length : 968
+agent :second_0, avg score : 17.200, avg epi length : 968
+Selfplay: update the model of opponent
+Evaluate reward:  18.666666666666668
+# of episode :6880
+agent :first_0, avg score : -19.500, avg epi length : 838
+agent :second_0, avg score : 19.500, avg epi length : 838
+Selfplay: update the model of opponent
+Evaluate reward:  18.333333333333332
+# of episode :6900
+agent :first_0, avg score : -19.300, avg epi length : 838
+agent :second_0, avg score : 19.300, avg epi length : 838
+Selfplay: update the model of opponent
+Evaluate reward:  19.666666666666668
+# of episode :6920
+agent :first_0, avg score : -19.850, avg epi length : 831
+agent :second_0, avg score : 19.850, avg epi length : 831
+Selfplay: update the model of opponent
+Evaluate reward:  20.0
+# of episode :6940
+agent :first_0, avg score : -17.900, avg epi length : 908
+agent :second_0, avg score : 17.900, avg epi length : 908
+Selfplay: update the model of opponent
+Evaluate reward:  20.0
+# of episode :6960
+agent :first_0, avg score : -17.700, avg epi length : 931
+agent :second_0, avg score : 17.700, avg epi length : 931
+Selfplay: update the model of opponent
+Evaluate reward:  20.333333333333332
+# of episode :6980
+agent :first_0, avg score : -18.400, avg epi length : 913
+agent :second_0, avg score : 18.400, avg epi length : 913
+Selfplay: update the model of opponent
+Evaluate reward:  17.0
+# of episode :7000
+agent :first_0, avg score : -16.450, avg epi length : 1051
+agent :second_0, avg score : 16.450, avg epi length : 1051
+Selfplay: update the model of opponent
+Evaluate reward:  16.0
+# of episode :7020
+agent :first_0, avg score : -18.050, avg epi length : 942
+agent :second_0, avg score : 18.050, avg epi length : 942
+Selfplay: update the model of opponent
+Evaluate reward:  20.333333333333332
+# of episode :7040
+agent :first_0, avg score : -19.700, avg epi length : 821
+agent :second_0, avg score : 19.700, avg epi length : 821
+Selfplay: update the model of opponent
+Evaluate reward:  12.333333333333334
+# of episode :7060
+agent :first_0, avg score : -13.300, avg epi length : 1194
+agent :second_0, avg score : 13.300, avg epi length : 1194
+Selfplay: update the model of opponent
+Evaluate reward:  19.333333333333332
+# of episode :7080
+agent :first_0, avg score : -18.650, avg epi length : 897
+agent :second_0, avg score : 18.650, avg epi length : 897
+Selfplay: update the model of opponent
+Evaluate reward:  19.333333333333332
+# of episode :7100
+agent :first_0, avg score : -19.100, avg epi length : 866
+agent :second_0, avg score : 19.100, avg epi length : 866
+Selfplay: update the model of opponent
+Evaluate reward:  17.333333333333332
+# of episode :7120
+agent :first_0, avg score : -15.750, avg epi length : 1091
+agent :second_0, avg score : 15.750, avg epi length : 1091
+Selfplay: update the model of opponent
+Evaluate reward:  18.0
+# of episode :7140
+agent :first_0, avg score : -15.600, avg epi length : 1043
+agent :second_0, avg score : 15.600, avg epi length : 1043
+Selfplay: update the model of opponent
+Evaluate reward:  14.333333333333334
+# of episode :7160
+agent :first_0, avg score : -7.450, avg epi length : 1580
+agent :second_0, avg score : 7.450, avg epi length : 1580
+Selfplay: update the model of opponent
+Evaluate reward:  17.666666666666668
+# of episode :7180
+agent :first_0, avg score : -14.400, avg epi length : 989
+agent :second_0, avg score : 14.400, avg epi length : 989
+Selfplay: update the model of opponent
+Evaluate reward:  16.333333333333332
+# of episode :7200
+agent :first_0, avg score : -17.450, avg epi length : 950
+agent :second_0, avg score : 17.450, avg epi length : 950
+Selfplay: update the model of opponent
+Evaluate reward:  14.333333333333334
+# of episode :7220
+agent :first_0, avg score : -14.200, avg epi length : 1180
+agent :second_0, avg score : 14.200, avg epi length : 1180
+Selfplay: update the model of opponent
+Evaluate reward:  12.333333333333334
+# of episode :7240
+agent :first_0, avg score : -17.100, avg epi length : 953
+agent :second_0, avg score : 17.100, avg epi length : 953
+Selfplay: update the model of opponent
+Evaluate reward:  6.666666666666667
+# of episode :7260
+agent :first_0, avg score : -10.000, avg epi length : 1253
+agent :second_0, avg score : 10.000, avg epi length : 1253
+Selfplay: update the model of opponent
+Evaluate reward:  15.0
+# of episode :7280
+agent :first_0, avg score : -12.950, avg epi length : 1198
+agent :second_0, avg score : 12.950, avg epi length : 1198
+Selfplay: update the model of opponent
+Evaluate reward:  19.666666666666668
+# of episode :7300
+agent :first_0, avg score : -17.350, avg epi length : 937
+agent :second_0, avg score : 17.350, avg epi length : 937
+Selfplay: update the model of opponent
+Evaluate reward:  18.666666666666668
+# of episode :7320
+agent :first_0, avg score : -19.100, avg epi length : 853
+agent :second_0, avg score : 19.100, avg epi length : 853
+Selfplay: update the model of opponent
+Evaluate reward:  20.333333333333332
+# of episode :7340
+agent :first_0, avg score : -17.300, avg epi length : 968
+agent :second_0, avg score : 17.300, avg epi length : 968
+Selfplay: update the model of opponent
+Evaluate reward:  15.0
+# of episode :7360
+agent :first_0, avg score : -16.300, avg epi length : 1070
+agent :second_0, avg score : 16.300, avg epi length : 1070
+Selfplay: update the model of opponent
+Evaluate reward:  19.0
+# of episode :7380
+agent :first_0, avg score : -16.700, avg epi length : 1037
+agent :second_0, avg score : 16.700, avg epi length : 1037
+Selfplay: update the model of opponent
+Evaluate reward:  15.0
+# of episode :7400
+agent :first_0, avg score : -9.300, avg epi length : 1273
+agent :second_0, avg score : 9.300, avg epi length : 1273
+Selfplay: update the model of opponent
+Evaluate reward:  12.666666666666666
+# of episode :7420
+agent :first_0, avg score : -7.150, avg epi length : 1444
+agent :second_0, avg score : 7.150, avg epi length : 1444
+Selfplay: update the model of opponent
+Evaluate reward:  14.666666666666666
+# of episode :7440
+agent :first_0, avg score : -14.650, avg epi length : 1149
+agent :second_0, avg score : 14.650, avg epi length : 1149
+Selfplay: update the model of opponent
+Evaluate reward:  14.333333333333334
+# of episode :7460
+agent :first_0, avg score : -13.700, avg epi length : 1143
+agent :second_0, avg score : 13.700, avg epi length : 1143
+Selfplay: update the model of opponent
+Evaluate reward:  11.666666666666666
+# of episode :7480
+agent :first_0, avg score : -15.600, avg epi length : 1088
+agent :second_0, avg score : 15.600, avg epi length : 1088
+Selfplay: update the model of opponent
+Evaluate reward:  15.666666666666666
+# of episode :7500
+agent :first_0, avg score : -14.700, avg epi length : 1034
+agent :second_0, avg score : 14.700, avg epi length : 1034
+Selfplay: update the model of opponent
+Evaluate reward:  3.3333333333333335
+# of episode :7520
+agent :first_0, avg score : 4.500, avg epi length : 1188
+agent :second_0, avg score : -4.500, avg epi length : 1188
+# of episode :7540
+agent :first_0, avg score : -7.950, avg epi length : 1329
+agent :second_0, avg score : 7.950, avg epi length : 1329
+Selfplay: update the model of opponent
+Evaluate reward:  13.0
+# of episode :7560
+agent :first_0, avg score : -12.300, avg epi length : 1218
+agent :second_0, avg score : 12.300, avg epi length : 1218
+Selfplay: update the model of opponent
+Evaluate reward:  18.0
+# of episode :7580
+agent :first_0, avg score : -8.500, avg epi length : 1308
+agent :second_0, avg score : 8.500, avg epi length : 1308
+Selfplay: update the model of opponent
+Evaluate reward:  17.333333333333332
+# of episode :7600
+agent :first_0, avg score : -13.300, avg epi length : 1201
+agent :second_0, avg score : 13.300, avg epi length : 1201
+Selfplay: update the model of opponent
+Evaluate reward:  12.0
+# of episode :7620
+agent :first_0, avg score : -12.400, avg epi length : 1305
+agent :second_0, avg score : 12.400, avg epi length : 1305
+Selfplay: update the model of opponent
+Evaluate reward:  0.3333333333333333
+# of episode :7640
+agent :first_0, avg score : -12.850, avg epi length : 1327
+agent :second_0, avg score : 12.850, avg epi length : 1327
+Selfplay: update the model of opponent
+Evaluate reward:  11.333333333333334
+# of episode :7660
+agent :first_0, avg score : -12.150, avg epi length : 1325
+agent :second_0, avg score : 12.150, avg epi length : 1325
+Selfplay: update the model of opponent
+Evaluate reward:  18.666666666666668
+# of episode :7680
+agent :first_0, avg score : -18.500, avg epi length : 903
+agent :second_0, avg score : 18.500, avg epi length : 903
+Selfplay: update the model of opponent
+Evaluate reward:  15.666666666666666
+# of episode :7700
+agent :first_0, avg score : -16.000, avg epi length : 1023
+agent :second_0, avg score : 16.000, avg epi length : 1023
+Selfplay: update the model of opponent
+Evaluate reward:  4.0
+# of episode :7720
+agent :first_0, avg score : -15.300, avg epi length : 1064
+agent :second_0, avg score : 15.300, avg epi length : 1064
+Selfplay: update the model of opponent
+Evaluate reward:  14.0
+# of episode :7740
+agent :first_0, avg score : -16.500, avg epi length : 1017
+agent :second_0, avg score : 16.500, avg epi length : 1017
+Selfplay: update the model of opponent
+Evaluate reward:  8.333333333333334
+# of episode :7760
+agent :first_0, avg score : -13.650, avg epi length : 1234
+agent :second_0, avg score : 13.650, avg epi length : 1234
+Selfplay: update the model of opponent
+Evaluate reward:  19.333333333333332
+# of episode :7780
+agent :first_0, avg score : -19.550, avg epi length : 845
+agent :second_0, avg score : 19.550, avg epi length : 845
+Selfplay: update the model of opponent
+Evaluate reward:  19.333333333333332
+# of episode :7800
+agent :first_0, avg score : -16.600, avg epi length : 1067
+agent :second_0, avg score : 16.600, avg epi length : 1067
+Selfplay: update the model of opponent
+Evaluate reward:  9.666666666666666
+# of episode :7820
+agent :first_0, avg score : -17.300, avg epi length : 1011
+agent :second_0, avg score : 17.300, avg epi length : 1011
+Selfplay: update the model of opponent
+Evaluate reward:  20.0
+# of episode :7840
+agent :first_0, avg score : -16.700, avg epi length : 961
+agent :second_0, avg score : 16.700, avg epi length : 961
+Selfplay: update the model of opponent
+Evaluate reward:  18.0
+# of episode :7860
+agent :first_0, avg score : -16.750, avg epi length : 1050
+agent :second_0, avg score : 16.750, avg epi length : 1050
+Selfplay: update the model of opponent
+Evaluate reward:  18.333333333333332
+# of episode :7880
+agent :first_0, avg score : -17.850, avg epi length : 965
+agent :second_0, avg score : 17.850, avg epi length : 965
+Selfplay: update the model of opponent
+Evaluate reward:  19.0
+# of episode :7900
+agent :first_0, avg score : -18.100, avg epi length : 993
+agent :second_0, avg score : 18.100, avg epi length : 993
+Selfplay: update the model of opponent
+Evaluate reward:  17.666666666666668
+# of episode :7920
+agent :first_0, avg score : -14.550, avg epi length : 1327
+agent :second_0, avg score : 14.550, avg epi length : 1327
+Selfplay: update the model of opponent
+Evaluate reward:  17.666666666666668
+# of episode :7940
+agent :first_0, avg score : -18.300, avg epi length : 926
+agent :second_0, avg score : 18.300, avg epi length : 926
+Selfplay: update the model of opponent
+Evaluate reward:  19.0
+# of episode :7960
+agent :first_0, avg score : -17.000, avg epi length : 988
+agent :second_0, avg score : 17.000, avg epi length : 988
+Selfplay: update the model of opponent
+Evaluate reward:  18.333333333333332
+# of episode :7980
+agent :first_0, avg score : -19.100, avg epi length : 845
+agent :second_0, avg score : 19.100, avg epi length : 845
+Selfplay: update the model of opponent
+Evaluate reward:  18.333333333333332
+# of episode :8000
+agent :first_0, avg score : -18.250, avg epi length : 926
+agent :second_0, avg score : 18.250, avg epi length : 926
+Selfplay: update the model of opponent
+Evaluate reward:  15.0
+# of episode :8020
+agent :first_0, avg score : -17.600, avg epi length : 1047
+agent :second_0, avg score : 17.600, avg epi length : 1047
+Selfplay: update the model of opponent
+Evaluate reward:  19.0
+# of episode :8040
+agent :first_0, avg score : -19.250, avg epi length : 940
+agent :second_0, avg score : 19.250, avg epi length : 940
+Selfplay: update the model of opponent
+Evaluate reward:  20.0
+# of episode :8060
+agent :first_0, avg score : -17.850, avg epi length : 1042
+agent :second_0, avg score : 17.850, avg epi length : 1042
+Selfplay: update the model of opponent
+Evaluate reward:  20.666666666666668
+# of episode :8080
+agent :first_0, avg score : -19.700, avg epi length : 820
+agent :second_0, avg score : 19.700, avg epi length : 820
+Selfplay: update the model of opponent
+Evaluate reward:  13.666666666666666
+# of episode :8100
+agent :first_0, avg score : -12.700, avg epi length : 1412
+agent :second_0, avg score : 12.700, avg epi length : 1412
+Selfplay: update the model of opponent
+Evaluate reward:  12.0
+# of episode :8120
+agent :first_0, avg score : -16.000, avg epi length : 1198
+agent :second_0, avg score : 16.000, avg epi length : 1198
+Selfplay: update the model of opponent
+Evaluate reward:  17.333333333333332
+# of episode :8140
+agent :first_0, avg score : -16.700, avg epi length : 993
+agent :second_0, avg score : 16.700, avg epi length : 993
+Selfplay: update the model of opponent
+Evaluate reward:  6.333333333333333
+# of episode :8160
+agent :first_0, avg score : -6.850, avg epi length : 1323
+agent :second_0, avg score : 6.850, avg epi length : 1323
+Selfplay: update the model of opponent
+Evaluate reward:  19.666666666666668
+# of episode :8180
+agent :first_0, avg score : -16.600, avg epi length : 954
+agent :second_0, avg score : 16.600, avg epi length : 954
+Selfplay: update the model of opponent
+Evaluate reward:  -3.0
+# of episode :8200
+agent :first_0, avg score : -12.700, avg epi length : 1352
+agent :second_0, avg score : 12.700, avg epi length : 1352
+Selfplay: update the model of opponent
+Evaluate reward:  20.333333333333332
+# of episode :8220
+agent :first_0, avg score : -18.850, avg epi length : 890
+agent :second_0, avg score : 18.850, avg epi length : 890
+Selfplay: update the model of opponent
+Evaluate reward:  17.333333333333332
+# of episode :8240
+agent :first_0, avg score : -18.000, avg epi length : 885
+agent :second_0, avg score : 18.000, avg epi length : 885
+Selfplay: update the model of opponent
+Evaluate reward:  19.666666666666668
+# of episode :8260
+agent :first_0, avg score : -19.700, avg epi length : 827
+agent :second_0, avg score : 19.700, avg epi length : 827
+Selfplay: update the model of opponent
+Evaluate reward:  17.666666666666668
+# of episode :8280
+agent :first_0, avg score : -15.800, avg epi length : 1135
+agent :second_0, avg score : 15.800, avg epi length : 1135
+Selfplay: update the model of opponent
+Evaluate reward:  18.0
+# of episode :8300
+agent :first_0, avg score : -15.800, avg epi length : 1069
+agent :second_0, avg score : 15.800, avg epi length : 1069
+Selfplay: update the model of opponent
+Evaluate reward:  20.333333333333332
+# of episode :8320
+agent :first_0, avg score : -13.200, avg epi length : 1250
+agent :second_0, avg score : 13.200, avg epi length : 1250
+Selfplay: update the model of opponent
+Evaluate reward:  16.0
+# of episode :8340
+agent :first_0, avg score : -16.650, avg epi length : 1013
+agent :second_0, avg score : 16.650, avg epi length : 1013
+Selfplay: update the model of opponent
+Evaluate reward:  15.333333333333334
+# of episode :8360
+agent :first_0, avg score : -16.450, avg epi length : 972
+agent :second_0, avg score : 16.450, avg epi length : 972
+Selfplay: update the model of opponent
+Evaluate reward:  13.666666666666666
+# of episode :8380
+agent :first_0, avg score : -17.650, avg epi length : 934
+agent :second_0, avg score : 17.650, avg epi length : 934
+Selfplay: update the model of opponent
+Evaluate reward:  19.666666666666668
+# of episode :8400
+agent :first_0, avg score : -18.600, avg epi length : 882
+agent :second_0, avg score : 18.600, avg epi length : 882
+Selfplay: update the model of opponent
+Evaluate reward:  16.0
+# of episode :8420
+agent :first_0, avg score : -15.400, avg epi length : 1159
+agent :second_0, avg score : 15.400, avg epi length : 1159
+Selfplay: update the model of opponent
+Evaluate reward:  15.666666666666666
+# of episode :8440
+agent :first_0, avg score : -16.400, avg epi length : 1068
+agent :second_0, avg score : 16.400, avg epi length : 1068
+Selfplay: update the model of opponent
+Evaluate reward:  18.666666666666668
+# of episode :8460
+agent :first_0, avg score : -18.500, avg epi length : 885
+agent :second_0, avg score : 18.500, avg epi length : 885
+Selfplay: update the model of opponent
+Evaluate reward:  20.333333333333332
+# of episode :8480
+agent :first_0, avg score : -18.750, avg epi length : 882
+agent :second_0, avg score : 18.750, avg epi length : 882
+Selfplay: update the model of opponent
+Evaluate reward:  18.666666666666668
+# of episode :8500
+agent :first_0, avg score : -19.500, avg epi length : 825
+agent :second_0, avg score : 19.500, avg epi length : 825
+Selfplay: update the model of opponent
+Evaluate reward:  18.0
+# of episode :8520
+agent :first_0, avg score : -15.100, avg epi length : 1129
+agent :second_0, avg score : 15.100, avg epi length : 1129
+Selfplay: update the model of opponent
+Evaluate reward:  17.666666666666668
+# of episode :8540
+agent :first_0, avg score : -19.900, avg epi length : 815
+agent :second_0, avg score : 19.900, avg epi length : 815
+Selfplay: update the model of opponent
+Evaluate reward:  16.333333333333332
+# of episode :8560
+agent :first_0, avg score : -15.150, avg epi length : 1216
+agent :second_0, avg score : 15.150, avg epi length : 1216
+Selfplay: update the model of opponent
+Evaluate reward:  19.666666666666668
+# of episode :8580
+agent :first_0, avg score : -17.200, avg epi length : 1033
+agent :second_0, avg score : 17.200, avg epi length : 1033
+Selfplay: update the model of opponent
+Evaluate reward:  18.333333333333332
+# of episode :8600
+agent :first_0, avg score : -18.150, avg epi length : 973
+agent :second_0, avg score : 18.150, avg epi length : 973
+Selfplay: update the model of opponent
+Evaluate reward:  15.333333333333334
+# of episode :8620
+agent :first_0, avg score : -15.850, avg epi length : 1165
+agent :second_0, avg score : 15.850, avg epi length : 1165
+Selfplay: update the model of opponent
+Evaluate reward:  17.0
+# of episode :8640
+agent :first_0, avg score : -13.050, avg epi length : 1238
+agent :second_0, avg score : 13.050, avg epi length : 1238
+Selfplay: update the model of opponent
+Evaluate reward:  11.666666666666666
+# of episode :8660
+agent :first_0, avg score : -17.100, avg epi length : 1077
+agent :second_0, avg score : 17.100, avg epi length : 1077
+Selfplay: update the model of opponent
+Evaluate reward:  10.0
+# of episode :8680
+agent :first_0, avg score : -14.000, avg epi length : 1269
+agent :second_0, avg score : 14.000, avg epi length : 1269
+Selfplay: update the model of opponent
+Evaluate reward:  15.0
+# of episode :8700
+agent :first_0, avg score : -19.450, avg epi length : 860
+agent :second_0, avg score : 19.450, avg epi length : 860
+Selfplay: update the model of opponent
+Evaluate reward:  18.0
+# of episode :8720
+agent :first_0, avg score : -14.250, avg epi length : 1188
+agent :second_0, avg score : 14.250, avg epi length : 1188
+Selfplay: update the model of opponent
+Evaluate reward:  15.333333333333334
+# of episode :8740
+agent :first_0, avg score : -14.000, avg epi length : 1284
+agent :second_0, avg score : 14.000, avg epi length : 1284
+Selfplay: update the model of opponent
+Evaluate reward:  14.666666666666666
+# of episode :8760
+agent :first_0, avg score : -14.800, avg epi length : 1124
+agent :second_0, avg score : 14.800, avg epi length : 1124
+Selfplay: update the model of opponent
+Evaluate reward:  15.666666666666666
+# of episode :8780
+agent :first_0, avg score : -15.300, avg epi length : 1143
+agent :second_0, avg score : 15.300, avg epi length : 1143
+Selfplay: update the model of opponent
+Evaluate reward:  20.333333333333332
+# of episode :8800
+agent :first_0, avg score : -18.750, avg epi length : 908
+agent :second_0, avg score : 18.750, avg epi length : 908
+Selfplay: update the model of opponent
+Evaluate reward:  16.666666666666668
+# of episode :8820
+agent :first_0, avg score : -17.350, avg epi length : 1028
+agent :second_0, avg score : 17.350, avg epi length : 1028
+Selfplay: update the model of opponent
+Evaluate reward:  18.0
+# of episode :8840
+agent :first_0, avg score : -17.600, avg epi length : 1016
+agent :second_0, avg score : 17.600, avg epi length : 1016
+Selfplay: update the model of opponent
+Evaluate reward:  15.666666666666666
+# of episode :8860
+agent :first_0, avg score : -15.450, avg epi length : 1191
+agent :second_0, avg score : 15.450, avg epi length : 1191
+Selfplay: update the model of opponent
+Evaluate reward:  14.666666666666666
+# of episode :8880
+agent :first_0, avg score : -17.000, avg epi length : 1054
+agent :second_0, avg score : 17.000, avg epi length : 1054
+Selfplay: update the model of opponent
+Evaluate reward:  14.666666666666666
+# of episode :8900
+agent :first_0, avg score : -16.450, avg epi length : 1047
+agent :second_0, avg score : 16.450, avg epi length : 1047
+Selfplay: update the model of opponent
+Evaluate reward:  14.333333333333334
+# of episode :8920
+agent :first_0, avg score : -14.450, avg epi length : 1229
+agent :second_0, avg score : 14.450, avg epi length : 1229
+Selfplay: update the model of opponent
+Evaluate reward:  18.333333333333332
+# of episode :8940
+agent :first_0, avg score : -19.000, avg epi length : 886
+agent :second_0, avg score : 19.000, avg epi length : 886
+Selfplay: update the model of opponent
+Evaluate reward:  19.0
+# of episode :8960
+agent :first_0, avg score : -18.300, avg epi length : 948
+agent :second_0, avg score : 18.300, avg epi length : 948
+Selfplay: update the model of opponent
+Evaluate reward:  19.333333333333332
+# of episode :8980
+agent :first_0, avg score : -19.250, avg epi length : 895
+agent :second_0, avg score : 19.250, avg epi length : 895
+Selfplay: update the model of opponent
+Evaluate reward:  20.0
+# of episode :9000
+agent :first_0, avg score : -15.800, avg epi length : 1102
+agent :second_0, avg score : 15.800, avg epi length : 1102
+Selfplay: update the model of opponent
+Evaluate reward:  18.666666666666668
+# of episode :9020
+agent :first_0, avg score : -18.300, avg epi length : 907
+agent :second_0, avg score : 18.300, avg epi length : 907
+Selfplay: update the model of opponent
+Evaluate reward:  16.0
+# of episode :9040
+agent :first_0, avg score : -14.100, avg epi length : 1211
+agent :second_0, avg score : 14.100, avg epi length : 1211
+Selfplay: update the model of opponent
+Evaluate reward:  19.0
+# of episode :9060
+agent :first_0, avg score : -17.550, avg epi length : 984
+agent :second_0, avg score : 17.550, avg epi length : 984
+Selfplay: update the model of opponent
+Evaluate reward:  13.333333333333334
+# of episode :9080
+agent :first_0, avg score : -9.000, avg epi length : 1434
+agent :second_0, avg score : 9.000, avg epi length : 1434
+Selfplay: update the model of opponent
+Evaluate reward:  17.0
+# of episode :9100
+agent :first_0, avg score : -16.800, avg epi length : 1041
+agent :second_0, avg score : 16.800, avg epi length : 1041
+Selfplay: update the model of opponent
+Evaluate reward:  17.0
+# of episode :9120
+agent :first_0, avg score : -17.700, avg epi length : 959
+agent :second_0, avg score : 17.700, avg epi length : 959
+Selfplay: update the model of opponent
+Evaluate reward:  16.333333333333332
+# of episode :9140
+agent :first_0, avg score : -14.400, avg epi length : 1145
+agent :second_0, avg score : 14.400, avg epi length : 1145
+Selfplay: update the model of opponent
+Evaluate reward:  13.333333333333334
+# of episode :9160
+agent :first_0, avg score : -11.800, avg epi length : 1129
+agent :second_0, avg score : 11.800, avg epi length : 1129
+Selfplay: update the model of opponent
+Evaluate reward:  6.666666666666667
+# of episode :9180
+agent :first_0, avg score : -13.750, avg epi length : 1177
+agent :second_0, avg score : 13.750, avg epi length : 1177
+Selfplay: update the model of opponent
+Evaluate reward:  15.666666666666666
+# of episode :9200
+agent :first_0, avg score : -14.400, avg epi length : 1157
+agent :second_0, avg score : 14.400, avg epi length : 1157
+Selfplay: update the model of opponent
+Evaluate reward:  12.333333333333334
+# of episode :9220
+agent :first_0, avg score : -11.950, avg epi length : 1203
+agent :second_0, avg score : 11.950, avg epi length : 1203
+Selfplay: update the model of opponent
+Evaluate reward:  11.333333333333334
+# of episode :9240
+agent :first_0, avg score : -14.500, avg epi length : 1192
+agent :second_0, avg score : 14.500, avg epi length : 1192
+Selfplay: update the model of opponent
+Evaluate reward:  16.666666666666668
+# of episode :9260
+agent :first_0, avg score : -17.650, avg epi length : 942
+agent :second_0, avg score : 17.650, avg epi length : 942
+Selfplay: update the model of opponent
+Evaluate reward:  13.666666666666666
+# of episode :9280
+agent :first_0, avg score : -13.000, avg epi length : 1199
+agent :second_0, avg score : 13.000, avg epi length : 1199
+Selfplay: update the model of opponent
+Evaluate reward:  14.333333333333334
+# of episode :9300
+agent :first_0, avg score : -10.050, avg epi length : 1258
+agent :second_0, avg score : 10.050, avg epi length : 1258
+Selfplay: update the model of opponent
+Evaluate reward:  18.0
+# of episode :9320
+agent :first_0, avg score : -12.950, avg epi length : 1152
+agent :second_0, avg score : 12.950, avg epi length : 1152
+Selfplay: update the model of opponent
+Evaluate reward:  1.0
+# of episode :9340
+agent :first_0, avg score : -10.300, avg epi length : 1214
+agent :second_0, avg score : 10.300, avg epi length : 1214
+Selfplay: update the model of opponent
+Evaluate reward:  20.0
+# of episode :9360
+agent :first_0, avg score : -18.200, avg epi length : 918
+agent :second_0, avg score : 18.200, avg epi length : 918
+Selfplay: update the model of opponent
+Evaluate reward:  19.0
+# of episode :9380
+agent :first_0, avg score : -18.500, avg epi length : 917
+agent :second_0, avg score : 18.500, avg epi length : 917
+Selfplay: update the model of opponent
+Evaluate reward:  17.333333333333332
+# of episode :9400
+agent :first_0, avg score : -18.100, avg epi length : 893
+agent :second_0, avg score : 18.100, avg epi length : 893
+Selfplay: update the model of opponent
+Evaluate reward:  18.333333333333332
+# of episode :9420
+agent :first_0, avg score : -18.450, avg epi length : 946
+agent :second_0, avg score : 18.450, avg epi length : 946
+Selfplay: update the model of opponent
+Evaluate reward:  18.333333333333332
+# of episode :9440
+agent :first_0, avg score : -16.850, avg epi length : 1066
+agent :second_0, avg score : 16.850, avg epi length : 1066
+Selfplay: update the model of opponent
+Evaluate reward:  14.0
+# of episode :9460
+agent :first_0, avg score : -17.400, avg epi length : 1037
+agent :second_0, avg score : 17.400, avg epi length : 1037
+Selfplay: update the model of opponent
+Evaluate reward:  13.0
+# of episode :9480
+agent :first_0, avg score : -18.050, avg epi length : 975
+agent :second_0, avg score : 18.050, avg epi length : 975
+Selfplay: update the model of opponent
+Evaluate reward:  14.0
+# of episode :9500
+agent :first_0, avg score : -11.900, avg epi length : 1259
+agent :second_0, avg score : 11.900, avg epi length : 1259
+Selfplay: update the model of opponent
+Evaluate reward:  5.0
+# of episode :9520
+agent :first_0, avg score : -5.850, avg epi length : 1258
+agent :second_0, avg score : 5.850, avg epi length : 1258
+Selfplay: update the model of opponent
+Evaluate reward:  20.0
+# of episode :9540
+agent :first_0, avg score : -18.850, avg epi length : 872
+agent :second_0, avg score : 18.850, avg epi length : 872
+Selfplay: update the model of opponent
+Evaluate reward:  17.666666666666668
+# of episode :9560
+agent :first_0, avg score : -17.750, avg epi length : 915
+agent :second_0, avg score : 17.750, avg epi length : 915
+Selfplay: update the model of opponent
+Evaluate reward:  12.0
+# of episode :9580
+agent :first_0, avg score : -11.050, avg epi length : 1284
+agent :second_0, avg score : 11.050, avg epi length : 1284
+Selfplay: update the model of opponent
+Evaluate reward:  9.333333333333334
+# of episode :9600
+agent :first_0, avg score : -14.800, avg epi length : 1151
+agent :second_0, avg score : 14.800, avg epi length : 1151
+Selfplay: update the model of opponent
+Evaluate reward:  16.0
+# of episode :9620
+agent :first_0, avg score : -15.450, avg epi length : 1127
+agent :second_0, avg score : 15.450, avg epi length : 1127
+Selfplay: update the model of opponent
+Evaluate reward:  18.0
+# of episode :9640
+agent :first_0, avg score : -17.600, avg epi length : 936
+agent :second_0, avg score : 17.600, avg epi length : 936
+Selfplay: update the model of opponent
+Evaluate reward:  4.666666666666667
+# of episode :9660
+agent :first_0, avg score : -6.750, avg epi length : 1375
+agent :second_0, avg score : 6.750, avg epi length : 1375
+Selfplay: update the model of opponent
+Evaluate reward:  5.0
+# of episode :9680
+agent :first_0, avg score : -10.900, avg epi length : 1283
+agent :second_0, avg score : 10.900, avg epi length : 1283
+Selfplay: update the model of opponent
+Evaluate reward:  18.666666666666668
+# of episode :9700
+agent :first_0, avg score : -12.700, avg epi length : 925
+agent :second_0, avg score : 12.700, avg epi length : 925
+Selfplay: update the model of opponent
+Evaluate reward:  1.6666666666666667
+# of episode :9720
+agent :first_0, avg score : -16.550, avg epi length : 961
+agent :second_0, avg score : 16.550, avg epi length : 961
+Selfplay: update the model of opponent
+Evaluate reward:  13.0
+# of episode :9740
+agent :first_0, avg score : -19.350, avg epi length : 854
+agent :second_0, avg score : 19.350, avg epi length : 854
+Selfplay: update the model of opponent
+Evaluate reward:  18.0
+# of episode :9760
+agent :first_0, avg score : -14.650, avg epi length : 1037
+agent :second_0, avg score : 14.650, avg epi length : 1037
+Selfplay: update the model of opponent
+Evaluate reward:  1.6666666666666667
+# of episode :9780
+agent :first_0, avg score : -12.750, avg epi length : 1252
+agent :second_0, avg score : 12.750, avg epi length : 1252
+Selfplay: update the model of opponent
+Evaluate reward:  18.333333333333332
+# of episode :9800
+agent :first_0, avg score : -18.700, avg epi length : 913
+agent :second_0, avg score : 18.700, avg epi length : 913
+Selfplay: update the model of opponent
+Evaluate reward:  20.0
+# of episode :9820
+agent :first_0, avg score : -15.600, avg epi length : 1084
+agent :second_0, avg score : 15.600, avg epi length : 1084
+Selfplay: update the model of opponent
+Evaluate reward:  18.666666666666668
+# of episode :9840
+agent :first_0, avg score : -15.450, avg epi length : 1074
+agent :second_0, avg score : 15.450, avg epi length : 1074
+Selfplay: update the model of opponent
+Evaluate reward:  12.666666666666666
+# of episode :9860
+agent :first_0, avg score : -9.250, avg epi length : 1137
+agent :second_0, avg score : 9.250, avg epi length : 1137
+Selfplay: update the model of opponent
+Evaluate reward:  16.666666666666668
+# of episode :9880
+agent :first_0, avg score : -19.200, avg epi length : 876
+agent :second_0, avg score : 19.200, avg epi length : 876
+Selfplay: update the model of opponent
+Evaluate reward:  16.333333333333332
+# of episode :9900
+agent :first_0, avg score : -15.550, avg epi length : 1131
+agent :second_0, avg score : 15.550, avg epi length : 1131
+Selfplay: update the model of opponent
+Evaluate reward:  20.0
+# of episode :9920
+agent :first_0, avg score : -19.800, avg epi length : 807
+agent :second_0, avg score : 19.800, avg epi length : 807
+Selfplay: update the model of opponent
+Evaluate reward:  19.0
+# of episode :9940
+agent :first_0, avg score : -18.050, avg epi length : 909
+agent :second_0, avg score : 18.050, avg epi length : 909
+Selfplay: update the model of opponent
+Evaluate reward:  17.0
+# of episode :9960
+agent :first_0, avg score : -18.000, avg epi length : 982
+agent :second_0, avg score : 18.000, avg epi length : 982
+Selfplay: update the model of opponent
+Evaluate reward:  15.333333333333334
+# of episode :9980
+agent :first_0, avg score : -13.950, avg epi length : 1238
+agent :second_0, avg score : 13.950, avg epi length : 1238
+Selfplay: update the model of opponent
+Evaluate reward:  14.0
+# of episode :10000
+agent :first_0, avg score : -12.400, avg epi length : 1237
+agent :second_0, avg score : 12.400, avg epi length : 1237
+Selfplay: update the model of opponent
+Evaluate reward:  13.333333333333334
+# of episode :10020
+agent :first_0, avg score : -14.950, avg epi length : 1152
+agent :second_0, avg score : 14.950, avg epi length : 1152
+Selfplay: update the model of opponent
+Evaluate reward:  19.0
+# of episode :10040
+agent :first_0, avg score : -17.750, avg epi length : 994
+agent :second_0, avg score : 17.750, avg epi length : 994
+Selfplay: update the model of opponent
+Evaluate reward:  19.333333333333332
+# of episode :10060
+agent :first_0, avg score : -18.250, avg epi length : 965
+agent :second_0, avg score : 18.250, avg epi length : 965
+Selfplay: update the model of opponent
+Evaluate reward:  17.0
+# of episode :10080
+agent :first_0, avg score : -15.050, avg epi length : 1165
+agent :second_0, avg score : 15.050, avg epi length : 1165
+Selfplay: update the model of opponent
+Evaluate reward:  16.0
+# of episode :10100
+agent :first_0, avg score : -15.100, avg epi length : 1162
+agent :second_0, avg score : 15.100, avg epi length : 1162
+Selfplay: update the model of opponent
+Evaluate reward:  19.333333333333332
+# of episode :10120
+agent :first_0, avg score : -20.350, avg epi length : 793
+agent :second_0, avg score : 20.350, avg epi length : 793
+Selfplay: update the model of opponent
+Evaluate reward:  19.333333333333332
+# of episode :10140
+agent :first_0, avg score : -19.500, avg epi length : 848
+agent :second_0, avg score : 19.500, avg epi length : 848
+Selfplay: update the model of opponent
+Evaluate reward:  19.333333333333332
+# of episode :10160
+agent :first_0, avg score : -17.200, avg epi length : 990
+agent :second_0, avg score : 17.200, avg epi length : 990
+Selfplay: update the model of opponent
+Evaluate reward:  18.0
+# of episode :10180
+agent :first_0, avg score : -19.250, avg epi length : 838
+agent :second_0, avg score : 19.250, avg epi length : 838
+Selfplay: update the model of opponent
+Evaluate reward:  18.333333333333332
+# of episode :10200
+agent :first_0, avg score : -15.650, avg epi length : 1046
+agent :second_0, avg score : 15.650, avg epi length : 1046
+Selfplay: update the model of opponent
+Evaluate reward:  19.666666666666668
+# of episode :10220
+agent :first_0, avg score : -18.000, avg epi length : 879
+agent :second_0, avg score : 18.000, avg epi length : 879
+Selfplay: update the model of opponent
+Evaluate reward:  19.0
+# of episode :10240
+agent :first_0, avg score : -18.150, avg epi length : 886
+agent :second_0, avg score : 18.150, avg epi length : 886
+Selfplay: update the model of opponent
+Evaluate reward:  20.0
+# of episode :10260
+agent :first_0, avg score : -19.050, avg epi length : 849
+agent :second_0, avg score : 19.050, avg epi length : 849
+Selfplay: update the model of opponent
+Evaluate reward:  18.0
+# of episode :10280
+agent :first_0, avg score : -19.650, avg epi length : 822
+agent :second_0, avg score : 19.650, avg epi length : 822
+Selfplay: update the model of opponent
+Evaluate reward:  19.666666666666668
+# of episode :10300
+agent :first_0, avg score : -19.450, avg epi length : 827
+agent :second_0, avg score : 19.450, avg epi length : 827
+Selfplay: update the model of opponent
+Evaluate reward:  18.333333333333332
+# of episode :10320
+agent :first_0, avg score : -20.350, avg epi length : 801
+agent :second_0, avg score : 20.350, avg epi length : 801
+Selfplay: update the model of opponent
+Evaluate reward:  20.333333333333332
+# of episode :10340
+agent :first_0, avg score : -19.800, avg epi length : 816
+agent :second_0, avg score : 19.800, avg epi length : 816
+Selfplay: update the model of opponent
+Evaluate reward:  19.333333333333332
+# of episode :10360
+agent :first_0, avg score : -18.300, avg epi length : 890
+agent :second_0, avg score : 18.300, avg epi length : 890
+Selfplay: update the model of opponent
+Evaluate reward:  18.0
+# of episode :10380
+agent :first_0, avg score : -19.650, avg epi length : 835
+agent :second_0, avg score : 19.650, avg epi length : 835
+Selfplay: update the model of opponent
+Evaluate reward:  19.666666666666668
+# of episode :10400
+agent :first_0, avg score : -19.000, avg epi length : 860
+agent :second_0, avg score : 19.000, avg epi length : 860
+Selfplay: update the model of opponent
+Evaluate reward:  18.0
+# of episode :10420
+agent :first_0, avg score : -19.150, avg epi length : 879
+agent :second_0, avg score : 19.150, avg epi length : 879
+Selfplay: update the model of opponent
+Evaluate reward:  17.333333333333332
+# of episode :10440
+agent :first_0, avg score : -14.700, avg epi length : 1203
+agent :second_0, avg score : 14.700, avg epi length : 1203
+Selfplay: update the model of opponent
+Evaluate reward:  19.333333333333332
+# of episode :10460
+agent :first_0, avg score : -17.750, avg epi length : 962
+agent :second_0, avg score : 17.750, avg epi length : 962
+Selfplay: update the model of opponent
+Evaluate reward:  17.333333333333332
+# of episode :10480
+agent :first_0, avg score : -17.600, avg epi length : 999
+agent :second_0, avg score : 17.600, avg epi length : 999
+Selfplay: update the model of opponent
+Evaluate reward:  11.333333333333334
+# of episode :10500
+agent :first_0, avg score : -11.650, avg epi length : 1289
+agent :second_0, avg score : 11.650, avg epi length : 1289
+Selfplay: update the model of opponent
+Evaluate reward:  2.0
+# of episode :10520
+agent :first_0, avg score : -9.600, avg epi length : 1288
+agent :second_0, avg score : 9.600, avg epi length : 1288
+Selfplay: update the model of opponent
+Evaluate reward:  0.0
+# of episode :10540
+agent :first_0, avg score : -8.750, avg epi length : 1284
+agent :second_0, avg score : 8.750, avg epi length : 1284
+Selfplay: update the model of opponent
+Evaluate reward:  16.333333333333332
+# of episode :10560
+agent :first_0, avg score : -16.200, avg epi length : 992
+agent :second_0, avg score : 16.200, avg epi length : 992
+Selfplay: update the model of opponent
+Evaluate reward:  14.0
+# of episode :10580
+agent :first_0, avg score : -15.800, avg epi length : 1124
+agent :second_0, avg score : 15.800, avg epi length : 1124
+Selfplay: update the model of opponent
+Evaluate reward:  20.333333333333332
+# of episode :10600
+agent :first_0, avg score : -19.250, avg epi length : 856
+agent :second_0, avg score : 19.250, avg epi length : 856
+Selfplay: update the model of opponent
+Evaluate reward:  19.0
+# of episode :10620
+agent :first_0, avg score : -17.900, avg epi length : 958
+agent :second_0, avg score : 17.900, avg epi length : 958
+Selfplay: update the model of opponent
+Evaluate reward:  18.666666666666668
+# of episode :10640
+agent :first_0, avg score : -19.750, avg epi length : 829
+agent :second_0, avg score : 19.750, avg epi length : 829
+Selfplay: update the model of opponent
+Evaluate reward:  16.0
+# of episode :10660
+agent :first_0, avg score : -17.550, avg epi length : 1015
+agent :second_0, avg score : 17.550, avg epi length : 1015
+Selfplay: update the model of opponent
+Evaluate reward:  20.666666666666668
+# of episode :10680
+agent :first_0, avg score : -20.200, avg epi length : 796
+agent :second_0, avg score : 20.200, avg epi length : 796
+Selfplay: update the model of opponent
+Evaluate reward:  16.666666666666668
+# of episode :10700
+agent :first_0, avg score : -16.150, avg epi length : 1120
+agent :second_0, avg score : 16.150, avg epi length : 1120
+Selfplay: update the model of opponent
+Evaluate reward:  9.333333333333334
+# of episode :10720
+agent :first_0, avg score : -18.500, avg epi length : 906
+agent :second_0, avg score : 18.500, avg epi length : 906
+Selfplay: update the model of opponent
+Evaluate reward:  16.0
+# of episode :10740
+agent :first_0, avg score : -14.550, avg epi length : 1179
+agent :second_0, avg score : 14.550, avg epi length : 1179
+Selfplay: update the model of opponent
+Evaluate reward:  18.333333333333332
+# of episode :10760
+agent :first_0, avg score : -14.750, avg epi length : 1160
+agent :second_0, avg score : 14.750, avg epi length : 1160
+Selfplay: update the model of opponent
+Evaluate reward:  17.333333333333332
+# of episode :10780
+agent :first_0, avg score : -18.250, avg epi length : 924
+agent :second_0, avg score : 18.250, avg epi length : 924
+Selfplay: update the model of opponent
+Evaluate reward:  18.0
+# of episode :10800
+agent :first_0, avg score : -15.450, avg epi length : 1150
+agent :second_0, avg score : 15.450, avg epi length : 1150
+Selfplay: update the model of opponent
+Evaluate reward:  16.0
+# of episode :10820
+agent :first_0, avg score : -15.950, avg epi length : 1140
+agent :second_0, avg score : 15.950, avg epi length : 1140
+Selfplay: update the model of opponent
+Evaluate reward:  18.333333333333332
+# of episode :10840
+agent :first_0, avg score : -12.700, avg epi length : 1315
+agent :second_0, avg score : 12.700, avg epi length : 1315
+Selfplay: update the model of opponent
+Evaluate reward:  16.0
+# of episode :10860
+agent :first_0, avg score : -17.500, avg epi length : 1069
+agent :second_0, avg score : 17.500, avg epi length : 1069
+Selfplay: update the model of opponent
+Evaluate reward:  18.0
+# of episode :10880
+agent :first_0, avg score : -18.950, avg epi length : 881
+agent :second_0, avg score : 18.950, avg epi length : 881
+Selfplay: update the model of opponent
+Evaluate reward:  16.666666666666668
+# of episode :10900
+agent :first_0, avg score : -11.850, avg epi length : 1296
+agent :second_0, avg score : 11.850, avg epi length : 1296
+Selfplay: update the model of opponent
+Evaluate reward:  13.333333333333334
+# of episode :10920
+agent :first_0, avg score : -16.800, avg epi length : 1033
+agent :second_0, avg score : 16.800, avg epi length : 1033
+Selfplay: update the model of opponent
+Evaluate reward:  16.333333333333332
+# of episode :10940
+agent :first_0, avg score : -17.250, avg epi length : 1059
+agent :second_0, avg score : 17.250, avg epi length : 1059
+Selfplay: update the model of opponent
+Evaluate reward:  17.0
+# of episode :10960
+agent :first_0, avg score : -13.050, avg epi length : 1300
+agent :second_0, avg score : 13.050, avg epi length : 1300
+Selfplay: update the model of opponent
+Evaluate reward:  13.666666666666666
+# of episode :10980
+agent :first_0, avg score : -17.050, avg epi length : 970
+agent :second_0, avg score : 17.050, avg epi length : 970
+Selfplay: update the model of opponent
+Evaluate reward:  9.666666666666666
+# of episode :11000
+agent :first_0, avg score : -10.700, avg epi length : 1207
+agent :second_0, avg score : 10.700, avg epi length : 1207
+Selfplay: update the model of opponent
+Evaluate reward:  14.0
+# of episode :11020
+agent :first_0, avg score : -17.250, avg epi length : 1025
+agent :second_0, avg score : 17.250, avg epi length : 1025
+Selfplay: update the model of opponent
+Evaluate reward:  16.333333333333332
+# of episode :11040
+agent :first_0, avg score : -15.500, avg epi length : 1132
+agent :second_0, avg score : 15.500, avg epi length : 1132
+Selfplay: update the model of opponent
+Evaluate reward:  12.0
+# of episode :11060
+agent :first_0, avg score : -16.050, avg epi length : 1109
+agent :second_0, avg score : 16.050, avg epi length : 1109
+Selfplay: update the model of opponent
+Evaluate reward:  19.333333333333332
+# of episode :11080
+agent :first_0, avg score : -19.400, avg epi length : 879
+agent :second_0, avg score : 19.400, avg epi length : 879
+Selfplay: update the model of opponent
+Evaluate reward:  20.0
+# of episode :11100
+agent :first_0, avg score : -19.650, avg epi length : 859
+agent :second_0, avg score : 19.650, avg epi length : 859
+Selfplay: update the model of opponent
+Evaluate reward:  20.333333333333332
+# of episode :11120
+agent :first_0, avg score : -19.600, avg epi length : 860
+agent :second_0, avg score : 19.600, avg epi length : 860
+Selfplay: update the model of opponent
+Evaluate reward:  19.0
+# of episode :11140
+agent :first_0, avg score : -17.900, avg epi length : 1006
+agent :second_0, avg score : 17.900, avg epi length : 1006
+Selfplay: update the model of opponent
+Evaluate reward:  20.0
+# of episode :11160
+agent :first_0, avg score : -19.750, avg epi length : 844
+agent :second_0, avg score : 19.750, avg epi length : 844
+Selfplay: update the model of opponent
+Evaluate reward:  15.666666666666666
+# of episode :11180
+agent :first_0, avg score : -12.100, avg epi length : 1181
+agent :second_0, avg score : 12.100, avg epi length : 1181
+Selfplay: update the model of opponent
+Evaluate reward:  14.666666666666666
+# of episode :11200
+agent :first_0, avg score : -18.350, avg epi length : 970
+agent :second_0, avg score : 18.350, avg epi length : 970
+Selfplay: update the model of opponent
+Evaluate reward:  16.666666666666668
+# of episode :11220
+agent :first_0, avg score : -16.150, avg epi length : 1046
+agent :second_0, avg score : 16.150, avg epi length : 1046
+Selfplay: update the model of opponent
+Evaluate reward:  18.666666666666668
+# of episode :11240
+agent :first_0, avg score : -17.100, avg epi length : 1038
+agent :second_0, avg score : 17.100, avg epi length : 1038
+Selfplay: update the model of opponent
+Evaluate reward:  15.666666666666666
+# of episode :11260
+agent :first_0, avg score : -15.400, avg epi length : 1263
+agent :second_0, avg score : 15.400, avg epi length : 1263
+Selfplay: update the model of opponent
+Evaluate reward:  19.0
+# of episode :11280
+agent :first_0, avg score : -18.050, avg epi length : 922
+agent :second_0, avg score : 18.050, avg epi length : 922
+Selfplay: update the model of opponent
+Evaluate reward:  18.0
+# of episode :11300
+agent :first_0, avg score : -18.450, avg epi length : 939
+agent :second_0, avg score : 18.450, avg epi length : 939
+Selfplay: update the model of opponent
+Evaluate reward:  15.666666666666666
+# of episode :11320
+agent :first_0, avg score : -15.800, avg epi length : 1094
+agent :second_0, avg score : 15.800, avg epi length : 1094
+Selfplay: update the model of opponent
+Evaluate reward:  14.333333333333334
+# of episode :11340
+agent :first_0, avg score : -16.800, avg epi length : 1098
+agent :second_0, avg score : 16.800, avg epi length : 1098
+Selfplay: update the model of opponent
+Evaluate reward:  14.0
+# of episode :11360
+agent :first_0, avg score : -14.250, avg epi length : 1221
+agent :second_0, avg score : 14.250, avg epi length : 1221
+Selfplay: update the model of opponent
+Evaluate reward:  12.666666666666666
+# of episode :11380
+agent :first_0, avg score : -17.650, avg epi length : 966
+agent :second_0, avg score : 17.650, avg epi length : 966
+Selfplay: update the model of opponent
+Evaluate reward:  19.333333333333332
+# of episode :11400
+agent :first_0, avg score : -18.300, avg epi length : 935
+agent :second_0, avg score : 18.300, avg epi length : 935
+Selfplay: update the model of opponent
+Evaluate reward:  16.666666666666668
+# of episode :11420
+agent :first_0, avg score : -17.250, avg epi length : 1014
+agent :second_0, avg score : 17.250, avg epi length : 1014
+Selfplay: update the model of opponent
+Evaluate reward:  16.0
+# of episode :11440
+agent :first_0, avg score : -11.550, avg epi length : 1287
+agent :second_0, avg score : 11.550, avg epi length : 1287
+Selfplay: update the model of opponent
+Evaluate reward:  20.0
+# of episode :11460
+agent :first_0, avg score : -17.600, avg epi length : 949
+agent :second_0, avg score : 17.600, avg epi length : 949
+Selfplay: update the model of opponent
+Evaluate reward:  18.333333333333332
+# of episode :11480
+agent :first_0, avg score : -17.900, avg epi length : 971
+agent :second_0, avg score : 17.900, avg epi length : 971
+Selfplay: update the model of opponent
+Evaluate reward:  19.666666666666668
+# of episode :11500
+agent :first_0, avg score : -17.500, avg epi length : 997
+agent :second_0, avg score : 17.500, avg epi length : 997
+Selfplay: update the model of opponent
+Evaluate reward:  13.333333333333334
+# of episode :11520
+agent :first_0, avg score : -12.350, avg epi length : 1290
+agent :second_0, avg score : 12.350, avg epi length : 1290
+Selfplay: update the model of opponent
+Evaluate reward:  18.666666666666668
+# of episode :11540
+agent :first_0, avg score : -19.050, avg epi length : 883
+agent :second_0, avg score : 19.050, avg epi length : 883
+Selfplay: update the model of opponent
+Evaluate reward:  19.0
+# of episode :11560
+agent :first_0, avg score : -18.550, avg epi length : 910
+agent :second_0, avg score : 18.550, avg epi length : 910
+Selfplay: update the model of opponent
+Evaluate reward:  14.0
+# of episode :11580
+agent :first_0, avg score : -14.650, avg epi length : 973
+agent :second_0, avg score : 14.650, avg epi length : 973
+Selfplay: update the model of opponent
+Evaluate reward:  16.666666666666668
+# of episode :11600
+agent :first_0, avg score : -19.050, avg epi length : 859
+agent :second_0, avg score : 19.050, avg epi length : 859
+Selfplay: update the model of opponent
+Evaluate reward:  16.333333333333332
+# of episode :11620
+agent :first_0, avg score : -17.950, avg epi length : 1026
+agent :second_0, avg score : 17.950, avg epi length : 1026
+Selfplay: update the model of opponent
+Evaluate reward:  16.666666666666668
+# of episode :11640
+agent :first_0, avg score : -14.850, avg epi length : 1197
+agent :second_0, avg score : 14.850, avg epi length : 1197
+Selfplay: update the model of opponent
+Evaluate reward:  16.0
+# of episode :11660
+agent :first_0, avg score : -14.500, avg epi length : 1156
+agent :second_0, avg score : 14.500, avg epi length : 1156
+Selfplay: update the model of opponent
+Evaluate reward:  19.0
+# of episode :11680
+agent :first_0, avg score : -17.350, avg epi length : 990
+agent :second_0, avg score : 17.350, avg epi length : 990
+Selfplay: update the model of opponent
+Evaluate reward:  12.0
+# of episode :11700
+agent :first_0, avg score : -13.550, avg epi length : 1225
+agent :second_0, avg score : 13.550, avg epi length : 1225
+Selfplay: update the model of opponent
+Evaluate reward:  17.0
+# of episode :11720
+agent :first_0, avg score : -14.800, avg epi length : 1228
+agent :second_0, avg score : 14.800, avg epi length : 1228
+Selfplay: update the model of opponent
+Evaluate reward:  15.666666666666666
+# of episode :11740
+agent :first_0, avg score : -8.150, avg epi length : 1291
+agent :second_0, avg score : 8.150, avg epi length : 1291
+Selfplay: update the model of opponent
+Evaluate reward:  7.666666666666667
+# of episode :11760
+agent :first_0, avg score : -14.900, avg epi length : 1116
+agent :second_0, avg score : 14.900, avg epi length : 1116
+Selfplay: update the model of opponent
+Evaluate reward:  19.333333333333332
+# of episode :11780
+agent :first_0, avg score : -15.800, avg epi length : 1009
+agent :second_0, avg score : 15.800, avg epi length : 1009
+Selfplay: update the model of opponent
+Evaluate reward:  19.666666666666668
+# of episode :11800
+agent :first_0, avg score : -19.800, avg epi length : 814
+agent :second_0, avg score : 19.800, avg epi length : 814
+Selfplay: update the model of opponent
+Evaluate reward:  15.666666666666666
+# of episode :11820
+agent :first_0, avg score : -14.250, avg epi length : 1192
+agent :second_0, avg score : 14.250, avg epi length : 1192
+Selfplay: update the model of opponent
+Evaluate reward:  12.666666666666666
+# of episode :11840
+agent :first_0, avg score : -15.000, avg epi length : 1121
+agent :second_0, avg score : 15.000, avg epi length : 1121
+Selfplay: update the model of opponent
+Evaluate reward:  12.666666666666666
+# of episode :11860
+agent :first_0, avg score : -12.750, avg epi length : 1238
+agent :second_0, avg score : 12.750, avg epi length : 1238
+Selfplay: update the model of opponent
+Evaluate reward:  16.0
+# of episode :11880
+agent :first_0, avg score : -15.450, avg epi length : 1132
+agent :second_0, avg score : 15.450, avg epi length : 1132
+Selfplay: update the model of opponent
+Evaluate reward:  13.666666666666666
+# of episode :11900
+agent :first_0, avg score : -14.550, avg epi length : 1194
+agent :second_0, avg score : 14.550, avg epi length : 1194
+Selfplay: update the model of opponent
+Evaluate reward:  20.333333333333332
+# of episode :11920
+agent :first_0, avg score : -19.200, avg epi length : 851
+agent :second_0, avg score : 19.200, avg epi length : 851
+Selfplay: update the model of opponent
+Evaluate reward:  12.333333333333334
+# of episode :11940
+agent :first_0, avg score : -15.900, avg epi length : 1077
+agent :second_0, avg score : 15.900, avg epi length : 1077
+Selfplay: update the model of opponent
+Evaluate reward:  17.666666666666668
+# of episode :11960
+agent :first_0, avg score : -16.450, avg epi length : 1054
+agent :second_0, avg score : 16.450, avg epi length : 1054
+Selfplay: update the model of opponent
+Evaluate reward:  16.333333333333332
+# of episode :11980
+agent :first_0, avg score : -18.100, avg epi length : 968
+agent :second_0, avg score : 18.100, avg epi length : 968
+Selfplay: update the model of opponent
+Evaluate reward:  15.666666666666666
+# of episode :12000
+agent :first_0, avg score : -14.500, avg epi length : 1201
+agent :second_0, avg score : 14.500, avg epi length : 1201
+Selfplay: update the model of opponent
+Evaluate reward:  17.666666666666668
+# of episode :12020
+agent :first_0, avg score : -18.700, avg epi length : 895
+agent :second_0, avg score : 18.700, avg epi length : 895
+Selfplay: update the model of opponent
+Evaluate reward:  13.666666666666666
+# of episode :12040
+agent :first_0, avg score : -13.950, avg epi length : 1226
+agent :second_0, avg score : 13.950, avg epi length : 1226
+Selfplay: update the model of opponent
+Evaluate reward:  16.0
+# of episode :12060
+agent :first_0, avg score : -16.450, avg epi length : 1057
+agent :second_0, avg score : 16.450, avg epi length : 1057
+Selfplay: update the model of opponent
+Evaluate reward:  19.666666666666668
+# of episode :12080
+agent :first_0, avg score : -18.900, avg epi length : 861
+agent :second_0, avg score : 18.900, avg epi length : 861
+Selfplay: update the model of opponent
+Evaluate reward:  17.333333333333332
+# of episode :12100
+agent :first_0, avg score : -17.300, avg epi length : 1011
+agent :second_0, avg score : 17.300, avg epi length : 1011
+Selfplay: update the model of opponent
+Evaluate reward:  15.333333333333334
+# of episode :12120
+agent :first_0, avg score : -18.600, avg epi length : 909
+agent :second_0, avg score : 18.600, avg epi length : 909
+Selfplay: update the model of opponent
+Evaluate reward:  16.666666666666668
+# of episode :12140
+agent :first_0, avg score : -15.350, avg epi length : 1170
+agent :second_0, avg score : 15.350, avg epi length : 1170
+Selfplay: update the model of opponent
+Evaluate reward:  17.333333333333332
+# of episode :12160
+agent :first_0, avg score : -16.800, avg epi length : 1036
+agent :second_0, avg score : 16.800, avg epi length : 1036
+Selfplay: update the model of opponent
+Evaluate reward:  16.0
+# of episode :12180
+agent :first_0, avg score : -15.800, avg epi length : 1102
+agent :second_0, avg score : 15.800, avg epi length : 1102
+Selfplay: update the model of opponent
+Evaluate reward:  14.0
+# of episode :12200
+agent :first_0, avg score : -17.050, avg epi length : 1055
+agent :second_0, avg score : 17.050, avg epi length : 1055
+Selfplay: update the model of opponent
+Evaluate reward:  16.0
+# of episode :12220
+agent :first_0, avg score : -18.300, avg epi length : 929
+agent :second_0, avg score : 18.300, avg epi length : 929
+Selfplay: update the model of opponent
+Evaluate reward:  19.333333333333332
+# of episode :12240
+agent :first_0, avg score : -19.600, avg epi length : 851
+agent :second_0, avg score : 19.600, avg epi length : 851
+Selfplay: update the model of opponent
+Evaluate reward:  15.0
+# of episode :12260
+agent :first_0, avg score : -16.700, avg epi length : 1050
+agent :second_0, avg score : 16.700, avg epi length : 1050
+Selfplay: update the model of opponent
+Evaluate reward:  19.0
+# of episode :12280
+agent :first_0, avg score : -18.400, avg epi length : 916
+agent :second_0, avg score : 18.400, avg epi length : 916
+Selfplay: update the model of opponent
+Evaluate reward:  11.333333333333334
+# of episode :12300
+agent :first_0, avg score : -16.750, avg epi length : 1083
+agent :second_0, avg score : 16.750, avg epi length : 1083
+Selfplay: update the model of opponent
+Evaluate reward:  14.333333333333334
+# of episode :12320
+agent :first_0, avg score : -15.650, avg epi length : 1094
+agent :second_0, avg score : 15.650, avg epi length : 1094
+Selfplay: update the model of opponent
+Evaluate reward:  14.0
+# of episode :12340
+agent :first_0, avg score : -15.400, avg epi length : 1172
+agent :second_0, avg score : 15.400, avg epi length : 1172
+Selfplay: update the model of opponent
+Evaluate reward:  11.666666666666666
+# of episode :12360
+agent :first_0, avg score : -13.700, avg epi length : 1192
+agent :second_0, avg score : 13.700, avg epi length : 1192
+Selfplay: update the model of opponent
+Evaluate reward:  12.666666666666666
+# of episode :12380
+agent :first_0, avg score : -14.500, avg epi length : 1128
+agent :second_0, avg score : 14.500, avg epi length : 1128
+Selfplay: update the model of opponent
+Evaluate reward:  19.0
+# of episode :12400
+agent :first_0, avg score : -19.650, avg epi length : 840
+agent :second_0, avg score : 19.650, avg epi length : 840
+Selfplay: update the model of opponent
+Evaluate reward:  20.0
+# of episode :12420
+agent :first_0, avg score : -20.150, avg epi length : 807
+agent :second_0, avg score : 20.150, avg epi length : 807
+Selfplay: update the model of opponent
+Evaluate reward:  17.666666666666668
+# of episode :12440
+agent :first_0, avg score : -14.400, avg epi length : 1167
+agent :second_0, avg score : 14.400, avg epi length : 1167
+Selfplay: update the model of opponent
+Evaluate reward:  17.0
+# of episode :12460
+agent :first_0, avg score : -17.100, avg epi length : 1096
+agent :second_0, avg score : 17.100, avg epi length : 1096
+Selfplay: update the model of opponent
+Evaluate reward:  12.333333333333334
+# of episode :12480
+agent :first_0, avg score : -15.200, avg epi length : 1112
+agent :second_0, avg score : 15.200, avg epi length : 1112
+Selfplay: update the model of opponent
+Evaluate reward:  16.333333333333332
+# of episode :12500
+agent :first_0, avg score : -18.050, avg epi length : 984
+agent :second_0, avg score : 18.050, avg epi length : 984
+Selfplay: update the model of opponent
+Evaluate reward:  19.0
+# of episode :12520
+agent :first_0, avg score : -15.450, avg epi length : 1152
+agent :second_0, avg score : 15.450, avg epi length : 1152
+Selfplay: update the model of opponent
+Evaluate reward:  18.666666666666668
+# of episode :12540
+agent :first_0, avg score : -19.050, avg epi length : 882
+agent :second_0, avg score : 19.050, avg epi length : 882
+Selfplay: update the model of opponent
+Evaluate reward:  18.666666666666668
+# of episode :12560
+agent :first_0, avg score : -20.450, avg epi length : 781
+agent :second_0, avg score : 20.450, avg epi length : 781
+Selfplay: update the model of opponent
+Evaluate reward:  20.666666666666668
+# of episode :12580
+agent :first_0, avg score : -18.600, avg epi length : 913
+agent :second_0, avg score : 18.600, avg epi length : 913
+Selfplay: update the model of opponent
+Evaluate reward:  17.333333333333332
+# of episode :12600
+agent :first_0, avg score : -13.850, avg epi length : 1273
+agent :second_0, avg score : 13.850, avg epi length : 1273
+Selfplay: update the model of opponent
+Evaluate reward:  18.666666666666668
+# of episode :12620
+agent :first_0, avg score : -15.950, avg epi length : 1145
+agent :second_0, avg score : 15.950, avg epi length : 1145
+Selfplay: update the model of opponent
+Evaluate reward:  18.333333333333332
+# of episode :12640
+agent :first_0, avg score : -19.350, avg epi length : 895
+agent :second_0, avg score : 19.350, avg epi length : 895
+Selfplay: update the model of opponent
+Evaluate reward:  14.666666666666666
+# of episode :12660
+agent :first_0, avg score : -15.550, avg epi length : 1171
+agent :second_0, avg score : 15.550, avg epi length : 1171
+Selfplay: update the model of opponent
+Evaluate reward:  19.666666666666668
+# of episode :12680
+agent :first_0, avg score : -16.950, avg epi length : 1056
+agent :second_0, avg score : 16.950, avg epi length : 1056
+Selfplay: update the model of opponent
+Evaluate reward:  18.666666666666668
+# of episode :12700
+agent :first_0, avg score : -17.300, avg epi length : 1101
+agent :second_0, avg score : 17.300, avg epi length : 1101
+Selfplay: update the model of opponent
+Evaluate reward:  18.666666666666668
+# of episode :12720
+agent :first_0, avg score : -15.750, avg epi length : 1236
+agent :second_0, avg score : 15.750, avg epi length : 1236
+Selfplay: update the model of opponent
+Evaluate reward:  17.0
+# of episode :12740
+agent :first_0, avg score : -15.700, avg epi length : 1211
+agent :second_0, avg score : 15.700, avg epi length : 1211
+Selfplay: update the model of opponent
+Evaluate reward:  18.333333333333332
+# of episode :12760
+agent :first_0, avg score : -19.050, avg epi length : 880
+agent :second_0, avg score : 19.050, avg epi length : 880
+Selfplay: update the model of opponent
+Evaluate reward:  13.666666666666666
+# of episode :12780
+agent :first_0, avg score : -16.500, avg epi length : 1059
+agent :second_0, avg score : 16.500, avg epi length : 1059
+Selfplay: update the model of opponent
+Evaluate reward:  12.666666666666666
+# of episode :12800
+agent :first_0, avg score : -14.900, avg epi length : 1183
+agent :second_0, avg score : 14.900, avg epi length : 1183
+Selfplay: update the model of opponent
+Evaluate reward:  14.0
+# of episode :12820
+agent :first_0, avg score : -18.100, avg epi length : 919
+agent :second_0, avg score : 18.100, avg epi length : 919
+Selfplay: update the model of opponent
+Evaluate reward:  16.666666666666668
+# of episode :12840
+agent :first_0, avg score : -18.250, avg epi length : 895
+agent :second_0, avg score : 18.250, avg epi length : 895
+Selfplay: update the model of opponent
+Evaluate reward:  18.666666666666668
+# of episode :12860
+agent :first_0, avg score : -18.050, avg epi length : 970
+agent :second_0, avg score : 18.050, avg epi length : 970
+Selfplay: update the model of opponent
+Evaluate reward:  17.666666666666668
+# of episode :12880
+agent :first_0, avg score : -15.650, avg epi length : 1160
+agent :second_0, avg score : 15.650, avg epi length : 1160
+Selfplay: update the model of opponent
+Evaluate reward:  14.0
+# of episode :12900
+agent :first_0, avg score : -16.000, avg epi length : 1119
+agent :second_0, avg score : 16.000, avg epi length : 1119
+Selfplay: update the model of opponent
+Evaluate reward:  16.666666666666668
+# of episode :12920
+agent :first_0, avg score : -16.100, avg epi length : 1114
+agent :second_0, avg score : 16.100, avg epi length : 1114
+Selfplay: update the model of opponent
+Evaluate reward:  15.333333333333334
+# of episode :12940
+agent :first_0, avg score : -16.700, avg epi length : 1053
+agent :second_0, avg score : 16.700, avg epi length : 1053
+Selfplay: update the model of opponent
+Evaluate reward:  14.333333333333334
+# of episode :12960
+agent :first_0, avg score : -14.650, avg epi length : 1180
+agent :second_0, avg score : 14.650, avg epi length : 1180
+Selfplay: update the model of opponent
+Evaluate reward:  11.333333333333334
+# of episode :12980
+agent :first_0, avg score : -15.900, avg epi length : 1125
+agent :second_0, avg score : 15.900, avg epi length : 1125
+Selfplay: update the model of opponent
+Evaluate reward:  17.0
+# of episode :13000
+agent :first_0, avg score : -18.600, avg epi length : 915
+agent :second_0, avg score : 18.600, avg epi length : 915
+Selfplay: update the model of opponent
+Evaluate reward:  11.333333333333334
+# of episode :13020
+agent :first_0, avg score : -13.550, avg epi length : 1293
+agent :second_0, avg score : 13.550, avg epi length : 1293
+Selfplay: update the model of opponent
+Evaluate reward:  12.333333333333334
+# of episode :13040
+agent :first_0, avg score : -12.350, avg epi length : 1265
+agent :second_0, avg score : 12.350, avg epi length : 1265
+Selfplay: update the model of opponent
+Evaluate reward:  20.0
+# of episode :13060
+agent :first_0, avg score : -18.350, avg epi length : 913
+agent :second_0, avg score : 18.350, avg epi length : 913
+Selfplay: update the model of opponent
+Evaluate reward:  19.0
+# of episode :13080
+agent :first_0, avg score : -15.700, avg epi length : 1126
+agent :second_0, avg score : 15.700, avg epi length : 1126
+Selfplay: update the model of opponent
+Evaluate reward:  17.0
+# of episode :13100
+agent :first_0, avg score : -17.100, avg epi length : 1058
+agent :second_0, avg score : 17.100, avg epi length : 1058
+Selfplay: update the model of opponent
+Evaluate reward:  17.666666666666668
+# of episode :13120
+agent :first_0, avg score : -20.050, avg epi length : 806
+agent :second_0, avg score : 20.050, avg epi length : 806
+Selfplay: update the model of opponent
+Evaluate reward:  20.0
+# of episode :13140
+agent :first_0, avg score : -19.350, avg epi length : 842
+agent :second_0, avg score : 19.350, avg epi length : 842
+Selfplay: update the model of opponent
+Evaluate reward:  17.666666666666668
+# of episode :13160
+agent :first_0, avg score : -7.750, avg epi length : 1045
+agent :second_0, avg score : 7.750, avg epi length : 1045
+Selfplay: update the model of opponent
+Evaluate reward:  1.6666666666666667
+# of episode :13180
+agent :first_0, avg score : -15.100, avg epi length : 1113
+agent :second_0, avg score : 15.100, avg epi length : 1113
+Selfplay: update the model of opponent
+Evaluate reward:  20.666666666666668
+# of episode :13200
+agent :first_0, avg score : -19.150, avg epi length : 833
+agent :second_0, avg score : 19.150, avg epi length : 833
+Selfplay: update the model of opponent
+Evaluate reward:  18.666666666666668
+# of episode :13220
+agent :first_0, avg score : -15.900, avg epi length : 950
+agent :second_0, avg score : 15.900, avg epi length : 950
+Selfplay: update the model of opponent
+Evaluate reward:  8.333333333333334
+# of episode :13240
+agent :first_0, avg score : -6.150, avg epi length : 1168
+agent :second_0, avg score : 6.150, avg epi length : 1168
+Selfplay: update the model of opponent
+Evaluate reward:  -10.0
+# of episode :13260
+agent :first_0, avg score : -7.250, avg epi length : 1156
+agent :second_0, avg score : 7.250, avg epi length : 1156
+Selfplay: update the model of opponent
+Evaluate reward:  -4.666666666666667
+# of episode :13280
+agent :first_0, avg score : 5.500, avg epi length : 1280
+agent :second_0, avg score : -5.500, avg epi length : 1280
+# of episode :13300
+agent :first_0, avg score : 4.000, avg epi length : 1249
+agent :second_0, avg score : -4.000, avg epi length : 1249
+# of episode :13320
+agent :first_0, avg score : 5.050, avg epi length : 1304
+agent :second_0, avg score : -5.050, avg epi length : 1304
+# of episode :13340
+agent :first_0, avg score : 2.300, avg epi length : 1356
+agent :second_0, avg score : -2.300, avg epi length : 1356
+# of episode :13360
+agent :first_0, avg score : -2.200, avg epi length : 1313
+agent :second_0, avg score : 2.200, avg epi length : 1313
+# of episode :13380
+agent :first_0, avg score : 1.350, avg epi length : 1290
+agent :second_0, avg score : -1.350, avg epi length : 1290
+# of episode :13400
+agent :first_0, avg score : 1.850, avg epi length : 1264
+agent :second_0, avg score : -1.850, avg epi length : 1264
+# of episode :13420
+agent :first_0, avg score : -6.800, avg epi length : 1263
+agent :second_0, avg score : 6.800, avg epi length : 1263
+Selfplay: update the model of opponent
+Evaluate reward:  20.0
+# of episode :13440
+agent :first_0, avg score : -18.900, avg epi length : 861
+agent :second_0, avg score : 18.900, avg epi length : 861
+Selfplay: update the model of opponent
+Evaluate reward:  14.666666666666666
+# of episode :13460
+agent :first_0, avg score : -13.900, avg epi length : 1202
+agent :second_0, avg score : 13.900, avg epi length : 1202
+Selfplay: update the model of opponent
+Evaluate reward:  19.333333333333332
+# of episode :13480
+agent :first_0, avg score : -12.000, avg epi length : 1253
+agent :second_0, avg score : 12.000, avg epi length : 1253
+Selfplay: update the model of opponent
+Evaluate reward:  19.0
+# of episode :13500
+agent :first_0, avg score : -18.050, avg epi length : 975
+agent :second_0, avg score : 18.050, avg epi length : 975
+Selfplay: update the model of opponent
+Evaluate reward:  16.0
+# of episode :13520
+agent :first_0, avg score : -17.100, avg epi length : 1106
+agent :second_0, avg score : 17.100, avg epi length : 1106
+Selfplay: update the model of opponent
+Evaluate reward:  18.0
+# of episode :13540
+agent :first_0, avg score : -16.100, avg epi length : 1234
+agent :second_0, avg score : 16.100, avg epi length : 1234
+Selfplay: update the model of opponent
+Evaluate reward:  18.333333333333332
+# of episode :13560
+agent :first_0, avg score : -18.250, avg epi length : 906
+agent :second_0, avg score : 18.250, avg epi length : 906
+Selfplay: update the model of opponent
+Evaluate reward:  14.666666666666666
+# of episode :13580
+agent :first_0, avg score : -14.600, avg epi length : 1125
+agent :second_0, avg score : 14.600, avg epi length : 1125
+Selfplay: update the model of opponent
+Evaluate reward:  14.666666666666666
+# of episode :13600
+agent :first_0, avg score : -11.150, avg epi length : 1299
+agent :second_0, avg score : 11.150, avg epi length : 1299
+Selfplay: update the model of opponent
+Evaluate reward:  14.666666666666666
+# of episode :13620
+agent :first_0, avg score : -14.100, avg epi length : 1161
+agent :second_0, avg score : 14.100, avg epi length : 1161
+Selfplay: update the model of opponent
+Evaluate reward:  14.0
+# of episode :13640
+agent :first_0, avg score : -15.900, avg epi length : 1072
+agent :second_0, avg score : 15.900, avg epi length : 1072
+Selfplay: update the model of opponent
+Evaluate reward:  17.666666666666668
+# of episode :13660
+agent :first_0, avg score : -18.050, avg epi length : 944
+agent :second_0, avg score : 18.050, avg epi length : 944
+Selfplay: update the model of opponent
+Evaluate reward:  13.333333333333334
+# of episode :13680
+agent :first_0, avg score : -13.500, avg epi length : 1252
+agent :second_0, avg score : 13.500, avg epi length : 1252
+Selfplay: update the model of opponent
+Evaluate reward:  18.333333333333332
+# of episode :13700
+agent :first_0, avg score : -16.500, avg epi length : 1118
+agent :second_0, avg score : 16.500, avg epi length : 1118
+Selfplay: update the model of opponent
+Evaluate reward:  16.0
+# of episode :13720
+agent :first_0, avg score : -15.050, avg epi length : 1155
+agent :second_0, avg score : 15.050, avg epi length : 1155
+Selfplay: update the model of opponent
+Evaluate reward:  12.333333333333334
+# of episode :13740
+agent :first_0, avg score : -11.250, avg epi length : 1280
+agent :second_0, avg score : 11.250, avg epi length : 1280
+Selfplay: update the model of opponent
+Evaluate reward:  14.666666666666666
+# of episode :13760
+agent :first_0, avg score : -12.200, avg epi length : 1260
+agent :second_0, avg score : 12.200, avg epi length : 1260
+Selfplay: update the model of opponent
+Evaluate reward:  15.0
+# of episode :13780
+agent :first_0, avg score : -17.250, avg epi length : 995
+agent :second_0, avg score : 17.250, avg epi length : 995
+Selfplay: update the model of opponent
+Evaluate reward:  16.666666666666668
+# of episode :13800
+agent :first_0, avg score : -16.750, avg epi length : 1102
+agent :second_0, avg score : 16.750, avg epi length : 1102
+Selfplay: update the model of opponent
+Evaluate reward:  14.333333333333334
+# of episode :13820
+agent :first_0, avg score : -14.600, avg epi length : 1301
+agent :second_0, avg score : 14.600, avg epi length : 1301
+Selfplay: update the model of opponent
+Evaluate reward:  15.333333333333334
+# of episode :13840
+agent :first_0, avg score : -15.350, avg epi length : 1144
+agent :second_0, avg score : 15.350, avg epi length : 1144
+Selfplay: update the model of opponent
+Evaluate reward:  18.333333333333332
+# of episode :13860
+agent :first_0, avg score : -15.150, avg epi length : 1196
+agent :second_0, avg score : 15.150, avg epi length : 1196
+Selfplay: update the model of opponent
+Evaluate reward:  14.0
+# of episode :13880
+agent :first_0, avg score : -13.650, avg epi length : 1385
+agent :second_0, avg score : 13.650, avg epi length : 1385
+Selfplay: update the model of opponent
+Evaluate reward:  12.333333333333334
+# of episode :13900
+agent :first_0, avg score : -11.200, avg epi length : 1566
+agent :second_0, avg score : 11.200, avg epi length : 1566
+Selfplay: update the model of opponent
+Evaluate reward:  12.666666666666666
+# of episode :13920
+agent :first_0, avg score : -14.950, avg epi length : 1279
+agent :second_0, avg score : 14.950, avg epi length : 1279
+Selfplay: update the model of opponent
+Evaluate reward:  14.666666666666666
+# of episode :13940
+agent :first_0, avg score : -12.900, avg epi length : 1374
+agent :second_0, avg score : 12.900, avg epi length : 1374
+Selfplay: update the model of opponent
+Evaluate reward:  11.333333333333334
+# of episode :13960
+agent :first_0, avg score : -11.650, avg epi length : 1435
+agent :second_0, avg score : 11.650, avg epi length : 1435
+Selfplay: update the model of opponent
+Evaluate reward:  18.333333333333332
+# of episode :13980
+agent :first_0, avg score : -17.450, avg epi length : 999
+agent :second_0, avg score : 17.450, avg epi length : 999
+Selfplay: update the model of opponent
+Evaluate reward:  14.666666666666666
+# of episode :14000
+agent :first_0, avg score : -16.750, avg epi length : 1083
+agent :second_0, avg score : 16.750, avg epi length : 1083
+Selfplay: update the model of opponent
+Evaluate reward:  16.666666666666668
+# of episode :14020
+agent :first_0, avg score : -15.900, avg epi length : 1180
+agent :second_0, avg score : 15.900, avg epi length : 1180
+Selfplay: update the model of opponent
+Evaluate reward:  14.666666666666666
+# of episode :14040
+agent :first_0, avg score : -16.750, avg epi length : 1176
+agent :second_0, avg score : 16.750, avg epi length : 1176
+Selfplay: update the model of opponent
+Evaluate reward:  1.0
+# of episode :14060
+agent :first_0, avg score : -7.450, avg epi length : 2027
+agent :second_0, avg score : 7.450, avg epi length : 2027
+Selfplay: update the model of opponent
+Evaluate reward:  9.333333333333334
+# of episode :14080
+agent :first_0, avg score : -9.100, avg epi length : 1850
+agent :second_0, avg score : 9.100, avg epi length : 1850
+Selfplay: update the model of opponent
+Evaluate reward:  15.333333333333334
+# of episode :14100
+agent :first_0, avg score : -13.700, avg epi length : 1506
+agent :second_0, avg score : 13.700, avg epi length : 1506
+Selfplay: update the model of opponent
+Evaluate reward:  18.0
+# of episode :14120
+agent :first_0, avg score : -15.900, avg epi length : 1341
+agent :second_0, avg score : 15.900, avg epi length : 1341
+Selfplay: update the model of opponent
+Evaluate reward:  19.0
+# of episode :14140
+agent :first_0, avg score : -18.250, avg epi length : 990
+agent :second_0, avg score : 18.250, avg epi length : 990
+Selfplay: update the model of opponent
+Evaluate reward:  12.0
+# of episode :14160
+agent :first_0, avg score : -11.600, avg epi length : 1517
+agent :second_0, avg score : 11.600, avg epi length : 1517
+Selfplay: update the model of opponent
+Evaluate reward:  7.0
+# of episode :14180
+agent :first_0, avg score : -12.000, avg epi length : 1421
+agent :second_0, avg score : 12.000, avg epi length : 1421
+Selfplay: update the model of opponent
+Evaluate reward:  19.333333333333332
+# of episode :14200
+agent :first_0, avg score : -17.250, avg epi length : 1038
+agent :second_0, avg score : 17.250, avg epi length : 1038
+Selfplay: update the model of opponent
+Evaluate reward:  17.0
+# of episode :14220
+agent :first_0, avg score : -14.700, avg epi length : 1242
+agent :second_0, avg score : 14.700, avg epi length : 1242
+Selfplay: update the model of opponent
+Evaluate reward:  18.666666666666668
+# of episode :14240
+agent :first_0, avg score : -17.750, avg epi length : 938
+agent :second_0, avg score : 17.750, avg epi length : 938
+Selfplay: update the model of opponent
+Evaluate reward:  18.0
+# of episode :14260
+agent :first_0, avg score : -17.200, avg epi length : 999
+agent :second_0, avg score : 17.200, avg epi length : 999
+Selfplay: update the model of opponent
+Evaluate reward:  16.333333333333332
+# of episode :14280
+agent :first_0, avg score : -15.250, avg epi length : 1220
+agent :second_0, avg score : 15.250, avg epi length : 1220
+Selfplay: update the model of opponent
+Evaluate reward:  15.666666666666666
+# of episode :14300
+agent :first_0, avg score : -14.950, avg epi length : 1233
+agent :second_0, avg score : 14.950, avg epi length : 1233
+Selfplay: update the model of opponent
+Evaluate reward:  15.333333333333334
+# of episode :14320
+agent :first_0, avg score : -18.700, avg epi length : 912
+agent :second_0, avg score : 18.700, avg epi length : 912
+Selfplay: update the model of opponent
+Evaluate reward:  17.333333333333332
+# of episode :14340
+agent :first_0, avg score : -14.200, avg epi length : 1219
+agent :second_0, avg score : 14.200, avg epi length : 1219
+Selfplay: update the model of opponent
+Evaluate reward:  19.0
+# of episode :14360
+agent :first_0, avg score : -16.150, avg epi length : 1055
+agent :second_0, avg score : 16.150, avg epi length : 1055
+Selfplay: update the model of opponent
+Evaluate reward:  16.333333333333332
+# of episode :14380
+agent :first_0, avg score : -15.900, avg epi length : 1081
+agent :second_0, avg score : 15.900, avg epi length : 1081
+Selfplay: update the model of opponent
+Evaluate reward:  7.333333333333333
+# of episode :14400
+agent :first_0, avg score : -14.650, avg epi length : 1197
+agent :second_0, avg score : 14.650, avg epi length : 1197
+Selfplay: update the model of opponent
+Evaluate reward:  18.333333333333332
+# of episode :14420
+agent :first_0, avg score : -18.950, avg epi length : 891
+agent :second_0, avg score : 18.950, avg epi length : 891
+Selfplay: update the model of opponent
+Evaluate reward:  17.666666666666668
+# of episode :14440
+agent :first_0, avg score : -18.800, avg epi length : 915
+agent :second_0, avg score : 18.800, avg epi length : 915
+Selfplay: update the model of opponent
+Evaluate reward:  12.0
+# of episode :14460
+agent :first_0, avg score : -14.050, avg epi length : 1199
+agent :second_0, avg score : 14.050, avg epi length : 1199
+Selfplay: update the model of opponent
+Evaluate reward:  15.0
+# of episode :14480
+agent :first_0, avg score : -15.650, avg epi length : 1166
+agent :second_0, avg score : 15.650, avg epi length : 1166
+Selfplay: update the model of opponent
+Evaluate reward:  17.333333333333332
+# of episode :14500
+agent :first_0, avg score : -15.150, avg epi length : 1150
+agent :second_0, avg score : 15.150, avg epi length : 1150
+Selfplay: update the model of opponent
+Evaluate reward:  15.666666666666666
+# of episode :14520
+agent :first_0, avg score : -10.350, avg epi length : 1293
+agent :second_0, avg score : 10.350, avg epi length : 1293
+Selfplay: update the model of opponent
+Evaluate reward:  3.3333333333333335
+# of episode :14540
+agent :first_0, avg score : -7.250, avg epi length : 1352
+agent :second_0, avg score : 7.250, avg epi length : 1352
+Selfplay: update the model of opponent
+Evaluate reward:  8.666666666666666
+# of episode :14560
+agent :first_0, avg score : -9.450, avg epi length : 1266
+agent :second_0, avg score : 9.450, avg epi length : 1266
+Selfplay: update the model of opponent
+Evaluate reward:  -5.666666666666667
+# of episode :14580
+agent :first_0, avg score : -3.450, avg epi length : 1280
+agent :second_0, avg score : 3.450, avg epi length : 1280
+# of episode :14600
+agent :first_0, avg score : -12.350, avg epi length : 1116
+agent :second_0, avg score : 12.350, avg epi length : 1116
+Selfplay: update the model of opponent
+Evaluate reward:  5.666666666666667
+# of episode :14620
+agent :first_0, avg score : -8.150, avg epi length : 1342
+agent :second_0, avg score : 8.150, avg epi length : 1342
+Selfplay: update the model of opponent
+Evaluate reward:  17.333333333333332
+# of episode :14640
+agent :first_0, avg score : -17.600, avg epi length : 948
+agent :second_0, avg score : 17.600, avg epi length : 948
+Selfplay: update the model of opponent
+Evaluate reward:  13.333333333333334
+# of episode :14660
+agent :first_0, avg score : -11.450, avg epi length : 1379
+agent :second_0, avg score : 11.450, avg epi length : 1379
+Selfplay: update the model of opponent
+Evaluate reward:  7.333333333333333
+# of episode :14680
+agent :first_0, avg score : -3.400, avg epi length : 1165
+agent :second_0, avg score : 3.400, avg epi length : 1165
+# of episode :14700
+agent :first_0, avg score : -14.550, avg epi length : 1154
+agent :second_0, avg score : 14.550, avg epi length : 1154
+Selfplay: update the model of opponent
+Evaluate reward:  11.666666666666666
+# of episode :14720
+agent :first_0, avg score : -12.000, avg epi length : 1290
+agent :second_0, avg score : 12.000, avg epi length : 1290
+Selfplay: update the model of opponent
+Evaluate reward:  17.666666666666668
+# of episode :14740
+agent :first_0, avg score : -15.200, avg epi length : 1145
+agent :second_0, avg score : 15.200, avg epi length : 1145
+Selfplay: update the model of opponent
+Evaluate reward:  18.0
+# of episode :14760
+agent :first_0, avg score : -17.350, avg epi length : 1029
+agent :second_0, avg score : 17.350, avg epi length : 1029
+Selfplay: update the model of opponent
+Evaluate reward:  18.333333333333332
+# of episode :14780
+agent :first_0, avg score : -19.500, avg epi length : 858
+agent :second_0, avg score : 19.500, avg epi length : 858
+Selfplay: update the model of opponent
+Evaluate reward:  20.333333333333332
+# of episode :14800
+agent :first_0, avg score : -17.900, avg epi length : 877
+agent :second_0, avg score : 17.900, avg epi length : 877
+Selfplay: update the model of opponent
+Evaluate reward:  13.666666666666666
+# of episode :14820
+agent :first_0, avg score : -16.800, avg epi length : 1062
+agent :second_0, avg score : 16.800, avg epi length : 1062
+Selfplay: update the model of opponent
+Evaluate reward:  15.0
+# of episode :14840
+agent :first_0, avg score : -13.300, avg epi length : 1276
+agent :second_0, avg score : 13.300, avg epi length : 1276
+Selfplay: update the model of opponent
+Evaluate reward:  13.333333333333334
+# of episode :14860
+agent :first_0, avg score : -14.700, avg epi length : 1162
+agent :second_0, avg score : 14.700, avg epi length : 1162
+Selfplay: update the model of opponent
+Evaluate reward:  17.0
+# of episode :14880
+agent :first_0, avg score : -14.500, avg epi length : 1172
+agent :second_0, avg score : 14.500, avg epi length : 1172
+Selfplay: update the model of opponent
+Evaluate reward:  17.666666666666668
+# of episode :14900
+agent :first_0, avg score : -17.200, avg epi length : 995
+agent :second_0, avg score : 17.200, avg epi length : 995
+Selfplay: update the model of opponent
+Evaluate reward:  11.666666666666666
+# of episode :14920
+agent :first_0, avg score : -17.550, avg epi length : 997
+agent :second_0, avg score : 17.550, avg epi length : 997
+Selfplay: update the model of opponent
+Evaluate reward:  16.333333333333332
+# of episode :14940
+agent :first_0, avg score : -16.600, avg epi length : 1007
+agent :second_0, avg score : 16.600, avg epi length : 1007
+Selfplay: update the model of opponent
+Evaluate reward:  19.0
+# of episode :14960
+agent :first_0, avg score : -19.350, avg epi length : 838
+agent :second_0, avg score : 19.350, avg epi length : 838
+Selfplay: update the model of opponent
+Evaluate reward:  14.333333333333334
+# of episode :14980
+agent :first_0, avg score : -17.750, avg epi length : 955
+agent :second_0, avg score : 17.750, avg epi length : 955
+Selfplay: update the model of opponent
+Evaluate reward:  19.0
+# of episode :15000
+agent :first_0, avg score : -18.650, avg epi length : 943
+agent :second_0, avg score : 18.650, avg epi length : 943
+Selfplay: update the model of opponent
+Evaluate reward:  16.666666666666668
+# of episode :15020
+agent :first_0, avg score : -16.850, avg epi length : 1063
+agent :second_0, avg score : 16.850, avg epi length : 1063
+Selfplay: update the model of opponent
+Evaluate reward:  19.333333333333332
+# of episode :15040
+agent :first_0, avg score : -17.450, avg epi length : 1034
+agent :second_0, avg score : 17.450, avg epi length : 1034
+Selfplay: update the model of opponent
+Evaluate reward:  19.333333333333332
+# of episode :15060
