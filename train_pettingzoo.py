@@ -109,7 +109,7 @@ def parallel_rollout(env, model, writer, evaluater, max_eps, max_timesteps, self
                 # if selfplay and n_epi%selfplay_interval==0 and n_epi!=0:  # note: this should not be in print_interval loop
                 if selfplay and record_score[env.agents[1]] - record_score[
                         env.agents[0]] > selfplay_score_delta and n_epi != 0:
-                    prefix = 'selfplay/'
+                    prefix = 'selfplay/large_net/'
                     save_model_path = model_path + prefix + str(
                         n_epi) + 'mappo_single'
                     model.save_model(save_model_path)
