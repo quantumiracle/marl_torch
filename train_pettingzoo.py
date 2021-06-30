@@ -16,6 +16,7 @@ from utils.arguments import get_args, print_args
 from utils.utils import create_log_dir, load_model
 from hyperparams import *
 
+os.environ["CUDA_VISIBLE_DEVICES"] = "1" 
 
 def iterate_rollout(env, model, max_eps, max_timesteps):
     """ TODO the PettingZooWrapper also needs to be modified for this usage"""
