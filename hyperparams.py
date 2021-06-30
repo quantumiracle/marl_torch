@@ -16,6 +16,6 @@ hyperparams = {
     'gamma': 0.99,
     'lmbda': 0.95,
     'eps_clip': 0.2,
-    'hidden_dim': 4096,  # 64
+    'hidden_dim': 40960,  # 64
     'K_epoch': 4,
 }
