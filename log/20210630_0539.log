@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "train_pettingzoo.py", line 13, in <module>
+    from utils.wrappers import PettingZooWrapper, make_env
+  File "/home/zihan/research/marl_torch/utils/wrappers.py", line 3, in <module>
+    import supersuit  # wrapper for pettingzoo envs
+  File "/home/zihan/anaconda3/envs/x/lib/python3.7/site-packages/supersuit/__init__.py", line 7, in <module>
+    from . import vector_constructors
+  File "/home/zihan/anaconda3/envs/x/lib/python3.7/site-packages/supersuit/vector_constructors.py", line 3, in <module>
+    from .vector import MakeCPUAsyncConstructor, MarkovVectorEnv
+  File "/home/zihan/anaconda3/envs/x/lib/python3.7/site-packages/supersuit/vector/__init__.py", line 2, in <module>
+    from .multiproc_vec import ProcConcatVec
+  File "/home/zihan/anaconda3/envs/x/lib/python3.7/site-packages/supersuit/vector/multiproc_vec.py", line 6, in <module>
+    import gym.vector
+ModuleNotFoundError: No module named 'gym.vector'

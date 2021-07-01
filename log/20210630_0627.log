@@ -1,0 +1,35 @@
+                          Options
+                          test: False
+                          env: slimevolley_v0
+                          ram_obs: False
+                          render: False
+                          num_envs: 2
+                          seed: 1234
+                          alg: ppo
+                          selfplay: True
+                          load_agent: None
+                          train_both: False
+                          against_baseline: False
+                          fictitious: False
+                          load_model: None
+                          device: cuda:0
+state_spaces:  {'first_0': Box(-3.4028234663852886e+38, 3.4028234663852886e+38, (12,), float32), 'second_0': Box(-3.4028234663852886e+38, 3.4028234663852886e+38, (12,), float32)} ,  action_spaces:  {'first_0': Discrete(6), 'second_0': Discrete(6)}
+['first_0', 'second_0']
+Traceback (most recent call last):
+  File "train_pettingzoo.py", line 234, in <module>
+    main()
+  File "train_pettingzoo.py", line 209, in main
+    **hyperparams).to(args.device)
+  File "/home/zihan/research/marl_torch/utils/ppo.py", line 166, in __init__
+    self.agents[agent_name] = PPODiscrete(state_space, action_space, func_approx, learner_args, **kwargs).to(learner_args['device'])
+  File "/home/zihan/research/marl_torch/utils/ppo.py", line 24, in __init__
+    self.policy = PolicyMLP(state_space, action_space, hidden_dim, self.device).to(self.device)
+  File "/home/zihan/anaconda3/envs/x/lib/python3.7/site-packages/torch/nn/modules/module.py", line 612, in to
+    return self._apply(convert)
+  File "/home/zihan/anaconda3/envs/x/lib/python3.7/site-packages/torch/nn/modules/module.py", line 359, in _apply
+    module._apply(fn)
+  File "/home/zihan/anaconda3/envs/x/lib/python3.7/site-packages/torch/nn/modules/module.py", line 381, in _apply
+    param_applied = fn(param)
+  File "/home/zihan/anaconda3/envs/x/lib/python3.7/site-packages/torch/nn/modules/module.py", line 610, in convert
+    return t.to(device, dtype if t.is_floating_point() else None, non_blocking)
+RuntimeError: CUDA out of memory. Tried to allocate 6.25 GiB (GPU 0; 23.65 GiB total capacity; 18.76 GiB already allocated; 1.81 GiB free; 18.77 GiB reserved in total by PyTorch)
