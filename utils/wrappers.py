@@ -103,15 +103,17 @@ class SlimeVolleyWrapper():
             # this is for validation: load a single policy as 'second_0' to play against the baseline agent (via self-play in 2015)
             obs2, reward, done, info = self.env.step(actions_[1]) # extra argument
             obs1 = obs2 
+            rewards[self.agents[0]] = -reward
+            rewards[self.agents[1]] = reward # the reward is for the learnable agent (second)
         else:
             # normal 2-player setting
             obs1, reward, done, info = self.env.step(*actions_) # extra argument
             obs2 = info['otherObs']
+            rewards[self.agents[0]] = reward
+            rewards[self.agents[1]] = -reward
 
         obs[self.agents[0]] = obs1
         obs[self.agents[1]] = obs2
-        rewards[self.agents[0]] = -reward
-        rewards[self.agents[1]] = reward # the reward is for the learnable agent (second)
         dones[self.agents[0]] = done
         dones[self.agents[1]] = done
         infos[self.agents[0]] = info

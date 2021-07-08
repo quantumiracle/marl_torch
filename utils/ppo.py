@@ -130,7 +130,7 @@ class PPODiscrete(nn.Module):
         self.policy_old.load_state_dict(self.policy.state_dict())
 
     def choose_action(self, s, Greedy=False):
-        prob = self.policy_old(torch.from_numpy(s).unsqueeze(0).float().to(self.device)).squeeze()  # make sure input state shape is correct
+        prob = self.policy(torch.from_numpy(s).unsqueeze(0).float().to(self.device)).squeeze()  # make sure input state shape is correct
         if Greedy:
             a = torch.argmax(prob, dim=-1).item()
             return a
